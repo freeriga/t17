@@ -2,15 +2,24 @@
 <meta charset=utf-8>
 <title>T17 rezidence</title>
 <style>
+* { box-sizing: border-box; }
 .logo { border-radius: .5rem; }
-html { font: 24px courier; }
-body { max-width: 30em; margin: 4em auto; }
-body { display: flex; }
+html { font: 32px courier; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid currentcolor; }
-.logo { display: block; margin: 1em auto;}
-body { text-align: center; }
+body { max-width: 50rem; margin: 4rem auto; text-align: center; }
+
+.gallery { margin: 2rem 0; }
+.gallery { display: flex; flex-direction: column; align-items: center; }
+.gallery img { width: 18rem; height: 18rem; display: inline; margin: 0; }
+.gallery img { margin: .5rem 0; }
 </style>
 <body>
 <main>
-<img class=logo src=buildings.svg style="height: 12rem">
-<b>T17</b> ir māja Maskačkā, kur dzīvo <a href="https://www.facebook.com/FREERIGA/">Free Riga</a>.
+<p>
+<b>T17</b> ir māja Maskačkā, kur dzīvo
+<a href="https://www.facebook.com/FREERIGA/">Free Riga</a>.
+<div class=gallery>
+<img src=photos/park.jpg>
+<img src=photos/out.jpg>
+<img src=photos/karlis.jpg>
+</div>
