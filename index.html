@@ -3,22 +3,43 @@
 <title>T17 rezidence</title>
 <style>
 * { box-sizing: border-box; }
-.logo { border-radius: .5rem; }
-html { font: 32px courier; }
+html { font: 32px/1.4 courier; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid currentcolor; }
-body { max-width: 50rem; margin: 4rem auto; text-align: center; }
+section { max-width: 32rem; margin: 1rem auto; text-align: center; }
 
-.gallery { margin: 2rem 0; }
-.gallery { display: flex; flex-direction: column; align-items: center; }
-.gallery img { width: 18rem; height: 18rem; display: inline; margin: 0; }
-.gallery img { margin: .5rem 0; }
+.gallery { display: flex; flex-direction: row; flex-wrap: wrap; }
+.gallery { align-items: center; justify-content: center;}
+.gallery img { width: 10rem; height: 10rem; display: inline; margin: 0; }
+
+.todo { list-style-type: none; padding: 0; }
+.todo { display: flex; flex-direction: row; flex-wrap: wrap; }
+.todo { align-items: center; justify-content: center; }
+.todo input { margin: 0 .5rem 0 1rem; transform: scale(2); }
+.todo label { margin-right: .5rem; }
+.todo span { display: flex; }
+
+@media (min-width: 900px) {
+  .gallery img { width: 14rem; height: 14rem; }
+  .gallery img:first-child { border-radius: .5rem 0 0 .5rem; }
+  .gallery img:last-child { border-radius: 0 .5rem .5rem 0; }
+}
 </style>
 <body>
-<main>
-<p>
-<b>T17</b> ir māja Maskačkā, kur dzīvo
-<a href="https://www.facebook.com/FREERIGA/">Free Riga</a>.
+
+<section>
+
 <div class=gallery>
 <img src=photos/out.jpg>
 <img src=photos/karlis.jpg>
 </div>
+
+<p><b>T17</b> ir māja Maskačkā, kur dzīvo
+<a href="https://www.facebook.com/FREERIGA/">Free Riga</a>.
+
+<ul class=todo>
+<li><input disabled checked type=checkbox><label>Tumbas
+<li><input disabled checked type=checkbox><label>Ledusskapis
+<li><input disabled type=checkbox><label>Tualete
+<li><input disabled type=checkbox><label>Duša
+<li><input disabled type=checkbox><label>Veļasmašīna
+<li><input disabled type=checkbox><label>Plīts
