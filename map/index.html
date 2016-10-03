@@ -1,4 +1,5 @@
 <!doctype html>
+<meta charset=utf-8>
 <title>T17 Map</title>
 <link rel=stylesheet href=leaflet.css>
 <script src=leaflet.js></script>
@@ -8,9 +9,33 @@ html, body { margin: 0; padding: 0; }
 </style>
 <div id=mapdiv>
 <script>
-var map = L.map("mapdiv").setView([56.941828, 24.120583], 17)
+var t17Coords = [56.942353, 24.120146]
+var p11Coords = [56.942, 24.1210]
+var parkCoords = [56.941828, 24.120583]
+
+var map = L.map("mapdiv").setView(parkCoords, 17)
 L.tileLayer(
-  // "https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWJyb2NrIiwiYSI6ImNpc3c2ZzRsMzAwMXoyem8zN3dndWhqMnAifQ.OvrTplj54KtcgDmDmlQQoQ"
-  "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+  // "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+  "http://tile.stamen.com/watercolor/{z}/{x}/{y}.png"
+  // "http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+  // "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
 ).addTo(map)
+
+function popup(coords, title, text) {
+  return L.marker(coords).addTo(map).bindPopup(
+    "<b>" + title + "</b><br>" + text
+  )
+}
+
+popup(
+  t17Coords,
+  "Turgeņeva iela 17",
+  "Free Riga residency"
+).openPopup()
+
+popup(
+  p11Coords,
+  "Puškin iela 11",
+  "Free Riga offices and workshops"
+)
 </script>

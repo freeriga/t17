@@ -1,15 +1,18 @@
 <!doctype html>
 <meta charset=utf-8>
 <title>T17 rezidence</title>
+<link rel=stylesheet href=map/leaflet.css>
 <style>
 * { box-sizing: border-box; }
 html { font: 32px/1.3 courier; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid currentcolor; }
-section { max-width: 34rem; margin: 0 auto; padding: 1rem; }
+section { max-width: 34rem; margin: 0 auto; padding: .25rem; }
 
 .gallery { display: flex; flex-direction: row; flex-wrap: wrap; }
 .gallery { align-items: center; justify-content: center;}
 .gallery img { width: 10rem; height: 10rem; display: inline; margin: 0; }
+
+#mapdiv { height: 600px; margin: 1rem; }
 
 .todo { list-style-type: none; padding: 0; }
 .todo { display: flex; flex-direction: row; flex-wrap: wrap; }
@@ -28,21 +31,56 @@ section { max-width: 34rem; margin: 0 auto; padding: 1rem; }
 
 <section>
 
-<div class=gallery>
-<img src=photos/out.jpg>
-<img src=photos/karlis.jpg>
-</div>
-
 <p><b>T17</b>
 (<a href="https://www.openstreetmap.org/way/113568992#map=18/56.94231/24.12014"
 >Turgeņeva iela 17</a>)
 ir māja, kur dzīvo
 <a href="https://www.facebook.com/FREERIGA/">Free Riga</a>.
 
-<ul class=todo>
-<li><input disabled checked type=checkbox><label>Tumbas
-<li><input disabled checked type=checkbox><label>Ledusskapis
-<li><input disabled type=checkbox><label>Tualete
-<li><input disabled type=checkbox><label>Duša
-<li><input disabled type=checkbox><label>Veļasmašīna
-<li><input disabled type=checkbox><label>Plīts
+<!-- <ul class=todo> -->
+<!-- <li><input disabled checked type=checkbox><label>Tumbas -->
+<!-- <li><input disabled checked type=checkbox><label>Ledusskapis -->
+<!-- <li><input disabled type=checkbox><label>Tualete -->
+<!-- <li><input disabled type=checkbox><label>Duša -->
+<!-- <li><input disabled type=checkbox><label>Veļasmašīna -->
+<!-- <li><input disabled type=checkbox><label>Plīts -->
+
+<div id=mapdiv></div>
+
+<div class=gallery>
+<img src=photos/out.jpg>
+<img src=photos/karlis.jpg>
+</div>
+
+<script src=map/leaflet.js></script>
+<script>
+var t17Coords = [56.942353, 24.120146]
+var p11Coords = [56.942, 24.1210]
+var parkCoords = [56.941828, 24.120583]
+
+var map = L.map("mapdiv").setView(parkCoords, 17)
+L.tileLayer(
+  // "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+  "http://tile.stamen.com/watercolor/{z}/{x}/{y}.png"
+  // "http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+  // "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
+).addTo(map)
+
+function popup(coords, title, text) {
+  return L.marker(coords).addTo(map).bindPopup(
+    "<b>" + title + "</b><br>" + text
+  )
+}
+
+popup(
+  t17Coords,
+  "Turgeņeva iela 17",
+  "Free Riga residency"
+).openPopup()
+
+popup(
+  p11Coords,
+  "Puškin iela 11",
+  "Free Riga offices and workshops"
+)
+</script>
