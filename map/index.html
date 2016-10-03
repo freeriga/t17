@@ -1,0 +1,16 @@
+<!doctype html>
+<title>T17 Map</title>
+<link rel=stylesheet href=leaflet.css>
+<script src=leaflet.js></script>
+<style>
+html, body { margin: 0; padding: 0; }
+#mapdiv { height: 100vh; }
+</style>
+<div id=mapdiv>
+<script>
+var map = L.map("mapdiv").setView([56.941828, 24.120583], 17)
+L.tileLayer(
+  // "https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWJyb2NrIiwiYSI6ImNpc3c2ZzRsMzAwMXoyem8zN3dndWhqMnAifQ.OvrTplj54KtcgDmDmlQQoQ"
+  "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+).addTo(map)
+</script>
