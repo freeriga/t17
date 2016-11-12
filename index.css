@@ -5,6 +5,12 @@ h1, h2, h3 { font-size: inherit; text-align: center; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid currentcolor; }
 section { max-width: 34rem; margin: 0 auto; padding: .25rem; }
 
+ul { padding-left: 2em; }
+li { padding-left: .25em; }
+
+table { width: 100%; }
+table td:last-child { text-align: right; }
+
 .gallery { display: flex; flex-direction: row; flex-wrap: wrap; }
 .gallery { align-items: center; justify-content: center;}
 .gallery img { width: 10rem; height: 10rem; display: inline; margin: 0; }
