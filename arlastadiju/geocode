@@ -1,0 +1,4 @@
+#!/bin/sh
+curl -sS "nominatim.openstreetmap.org/search?city=Riga&country=Latvia&street=$*" |
+grep -A 4 langaddress | tail -n 2 | sed -e 's/[^0-9.]//g' |
+{ read a; read b; echo $a, $b; }

@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+shopt -s extglob
+first=1
+while read line; do
+  if [[ $line == "* "* ]]; then
+    read coords
+    if [[ ! $first ]]; then
+      cat <<.
+</article>
+.
+    fi
+    first=
+    cat <<.
+
+<article>
+  <h2>${line##\* }</h2>
+  <address><coords>$coords</coords></address>
+.
+    read
+    echo "  <p class=summary>"
+    while read summary; do
+      if [[ $summary == "" ]]; then
+        break
+      else
+        echo "    $summary"
+      fi
+    done
+    echo "  </p>"
+    cat <<.
+  <p>
+.
+  else
+    if [[ $line == "" ]]; then
+      echo "  <p>"
+    else
+      echo "    $line"
+    fi
+  fi
+done
+
+cat <<.
+</article>
+.

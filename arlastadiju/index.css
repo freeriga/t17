@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   font-family: times, "times new roman", "georgia", serif;
   line-height: 1.5;
+  counter-reset: article;
 }
 
 h1, h2, h3 { font-family: helvetica; }
@@ -20,16 +21,21 @@ h2 { margin: 0 0 .25em 0; }
 
 article { text-align: justify; }
 
+article h2::before {
+  counter-increment: article;
+  content: counter(article) ". ";
+}
+
 h1 div {
   float: right;
 }
 
-h1 span {
+#byline {
   font-size: 1rem;
   /* background-color: yellow; */
   /* border: 2px solid #cc0; */
   /* border-radius: .5em; */
-  padding: .1em .5em;
+  padding: .1em 0 0 .5em;
   font-weight: 500;
 }
 
@@ -42,19 +48,22 @@ body.story {
   margin: 2rem auto;
 }
 
+details { display: none; }
+
 .map-icon.dim {
   background-color: lightgrey;
   border-color: grey;
 }
 
-body.story .stories,
-body.story header { display: none; }
+#title { font-weight: bold; }
+
+aside p:first-child { margin-top: 0; }
 
 body.story #mapdiv {
   height: 300px;
   width: 300px;
   float: left;
-  margin: 0 1rem 0 0;
+  margin: .3rem 1rem 0 0;
 }
 
 aside {
@@ -94,28 +103,47 @@ summary { outline: 0; }
   font-weight: bold;
 }
 
-body { padding-bottom: 4rem; max-width: 65em; margin: 1rem auto; }
-
-@media (max-width: 65em) {
-  h1 { padding: 0 1rem; }
+body {
+  padding-bottom: 4rem;
+  margin: 1rem;
 }
 
 h2, h3 { font-size: inherit; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid currentcolor; }
 
-article { margin: 1.5rem 0 0; }
-
 #mapdiv { height: 700px; border: 1px solid #aaa; }
 
 coords { display: none; }
 
-.stories {
-  display: flex;
-  flex-wrap: wrap;
+.guide { display: flex; }
+.map { flex-grow: 1; }
+
+.stories { margin-top: 2rem; }
+.stories h2 { font-weight: normal; }
+.stories { padding: 0 2rem 0 1rem; }
+
+article:hover h2 {
+  text-decoration: underline;
 }
 
-.stories article {
-  width: 50%;
-  flex-shrink: 0;
-  padding: 0 1rem;
+.leaflet-popup-content-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
 }
+
+.leaflet-popup-content {
+  font-size: 1rem;
+  font-family: times, "times new roman", serif;
+  line-height: 1.2;
+}
+
+.leaflet-popup-content p {
+  text-align: justify;
+}
+
+.leaflet-popup-content b {
+  font-family: helvetica, arial, sans-serif;
+}
+
+article { cursor: pointer; }
+
+.story .stories { display: none; }

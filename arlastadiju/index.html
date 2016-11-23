@@ -7,11 +7,16 @@
 <link rel=stylesheet href=index.css>
 <body>
 
+<section class=guide>
+<section class=map>
+
 <header>
   <h1>
-    Tikšanās ar Lastādiju
+    <span id=title>
+      Tikšanās ar Lastādiju
+    </span>
     <div>
-      <span>
+      <span id=byline>
         veidoja
         <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
         <a href="http://t17.lv"><b>T17</b></a>
@@ -22,11 +27,11 @@
   </h1>
 </header>
 
-<section class=wide>
 <div id=mapdiv></div>
-</section>
 
 <aside></aside>
+
+</section>
 
 <section class=stories>
 
@@ -36,7 +41,7 @@
 <coords>56.9431628, 24.1243507</coords>
 </address>
 <details>
-  <summary>
+<summary>
   Vieta, kas ļauj tās apmeklētājiem iepazīt aizgājušo laiku artefaktus un veldzēties taustāmās atmiņās. Tieši niansēs slēpjas šī antikvariāta šarms, un vislabāk tās iepazīt nesteidzīgi malkojot namatēva sarūpētos dzērienus un iesaistoties improvizētā stāstu programmā pie bāra letes. Ar saimniekiem esam vienisprātis &ndash; Bānūzim “zīmējas spoža nākotne”.
 </summary>
 <main>
@@ -62,12 +67,12 @@ Liels veikals, kas slēpjas mazas un vienkāršas koka mājiņas aizsegā. Tajā
 </article>
 
 <article>
-<h2>''Latgalīte''</h2>
+<h2>Rīgas Lielās Horālās sinagogas memoriāls</h2>
 <address>
-<coords>56.94282, 24.128103</coords>
+<coords>56.942563, 24.126338</coords>
 </address>
 <details>
-<summary>No skaidu plāksnēm un plastmasas plēvēm būvētās paralēlajās realitātēs birokrātijai ir pārāk auksti. Savas dzīves karaļi jums sagādās visu &ndash; no akumulatora lādētāja līdz vientuļa zaldāta dienasgrāmatai. ''Tā jau mums viss ir labi, un narkomānu te nav,'' viņš bilst un noslauka biksēs no rokām pilošo motoreļļu.
+<summary>Memoriāls, kurā esošie objekti, vienlaikus pieminot nāvi un dzīvību, ir pretrunā viens otram. Automašīnu troksnis un glābēju vārdi šeit skan skaļāk par upuru kliedzieniem. “Dzīve iet uz priekšu,” atgādina vietējais rabīns un piedāvā iepazīties ar viņa kabinetā esošajām grāmatām par ebreju iznīcināšanu Latvijā.
 </summary>
 <main>
 </main>
@@ -75,12 +80,12 @@ Liels veikals, kas slēpjas mazas un vienkāršas koka mājiņas aizsegā. Tajā
 </article>
 
 <article>
-<h2>Rīgas Lielās Horālās sinagogas memoriāls</h2>
+<h2>''Latgalīte''</h2>
 <address>
-<coords>56.942563, 24.126338</coords>
+<coords>56.94282, 24.128103</coords>
 </address>
 <details>
-<summary>Memoriāls, kurā esošie objekti, vienlaikus pieminot nāvi un dzīvību, ir pretrunā viens otram. Automašīnu troksnis un glābēju vārdi šeit skan skaļāk par upuru kliedzieniem. “Dzīve iet uz priekšu,” atgādina vietējais rabīns un piedāvā iepazīties ar viņa kabinetā esošajām grāmatām par ebreju iznīcināšanu Latvijā.
+<summary>No skaidu plāksnēm un plastmasas plēvēm būvētās paralēlajās realitātēs birokrātijai ir pārāk auksti. Savas dzīves karaļi jums sagādās visu &ndash; no akumulatora lādētāja līdz vientuļa zaldāta dienasgrāmatai. ''Tā jau mums viss ir labi, un narkomānu te nav,'' viņš bilst un noslauka biksēs no rokām pilošo motoreļļu.
 </summary>
 <main>
 </main>
@@ -220,7 +225,8 @@ function query(x, selector) {
   return x.querySelector(selector)
 }
 
-var centerCoords = [56.943148, 24.123707]
+var t17Coords = [56.943148, 24.123707]
+
 var map = L.map("mapdiv", {
   zoomControl: false,
   scrollWheelZoom: false,
@@ -228,18 +234,15 @@ var map = L.map("mapdiv", {
 })
 
 L.tileLayer(
-  // "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-  // "http://tile.stamen.com/watercolor/{z}/{x}/{y}.png"
-  //"http://a.tile.stamen.com/toner/{z}/{x}/{y}.png"
-   "http://a.tile.stamen.com/toner-lite/{z}/{x}/{y}.png"
-  //"http://a.tile.stamen.com/toner-hybrid/{z}/{x}/{y}.png"
-  // "http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
-  // "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
+  "http://a.tile.stamen.com/toner-lite/{z}/{x}/{y}.png"
 ).addTo(map)
+
+var aside = query(document, "aside")
 
 var places = {}
 var currentPlace
 
+// Collect data about places from HTML
 queryAll(document, "article").forEach(function (x, i) {
   x.id = "vieta" + (i + 1)
 
@@ -253,13 +256,12 @@ queryAll(document, "article").forEach(function (x, i) {
   places[i + 1] = place
 })
 
-var aside = query(document, "aside")
-
 if (location.hash.match(/stasts(\d+)$/)) {
   var i = RegExp.$1
   currentPlace = places[i]
-  aside.innerHTML = "<h2>" + currentPlace.name + "</h2>"
-  aside.innerHTML += currentPlace.story
+  query(document, "#title").innerHTML = currentPlace.name
+  query(document, "#byline").innerHTML = "<b>Tikšanās ar Lastādiju</b>"
+  aside.innerHTML = currentPlace.story
   aside.className = "visible"
   document.body.className = "story"
   document.title = currentPlace.name
@@ -267,7 +269,7 @@ if (location.hash.match(/stasts(\d+)$/)) {
 } else {
   aside.className = ""
   document.body.className = ""
-  map.setView(centerCoords, 16)
+  map.setView(t17Coords, 16)
 }
 
 queryAll(document, "article").forEach(function (x, i) {
@@ -275,13 +277,16 @@ queryAll(document, "article").forEach(function (x, i) {
 
   function popup(coords, title, text, i) {
     var icon = L.divIcon({
-      className: "map-icon " + ((currentPlace && (places[i] != currentPlace)) ? "dim" : ""),
+      className: (
+        "map-icon " + ((currentPlace && (places[i] != currentPlace)) ? "dim" : "")
+      ),
       html: i
     })
-    var marker = L.marker(coords, { icon: icon }).addTo(map)
+    place.marker = L.marker(coords, { icon: icon }).addTo(map)
     if (!currentPlace) {
-      marker.bindPopup(
-        "<b>" + title + "</b><br><br>" + text + "<br><br><a target=_blank href=#stasts" + i + ">Lasīt vairāk</a>"
+      place.marker.bindPopup(
+        "<b>" + title + "</b><p>" + text +
+        "</p><a target=_blank href=#stasts" + i + ">Lasīt vairāk</a>"
       ).bindTooltip(title)
     }
   }
@@ -290,9 +295,16 @@ queryAll(document, "article").forEach(function (x, i) {
     popup(place.coords, place.name, place.description, i + 1)
   }
 
+  x.onmouseover = function () {
+    place.marker.openPopup()
+    map.setView(place.coords, 16)
+    // window.open(location.href + "#stasts" + (i + 1), "_blank")
+    return false;
+  }
+
   x.onclick = function () {
     window.open(location.href + "#stasts" + (i + 1), "_blank")
-    return false;
+    return false
   }
 })
 
