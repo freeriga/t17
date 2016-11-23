@@ -1,4 +1,5 @@
 * Free Riga Puškina ielā (P11)
+Puškina iela 11
 
 Bijusī Rīgas Dzirnavnieka fabrikas katlu māja un ofiss, kas pēc gadiem
 ilgas aizmirstības lēnām pārvērtusies par vietējo sociālo un kultūras
@@ -7,6 +8,7 @@ un organizācijas. Un runā, ka māja ir atvērta arī kaimiņiem, kas meklē
 vietu, kur pulcēties un pavadīt laiku.
 
 * "Deficīts"
+GPS 56.942117, 24.119644
 
 Pazudušo mīļlietiņu “Nārnijas skapis”, kur saplūst
 padomju pasaules mantojums un maģiski vecmāmiņu, kolekcionāru un, jo
@@ -16,6 +18,7 @@ rotaslietas, mugursomas ar kaķu sejām un romantisku gleznu
 reprodukcijas kaķu veidolā?
 
 * Abrenes ielas pieturvieta
+GPS 56.945681, 24.131111
 
 Abrenes ielas galapunkts lieliski ilustrē metaforu par transportu
 satiksmi kā pilsētas asinsriti. Galapunkts kalpo kā sirds, kas palīdz
@@ -26,21 +29,24 @@ galapunkta un braucot līdz Abrenes ielai, ir iespēja garantēt, ka
 mājupceļā nebūs jāstāv kājās ar iepirkumu maisiņiem.
 
 * Latvijas Zinātņu аkadēmija
+Latvijas Zinātņu аkadēmija
 
 Latvijas Zinātņu akadēmija – padomju laika šarms bijušajā kolhoznieku
 namā jūtams vēl šobaltdien. Zinātņu akadēmija mūsdienās uzņem ne tikai
 zinātniekus. To labi var redzēt pusdienlaikā Zinātņua akadēmijas
 ēdnīcā. Akadēmija ir darba vieta grāmatvežiem, redaktoriem,
 dziedniekiem un skolotājiem. Te kādreiz glabājās Dainu skapis, bet
-tagad telpas kļuvušas par krāsainu kapitālisma  dzītu profesiju
+tagad telpas kļuvušas par krāsainu kapitālisma dzītu profesiju
 rasolu.
 
 * Kurpnieka darbnīca
+GPS 56.941921, 24.119300
 
 Runā, ka apkaimē un, iespējams, Rīgā labākā un izdevīgākā kurpnieka
 darbnīca!
 
 * Sarkanā Krusta sociālais centrs “Gaiziņš”
+GPS 56.942063, 24.118892
 
 Dzeltenajā ēkā pie Centrāltirgus patvērumu un atbalstu rod cilvēki ar
 visdažādākajiem dzīvesstāstiem. Cits nāk pēc siltiem ziemas zābakiem
@@ -50,6 +56,7 @@ bet, lai kādu dzīves ceļu ikviens no šejienes iemītniekiem būtu
 mērojis, visus vieno vēlme būt noderīgiem un pieņemtiem.
 
 * Pazemes gājēju tunelis zem Gogoļa ielas
+GPS 56.945419, 24.119448
 
 Vieta, kurai ik dienas cauri izskrien simtiem cilvēku, acis pat
 nepaceļot. Taču, ja uz mirkli apstājas un paraugās apkārt, var
@@ -61,6 +68,7 @@ nopelnīt trūkstošo centu maizītei vai patverties no sliktiem laika
 apstākļiem.
 
 * SIA "Organza" audumu veikals
+Puškina iela 20a
 
 Veca ķieģeļu siena ar askētisku norādi „Audumi” ved uz veikalu
 garāmgājējiem nepamanāmā vietā, tomēr pēc pārdevējas teiktā veikalu
@@ -69,11 +77,13 @@ reklāma. Te ienākot, ielas neomulību nomaina veikalā esošā miera un
 vienkāršības sajūta.
 
 * Lunchbox
+GPS 56.941803, 24.122848
 
 Jauna vietiņa ar izdevīgu pusdienu piedāvājumu, ko saimnieks
 tiešsaistē pārrauga no sava kabineta tuvējā augstceltnē.
 
 * Rīgas Jēzus baznīca
+Jezus baznica
 
 Gandrīz 400 gadu ir pagājuši, pilsētas robežas ir mainījušās, bet
 dievnams tur turpina stāvēt, nemainīgi piederot luteriskajai draudzei,
@@ -83,6 +93,7 @@ nācu un nākšu. Šī ir visskaistākā baznīca. Svēta vieta.”  Tā par šo
 vietu izsakās baznīcā sastapta ļoti cienījama vecuma kundze.
 
 * Antikvaribārs “Bānūzis”
+Banuzis
 
 Vieta, kas ļauj tās apmeklētājiem iepazīt aizgājušo laiku artefaktus
 un veldzēties taustāmās atmiņās. Tieši niansēs slēpjas šī antikvariāta
@@ -92,6 +103,7 @@ bāra letes. Ar saimniekiem esam vienisprātis - "Bānūzim" “zīmējas
 spoža nākotne”.
 
 * Grāmatnīca “Janus”
+GPS 56.941325, 24.122873
 
 Liels veikals, kas slēpjas mazas un vienkāršas koka mājiņas
 aizsegā. Tajā var pavadīt pat pusi dienas, iepazīstoties ar jaunāko
@@ -100,6 +112,7 @@ veikalā dažkārt ieņem gluži vai psihologa lomu, palīdzot cilvēkiem
 atrast to, ko viņi meklē.
 
 * Rīgas Lielās Horālās sinagogas memoriāls
+GPS 56.942451, 24.126339
 
 Memoriāls, kurā esošie objekti, vienlaikus pieminot nāvi un dzīvību,
 ir pretstatā viens otram. Automašīnu troksnis un ebreju glābēju vārdi
@@ -109,6 +122,7 @@ iepazīties ar viņa kabinetā esošajām grāmatām par ebreju iznīcināšanu
 Latvijā.
 
 * "Igo. Akcents personībai"
+GPS 56.940723, 24.117702
 
 No skata necila vienstāva māja patukšās Turgeņeva ielas pašā
 galā. Māju ieņēmusi radoša komanda, lai dienas gaismu ieraudzītu
@@ -119,16 +133,19 @@ iemītnieks šajā kvartālā, kas rada citādu un kontrastējošu apkaimes
 tēlu.
 
 * Hanza Hotel
+GPS 56.941837, 24.123442
 
 Neliela trīs zvaigžņu viesnīca, kas varbūt atrodas un varbūt neatrodas
 Maskačkā.
 
 * Ugunsdzēsēju depo
+GPS 56.942560, 24.115759
 
 Priecīgi par apmeklētājiem, kuriem nekas nedeg, ugunsdzēsēji ir
 pretimnākoši, laipni un labi jūt cilvēkus.
 
 * Kafejnīca “Rozmarīns”
+GPS 56.939676, 24.124602
 
 Pēc nosaukuma nepateiksi, ka šīs kafejnīcas interjerā dominē doriskās
 un joniskās grieķu kolonnas. “Rozmarīns” ir vieta ar attieksmi, to
@@ -138,6 +155,7 @@ saimniece saka, ja cilvēks vēloties paēst, viņam te vienmēr tiks kaut
 kas pasniegts - kartupeļi ar rozmarīnu, piemēram.
 
 * Centrāltirgus
+GPS 56.943945, 24.116780
 
 Starp pieciem pārbūvētiem cepelīnu angāriem ik dienu mutuļo garšas,
 smaržas un cilvēku pūļi, kas zina, kur, kas un par cik atrodams. Te ir
@@ -147,6 +165,7 @@ kontrabandas cigaretēm un tūristu suvenīriem, gan Ogrē audzētajām
 puķēm, ko katru rītu puķu pārdevējas uz tirgu ved ar vilcienu.
 
 * Vissvētās Dievmātes Pasludināšanas pareizticīgo baznīca
+GPS 56.943944, 24.122906
 
 Pāri ielai pie policijas iecirkņa ēkas Gogoļa un Turgeņeva ielu
 krustojumā sēž vīrs un vēro putniņus. Viņš te nāk “katru dienu -
@@ -159,6 +178,7 @@ kur, un pasūtīt lūgšanas par drošību un veselību viņi nevar. Tāpēc
 viņi nāk šeit. Citās baznīcās tā neļauj, bet pie mums ļauj. Vot tā!”
 
 * Spīķeri
+Dirty Deal
 
 Dažu gadu laikā šis sākotnēji maz zināmais kultūrpunkts ir daudz
 mainījies un attīstijies. Gadsimtu senās spīķeru noliktavas no omulīgā
@@ -168,6 +188,7 @@ pavadīt laiku kafejnīcās un salonos. Tāpat šeit joprojām mājo
 kritiskie un laikmetīgie teātra uzvedumi no Dirty Deal Teatro.
 
 * Nail Smile
+GPS 56.942018, 24.122680
 
 Krustojumā esošs frizētavu-skaistumkopšanas salonu pāris ieintriģē ar
 pašu neapzināto vienotību. Ar pieticību un atrunām pārdevēja saka, ka
@@ -177,6 +198,7 @@ tomēr rajonu spilgti raksturojošu iespaidu par krievu-latviešu
 līdzāspastāvēšanu.
 
 * Kafejnīca “Sviesta pika”
+GPS 56.942356, 24.121587
 
 Aiz privātas autostāvvietas uz Elijas un Puškina ielas stūra, kuru
 gadiem pārvalda tas pats uzraugs, atrodas kafejnīca "Sviesta pika", ko
@@ -185,6 +207,7 @@ pēc zupas, kafijas un pusdienu piedāvājuma - ir izvēle starp soļanku
 un mājas soļanku.
 
 * "Latgalīte"
+9a Firsa Sadovnikova iela
 
 No skaidu plāksnēm un plastmasas plēvēm būvētās paralēlajās realitātēs
 birokrātijai ir pārāk auksti. Savas dzīves karaļi jums sagādās visu -
@@ -202,6 +225,7 @@ džinsu šķirošanu. Drēbes šeit ir uzticamas un, galvenais, lētas, jo
 “laiki diemžēl paliek arvien grūtāki”.
 
 * Free Riga Turgeņeva ielas rezidence (T17)
+Turgeņeva iela 17
 
 Neuzkrītoša, teju 200 gadus veca divstāvu dzīvojamā ēka. Mājas otrais
 stāvs pēc pieciem tukšiem gadiem ir ieguvis otro elpu - tur tagad

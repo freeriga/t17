@@ -3,20 +3,34 @@ shopt -s extglob
 first=1
 while read line; do
   if [[ $line == "* "* ]]; then
-    read coords
-    if [[ ! $first ]]; then
-      cat <<.
-</article>
-.
+    i=$((i+1))
+    read address
+    if [[ $address != "" ]]; then
+      if [[ $address == "GPS "* ]]; then
+        coords=${address##GPS }
+        echo "$line: custom coordinates $coords" >&2
+      else
+        echo -n "$line: geocoding $address... " >&2
+        coords=$(./geocode $address)
+        echo $coords >&2
+      fi
+      read # skip blank line
+    else
+      echo "**$line lacks address" >&2
+      coords=
     fi
-    first=
+    
+    [ $first ] || echo "</article>"; first=
+    
     cat <<.
 
 <article>
-  <h2>${line##\* }</h2>
+  <h2>
+    <span class=number>$i</span>
+    <span class=name>${line##\* }</span>
+  </h2>
   <address><coords>$coords</coords></address>
 .
-    read
     echo "  <p class=summary>"
     while read summary; do
       if [[ $summary == "" ]]; then
@@ -25,10 +39,6 @@ while read line; do
         echo "    $summary"
       fi
     done
-    echo "  </p>"
-    cat <<.
-  <p>
-.
   else
     if [[ $line == "" ]]; then
       echo "  <p>"

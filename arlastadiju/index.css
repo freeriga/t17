@@ -1,12 +1,12 @@
 * { box-sizing: border-box; }
 html {
-  font-size: 16px;
-  font-family: times, "times new roman", "georgia", serif;
-  line-height: 1.5;
+  font-size: 14px;
+  font-family: Rubik;
+  line-height: 1.3;
   counter-reset: article;
 }
 
-h1, h2, h3 { font-family: helvetica; }
+h1, h2, h3 { font-family: Rubik; }
 
 h1 {
   font-size: 1.2rem;
@@ -19,11 +19,23 @@ h1 {
 
 h2 { margin: 0 0 .25em 0; }
 
-article { text-align: justify; }
+/*
+article h2 .number {
+  border-radius: 50%;
+  font-weight: 500;
+  display: inline-block;
+  width: 1.5em;
+  background: yellow;
+  text-align: center;
+  border: 1px solid #cc0;
+  vertical-align: top;
+  margin-right: .5em;
+}
+*/
 
-article h2::before {
-  counter-increment: article;
-  content: counter(article) ". ";
+article h2 .name {
+  display: inline-block;
+  max-width: 20em;
 }
 
 h1 div {
@@ -70,10 +82,6 @@ aside {
   display: none;
 }
 
-aside p {
-  text-align: justify;
-}
-
 aside a {
   float: right;
   border: 0;
@@ -87,20 +95,38 @@ aside.visible {
   display: block;
 }
 
-summary {
+.summary {
+  display: none;
   cursor: pointer;
 }
 
 summary { outline: 0; }
 
-.map-icon {
+.leaflet-container {
+  font: inherit;
+}
+
+article h2 .number {
+  margin-right: .25em;
+  vertical-align: top !important;
+}
+
+article h2 { line-height: 23px; }
+
+article h2 .number, .map-icon {
+  display: inline-block;
   background-color: #ff6;
   border-radius: 50%;
-  width: 21px !important;
-  height: 21px !important;
-  border: 2px solid #cc0;
+  -webkit-box-shadow: 1px 1px 20px -5px rgba(20,20,0,0.75);
+  -moz-box-shadow: 4px 4px 20px -5px rgba(20,20,0,0.75);
+  box-shadow: inset 1px 1px 12px -5px rgba(20,20,0,0.75);
+  width: 23px !important;
+  height: 23px !important;
+  line-height: 21px !important;
+  border: 1px solid #cc0;
+  vertical-align: middle;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 body {
@@ -109,20 +135,22 @@ body {
 }
 
 h2, h3 { font-size: inherit; }
-a { color: inherit; text-decoration: none; border-bottom: 1px solid currentcolor; }
+a { color: inherit; }
+/* text-decoration: none; border-bottom: 1px solid currentcolor; } */
 
-#mapdiv { height: 700px; border: 1px solid #aaa; }
+#mapdiv { height: 92vh; border: 1px solid #aaa; }
 
 coords { display: none; }
 
 .guide { display: flex; }
 .map { flex-grow: 1; }
 
+.stories { flex-basis: 26rem; }
 .stories { margin-top: 2rem; }
 .stories h2 { font-weight: normal; }
 .stories { padding: 0 2rem 0 1rem; }
 
-article:hover h2 {
+article:hover h2 .name {
   text-decoration: underline;
 }
 
@@ -132,16 +160,17 @@ article:hover h2 {
 
 .leaflet-popup-content {
   font-size: 1rem;
-  font-family: times, "times new roman", serif;
-  line-height: 1.2;
-}
-
-.leaflet-popup-content p {
+  font-family: rubik;
+  line-height: 1.4;
   text-align: justify;
 }
 
+.leaflet-popup-content p {
+  margin: .5em 0;
+}
+
 .leaflet-popup-content b {
-  font-family: helvetica, arial, sans-serif;
+  font-family: rubik;
 }
 
 article { cursor: pointer; }
