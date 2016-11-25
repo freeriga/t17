@@ -109,3 +109,10 @@ aside p { margin-bottom: .5em; }
 .name { transition: 0.5s linear all; }
 .name { border-bottom: 1px solid transparent; }
 .name.pulse { border-color: #333; }
+
+.map-icon { transition: 0.5s linear all; }
+
+.map-icon.shade { opacity: 0.5; background-color: #eea; }
+article.shade { opacity: 0.3; }
+
+article { transition: 0.5s linear all; }

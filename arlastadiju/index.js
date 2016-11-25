@@ -75,15 +75,30 @@ onload = function () {
         html: i
       })
       place.marker = L.marker(coords, { icon: icon }).addTo(map)
+      setTimeout(function () {
+        place.marker._icon.onmouseenter = function() {
+          queryAll(document, "article").forEach(function (article, j) {
+            if (i != j + 1) {
+              article.className += " shade"
+            }
+          })
+        }
+        place.marker._icon.onmouseleave = function () {
+          queryAll(document, "article").forEach(function (article, j) {
+            article.className = article.className.replace(" shade", "")
+          })
+        }
+      })
       allMarkers.push(place.marker)
       if (!currentPlace) {
         place.marker.bindPopup(
           "<b>" + title + "</b><p>" + text +
           "</p><a target=_blank href=#stasts" + i + ">Lasīt vairāk</a>", {
             maxWidth: 400,
-            offset: L.point(7, 4)
+            offset: L.point(7, 4),
+            autoPanPadding: L.point(20, 20)
           }
-        ).bindTooltip(title)
+        )
       }
     }
 
@@ -93,6 +108,13 @@ onload = function () {
 
     x.onmouseenter = function () {
       place.nameElement.className = "name pulse"
+      Object.keys(places).forEach(function (x) {
+        var marker = places[x].marker
+        if (marker)
+          marker._icon.className += " shade"
+      })
+      place.marker._icon.className =
+        place.marker._icon.className.replace(" shade", "")
       hoverTimeout = setTimeout(function () {
         place.marker.openPopup()
       }, 500)
@@ -102,6 +124,12 @@ onload = function () {
 
     x.onmouseleave = function () {
       console.log("clearing timeout", hoverTimeout)
+      Object.keys(places).forEach(function (x) {
+        var marker = places[x].marker
+        if (marker)
+          marker._icon.className =
+            marker._icon.className.replace(" shade", "")
+      })
       queryAll(document, "article .name").forEach(function (x) {
         x.className = "name"
       })
