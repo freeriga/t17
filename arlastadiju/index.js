@@ -1,30 +1,12 @@
+var tileUrl = "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
+
 var places = {}
 var currentPlace
+var allMarkers = []
 
 function array(x) { return [].slice.call(x) }
 function queryAll(x, selector) { return array(x.querySelectorAll(selector)) }
 function query(x, selector) { return x.querySelector(selector) }
-
-function debounce (func, wait, immediate) {
-  var timeout
-  return function () {
-    var context = this, args = arguments
-    var later = function () {
-      timeout = null
-      if (!immediate) func.apply(context, args)
-    };
-    var callNow = immediate && !timeout
-    clearTimeout(timeout)
-    timeout = setTimeout(later, wait)
-    if (callNow) func.apply(context, args)
-  }
-}
-
-var showPopup = function (place) {
-  place.marker.openPopup()
-  // map.setView(place.coords, 16)
-  // window.open(location.href + "#stasts" + (i + 1), "_blank")
-}
 
 onload = function () {
   var t17Coords = [56.943148, 24.123707]
@@ -35,13 +17,9 @@ onload = function () {
     attributionControl: false
   })
 
-  L.tileLayer(
-  // "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-   "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
-
-//    "http://a.tile.stamen.com/toner-lite/{z}/{x}/{y}.png"
-  , { attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>' }
-  ).addTo(map)
+  L.tileLayer(tileUrl , {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
+  }).addTo(map)
 
   map.addControl(L.control.attribution({
     position: "bottomright",
@@ -49,8 +27,6 @@ onload = function () {
   }))
 
   var aside = query(document, "aside")
-
-  var allMarkers = []
 
   // Collect data about places from HTML
   queryAll(document, "article").forEach(function (x, i) {
@@ -67,8 +43,6 @@ onload = function () {
       ).join("\n")
     }
 
-    console.log(place.name, place.coords)
-
     places[i + 1] = place
   })
 
@@ -78,12 +52,10 @@ onload = function () {
     query(document, "h1").innerHTML = currentPlace.name
     query(document, "h2").innerHTML = "Tikšanās ar Lastādiju"
     aside.innerHTML = currentPlace.story
-    aside.className = "visible"
     document.body.className = "story"
     document.title = currentPlace.name
     map.setView(currentPlace.coords, 16)
   } else {
-    aside.className = ""
     document.body.className = ""
   }
 
@@ -118,7 +90,7 @@ onload = function () {
 
     x.onmouseenter = function () {
       hoverTimeout = setTimeout(function () {
-        showPopup(place)
+        place.marker.openPopup()
       }, 500)
       console.log("setting timeout", place.name, hoverTimeout)
       return false;

@@ -18,42 +18,31 @@ body { margin: 1rem; }
 header, .map { width: calc(100% - 25rem); }
 
 header { line-height: 18px; }
-h1 { font-size: 18px; }
-h2 a { font-weight: bold; color: black; }
+header { padding-bottom: .5rem; }
 
-header h1, header h2 { display: inline-block; }
-header h2 { float: right; }
+h1, h2 { display: inline-block; }
+h1 { font-size: 18px; }
+h2 { float: right; }
+h2 a { font-weight: bold; color: black; }
 
 h1 { font-weight: bold; }
 h2 { font-weight: 500; }
-
 h3 { cursor: pointer; }
 
-header { padding-bottom: .5rem; }
-
 .map, .stories { display: inline-block; }
-
+.map, .stories { height: calc(100vh - 4.1rem); }
 .map { float: left; }
 .map { border: 1px solid #ccc; }
-.map, .stories { height: calc(100vh - 4.1rem); }
-
 .stories { overflow-y: auto; }
 .stories { padding-left: .5rem; }
 
-.map-icon.dim {
-  background-color: lightgrey;
-  border-color: grey;
-}
+.map-icon.dim { background-color: lightgrey; border-color: grey; }
 
 body.story #mapelement {
-  height: 300px;
-  width: 300px;
+  height: 20rem;
+  width: 20rem;
   float: left;
   margin: .3rem 1rem 0 0;
-}
-
-.leaflet-container {
-  font: inherit;
 }
 
 h3 .number, .map-icon {
@@ -71,6 +60,8 @@ h3 .number, .map-icon {
   text-align: center;
   font-weight: 500;
 }
+
+.leaflet-container { font: inherit; }
 
 .leaflet-popup-content-wrapper {
   background-color: rgba(255, 255, 255, 0.9);
@@ -109,6 +100,7 @@ body.story { max-width: 42em; margin: 1rem auto; }
 body.story .stories { display: none; }
 body.story header { width: 100%; }
 
-@media (max-width: 900px) {
-  header { width: 100%; }
-}
+aside { line-height: 1.4; }
+aside p { margin-bottom: .5em; }
+
+@media (max-width: 900px) { header { width: 100%; } }
