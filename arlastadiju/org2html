@@ -25,10 +25,10 @@ while read line; do
     cat <<.
 
 <article>
-  <h2>
-    <span class=number>$i</span>
-    <span class=name>${line##\* }</span>
-  </h2>
+  <h3>
+    <span class=number-container><span class=number>$i</span></span>
+    <span class=name-container><span class=name>${line##\* }</span></span>
+  </h3>
   <address><coords>$coords</coords></address>
 .
     echo "  <p class=summary>"
