@@ -106,13 +106,12 @@ aside p { margin-bottom: .5em; }
 
 @media (max-width: 900px) { header { width: 100%; } }
 
-.name { transition: 0.5s linear all; }
+.name, .map-icon, article {
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+}
+
 .name { border-bottom: 1px solid transparent; }
 .name.pulse { border-color: #333; }
-
-.map-icon { transition: 0.5s linear all; }
-
 .map-icon.shade { opacity: 0.5; background-color: #eea; }
 article.shade { opacity: 0.3; }
-
-article { transition: 0.5s linear all; }
