@@ -76,16 +76,22 @@ onload = function () {
       })
       place.marker = L.marker(coords, { icon: icon }).addTo(map)
       setTimeout(function () {
-        place.marker._icon.onmouseenter = function() {
+        place.marker._icon.onmouseenter = place.marker._icon.onfocus = function() {
           queryAll(document, "article").forEach(function (article, j) {
             if (i != j + 1) {
               article.className += " shade"
+              places[j + 1].marker._icon.className += " shade"
             }
+
+            // if (places[j + 1].marker._icon == document.activeElement)
+            //   places[j + 1].marker.openPopup()
           })
         }
-        place.marker._icon.onmouseleave = function () {
+        place.marker._icon.onmouseleave = place.marker._icon.onblur = function () {
           queryAll(document, "article").forEach(function (article, j) {
             article.className = article.className.replace(" shade", "")
+            places[j + 1].marker._icon.className =
+              places[j + 1].marker._icon.className.replace(" shade", "")
           })
         }
       })
@@ -118,12 +124,10 @@ onload = function () {
       hoverTimeout = setTimeout(function () {
         place.marker.openPopup()
       }, 500)
-      console.log("setting timeout", place.name, hoverTimeout)
       return false;
     }
 
     x.onmouseleave = function () {
-      console.log("clearing timeout", hoverTimeout)
       Object.keys(places).forEach(function (x) {
         var marker = places[x].marker
         if (marker)
