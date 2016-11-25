@@ -77,13 +77,13 @@ reklāma. Te ienākot, ielas neomulību nomaina veikalā esošā miera un
 vienkāršības sajūta.
 
 * Lunchbox
-GPS 56.941803, 24.122848
+GPS 56.9418, 24.122648
 
 Jauna vietiņa ar izdevīgu pusdienu piedāvājumu, ko saimnieks
 tiešsaistē pārrauga no sava kabineta tuvējā augstceltnē.
 
 * Rīgas Jēzus baznīca
-Jezus baznica
+GPS 56.94162, 24.1235
 
 Gandrīz 400 gadu ir pagājuši, pilsētas robežas ir mainījušās, bet
 dievnams tur turpina stāvēt, nemainīgi piederot luteriskajai draudzei,
@@ -93,7 +93,7 @@ nācu un nākšu. Šī ir visskaistākā baznīca. Svēta vieta.”  Tā par šo
 vietu izsakās baznīcā sastapta ļoti cienījama vecuma kundze.
 
 * Antikvaribārs “Bānūzis”
-Banuzis
+GPS 56.9432628, 24.1243507
 
 Vieta, kas ļauj tās apmeklētājiem iepazīt aizgājušo laiku artefaktus
 un veldzēties taustāmās atmiņās. Tieši niansēs slēpjas šī antikvariāta
@@ -103,7 +103,7 @@ bāra letes. Ar saimniekiem esam vienisprātis - "Bānūzim" “zīmējas
 spoža nākotne”.
 
 * Grāmatnīca “Janus”
-GPS 56.941325, 24.122873
+GPS 56.94140, 24.12273
 
 Liels veikals, kas slēpjas mazas un vienkāršas koka mājiņas
 aizsegā. Tajā var pavadīt pat pusi dienas, iepazīstoties ar jaunāko
@@ -133,7 +133,7 @@ iemītnieks šajā kvartālā, kas rada citādu un kontrastējošu apkaimes
 tēlu.
 
 * Hanza Hotel
-GPS 56.941837, 24.123442
+GPS 56.94205, 24.123442
 
 Neliela trīs zvaigžņu viesnīca, kas varbūt atrodas un varbūt neatrodas
 Maskačkā.
@@ -178,7 +178,7 @@ kur, un pasūtīt lūgšanas par drošību un veselību viņi nevar. Tāpēc
 viņi nāk šeit. Citās baznīcās tā neļauj, bet pie mums ļauj. Vot tā!”
 
 * Spīķeri
-Dirty Deal
+GPS 56.9416366, 24.116552
 
 Dažu gadu laikā šis sākotnēji maz zināmais kultūrpunkts ir daudz
 mainījies un attīstijies. Gadsimtu senās spīķeru noliktavas no omulīgā
@@ -188,7 +188,7 @@ pavadīt laiku kafejnīcās un salonos. Tāpat šeit joprojām mājo
 kritiskie un laikmetīgie teātra uzvedumi no Dirty Deal Teatro.
 
 * Nail Smile
-GPS 56.942018, 24.122680
+GPS 56.942118, 24.122880
 
 Krustojumā esošs frizētavu-skaistumkopšanas salonu pāris ieintriģē ar
 pašu neapzināto vienotību. Ar pieticību un atrunām pārdevēja saka, ka

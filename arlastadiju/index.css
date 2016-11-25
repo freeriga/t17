@@ -22,12 +22,13 @@ header { padding-bottom: .5rem; }
 
 h1, h2 { display: inline-block; }
 h1 { font-size: 18px; }
-h2 { float: right; }
+h2 { margin-left: 2em; }
 h2 a { font-weight: bold; color: black; }
 
 h1 { font-weight: bold; }
-h2 { font-weight: 500; }
 h3 { cursor: pointer; }
+
+b { font-weight: 500; }
 
 .map, .stories { display: inline-block; }
 .map, .stories { height: calc(100vh - 4.1rem); }
@@ -42,7 +43,7 @@ body.story #mapelement {
   height: 20rem;
   width: 20rem;
   float: left;
-  margin: .3rem 1rem 0 0;
+  margin-right: 1rem;
 }
 
 h3 .number, .map-icon {
@@ -104,3 +105,7 @@ aside { line-height: 1.4; }
 aside p { margin-bottom: .5em; }
 
 @media (max-width: 900px) { header { width: 100%; } }
+
+.name { transition: 0.5s linear all; }
+.name { border-bottom: 1px solid transparent; }
+.name.pulse { border-color: #333; }

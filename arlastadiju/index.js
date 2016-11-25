@@ -12,7 +12,7 @@ onload = function () {
   var t17Coords = [56.943148, 24.123707]
 
   var map = L.map("mapelement", {
-    zoomControl: false,
+    zoomControl: true,
     scrollWheelZoom: false,
     attributionControl: false
   })
@@ -32,8 +32,11 @@ onload = function () {
   queryAll(document, "article").forEach(function (x, i) {
     x.id = "vieta" + (i + 1)
 
+    var nameElement = query(x, "h3 .name")
+
     var place = {
-      name: query(x, "h3 .name").innerText,
+      name: nameElement.innerText,
+      nameElement: nameElement,
       coords: query(x, "coords").innerText.split(", "),
       description: query(x, "p.summary").innerText,
       story: array(
@@ -50,7 +53,7 @@ onload = function () {
     var i = RegExp.$1
     currentPlace = places[i]
     query(document, "h1").innerHTML = currentPlace.name
-    query(document, "h2").innerHTML = "Tikšanās ar Lastādiju"
+    query(document, "h2").innerHTML = "" // "Tikšanās ar Lastādiju"
     aside.innerHTML = currentPlace.story
     document.body.className = "story"
     document.title = currentPlace.name
@@ -89,6 +92,7 @@ onload = function () {
     }
 
     x.onmouseenter = function () {
+      place.nameElement.className = "name pulse"
       hoverTimeout = setTimeout(function () {
         place.marker.openPopup()
       }, 500)
@@ -98,6 +102,9 @@ onload = function () {
 
     x.onmouseleave = function () {
       console.log("clearing timeout", hoverTimeout)
+      queryAll(document, "article .name").forEach(function (x) {
+        x.className = "name"
+      })
       clearTimeout(hoverTimeout)
     }
 
