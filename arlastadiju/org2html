@@ -3,6 +3,7 @@ shopt -s extglob
 first=1
 while read line; do
   if [[ $line == "* "* ]]; then
+    aftersummary=
     i=$((i+1))
     read address
     if [[ $address != "" ]]; then
@@ -19,9 +20,9 @@ while read line; do
       echo "**$line lacks address" >&2
       coords=
     fi
-    
+
     [ $first ] || echo "</article>"; first=
-    
+
     cat <<.
 
 <article>
@@ -34,6 +35,7 @@ while read line; do
     echo "  <p class=summary>"
     while read summary; do
       if [[ $summary == "" ]]; then
+        aftersummary=1
         break
       else
         echo "    $summary"
@@ -43,6 +45,10 @@ while read line; do
     if [[ $line == "" ]]; then
       echo "  <p>"
     else
+      if [[ $aftersummary ]]; then
+        echo "  <p>"
+        aftersummary=
+      fi
       echo "    $line"
     fi
   fi
