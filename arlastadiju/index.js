@@ -98,8 +98,9 @@ onload = function () {
       allMarkers.push(place.marker)
       if (!currentPlace) {
         place.marker.bindPopup(
-          "<b>" + title + "</b><p>" + text +
-          "</p><a target=_blank href=#stasts" + i + ">Lasīt vairāk</a>", {
+          "<b>" + title + "</b><p>" + text + "</p>" + (
+            place.story ? "<a target=_blank href=#stasts" + i + ">Lasīt vairāk</a>" : ""
+          ), {
             maxWidth: 400,
             offset: L.point(7, 4),
             autoPanPadding: L.point(20, 20)
@@ -140,9 +141,12 @@ onload = function () {
       clearTimeout(hoverTimeout)
     }
 
-    x.onclick = function () {
-      window.open(location.href + "#stasts" + (i + 1), "_blank")
-      return false
+    if (place.story) {
+      x.className += " link"
+      x.onclick = function () {
+        window.open(location.href + "#stasts" + (i + 1), "_blank")
+        return false
+      }
     }
   })
 
