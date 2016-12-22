@@ -117,3 +117,5 @@ article.link .name.pulse { border-color: #333; }
 article.shade { opacity: 0.3; }
 
 #index { display: none; }
+
+aside { white-space: pre-line; }
