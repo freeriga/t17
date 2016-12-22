@@ -1,2 +1,2 @@
-index.html: index.org preamble.html geocode org2html
-	( cat preamble.html && ./org2html < index.org ) > index.html
+index.html: geocode index.xml index.xsl
+	xsltproc index.xsl index.xml > index.html

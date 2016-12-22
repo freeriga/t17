@@ -24,6 +24,8 @@ h1, h2 { display: inline-block; }
 h2 { margin-left: 2em; }
 h2 a { font-weight: bold; color: black; }
 
+a { color: black; }
+
 h1 { font-weight: bold; }
 h3 { cursor: pointer; }
 
@@ -113,3 +115,5 @@ article .name { border-bottom: 1px solid transparent; }
 article.link .name.pulse { border-color: #333; }
 .map-icon.shade { opacity: 0.5; background-color: #eea; }
 article.shade { opacity: 0.3; }
+
+#index { display: none; }

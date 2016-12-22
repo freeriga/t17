@@ -1,155 +1,130 @@
-var tileUrl = "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
-
-var places = {}
-var currentPlace
+var map
+var places
 var allMarkers = []
+var hoverTimeout
 
+map = L.map("mapelement", {
+  zoomControl: true,
+  scrollWheelZoom: false,
+  attributionControl: false
+})
+
+// Use Wikimedia's OpenStreetMap tile rendering
+L.tileLayer("https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png", {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
+}).addTo(map)
+
+// Show the copyright attribution
+map.addControl(L.control.attribution({
+  position: "bottomright",
+  prefix: ""
+}))
+
+// Collect data about places from HTML
+places = queryAll(document, "article").map(
+  function parsePlaceElement (x, i) {
+    var nameElement = query(x, "h3 .name")
+    return {
+      index: i,
+      element: x,
+      name: nameElement.innerText,
+      nameElement: nameElement,
+      coords: x.getAttribute("data-coords").split(", "),
+      snippet: query(x, "p.summary").innerText,
+      story: x.getAttribute("data-has-story") == "true",
+      id: x.getAttribute("data-id")
+    }
+  }
+)
+
+// Set up map markers and popups
+queryAll(document, "article").forEach(function (x, i) {
+  var place = places[i]
+
+  function popup(coords, title, text, i) {
+    var icon = L.divIcon({ className: "map-icon",  html: (i + 1) })
+    place.marker = L.marker(coords, { icon: icon }).addTo(map)
+    setupMarkerFading(place)
+    setupMarkerPopup(place)
+    allMarkers.push(place.marker)
+  }
+
+  popup(place.coords, place.name, place.snippet, i)
+
+  x.onmouseenter = function () {
+    place.nameElement.className = "name pulse"
+    places.forEach(function (x) {
+      toggleClass(x.marker._icon, "shade", true)
+    })
+    toggleClass(place.marker._icon, "shade", false)
+    hoverTimeout = setTimeout(function () {
+      place.marker.openPopup()
+    }, 500)
+    return false;
+  }
+
+  x.onmouseleave = function () {
+    places.forEach(function (x) {
+      toggleClass(places[x].marker._icon, "shade", false)
+    })
+    queryAll(document, "article .name").forEach(function (x) {
+      x.className = "name"
+    })
+    clearTimeout(hoverTimeout)
+  }
+})
+
+map.fitBounds(L.featureGroup(allMarkers).getBounds())
+
+// DOM utility functions
 function array(x) { return [].slice.call(x) }
 function queryAll(x, selector) { return array(x.querySelectorAll(selector)) }
 function query(x, selector) { return x.querySelector(selector) }
 
-onload = function () {
-  var t17Coords = [56.943148, 24.123707]
-
-  var map = L.map("mapelement", {
-    zoomControl: true,
-    scrollWheelZoom: false,
-    attributionControl: false
-  })
-
-  L.tileLayer(tileUrl , {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
-  }).addTo(map)
-
-  map.addControl(L.control.attribution({
-    position: "bottomright",
-    prefix: ""
-  }))
-
-  var aside = query(document, "aside")
-
-  // Collect data about places from HTML
-  queryAll(document, "article").forEach(function (x, i) {
-    x.id = "vieta" + (i + 1)
-
-    var nameElement = query(x, "h3 .name")
-
-    var place = {
-      name: nameElement.innerText,
-      nameElement: nameElement,
-      coords: query(x, "coords").innerText.split(", "),
-      description: query(x, "p.summary").innerText,
-      story: array(
-        queryAll(x, "p:not(.summary)")
-      ).map(
-        function (x) { return x.outerHTML }
-      ).join("\n")
-    }
-
-    places[i + 1] = place
-  })
-
-  if (location.hash.match(/stasts(\d+)$/)) {
-    var i = RegExp.$1
-    currentPlace = places[i]
-    query(document, "h1").innerHTML = currentPlace.name
-    query(document, "h2").innerHTML = "" // "Tikšanās ar Lastādiju"
-    aside.innerHTML = currentPlace.story
-    document.body.className = "story"
-    document.title = currentPlace.name
-    map.setView(currentPlace.coords, 16)
-  } else {
-    document.body.className = ""
+function toggleClass(x, klass, on) {
+  var classes = x.className.split(" ")
+  var i = classes.indexOf(klass)
+  if (on && i == -1) {
+    classes.push(klass)
+  } else if (!on && i >= 0) {
+    classes.splice(i, 1)
   }
+  x.className = classes.join(" ")
+}
 
-  var hoverTimeout
-
-  queryAll(document, "article").forEach(function (x, i) {
-    var place = places[i + 1]
-
-    function popup(coords, title, text, i) {
-      var icon = L.divIcon({
-        className: (
-          "map-icon " + ((currentPlace && (places[i] != currentPlace)) ? "dim" : "")
-        ),
-        html: i
-      })
-      place.marker = L.marker(coords, { icon: icon }).addTo(map)
-      setTimeout(function () {
-        place.marker._icon.onmouseenter = place.marker._icon.onfocus = function() {
-          queryAll(document, "article").forEach(function (article, j) {
-            if (i != j + 1) {
-              article.className += " shade"
-              places[j + 1].marker._icon.className += " shade"
-            }
-
-            // if (places[j + 1].marker._icon == document.activeElement)
-            //   places[j + 1].marker.openPopup()
-          })
-        }
-        place.marker._icon.onmouseleave = place.marker._icon.onblur = function () {
-          queryAll(document, "article").forEach(function (article, j) {
-            article.className = article.className.replace(" shade", "")
-            places[j + 1].marker._icon.className =
-              places[j + 1].marker._icon.className.replace(" shade", "")
-          })
+function setupMarkerFading(place) {
+  // Immediate timeout needed because the _icon member is not
+  // initialized yet.
+  setTimeout(function () {
+    var icon = place.marker._icon
+    
+    icon.onmouseenter = icon.onfocus = function () {
+      places.forEach(function (x) {
+        if (x.index != place.index) {
+          toggleClass(x.element, "shade", true)
+          toggleClass(x.marker._icon, "shade", true)
         }
       })
-      allMarkers.push(place.marker)
-      if (!currentPlace) {
-        place.marker.bindPopup(
-          "<b>" + title + "</b><p>" + text + "</p>" + (
-            place.story ? "<a target=_blank href=#stasts" + i + ">Lasīt vairāk</a>" : ""
-          ), {
-            maxWidth: 400,
-            offset: L.point(7, 4),
-            autoPanPadding: L.point(20, 20)
-          }
-        )
-      }
     }
-
-    if (place.coords.length == 2) {
-      popup(place.coords, place.name, place.description, i + 1)
-    }
-
-    x.onmouseenter = function () {
-      place.nameElement.className = "name pulse"
-      Object.keys(places).forEach(function (x) {
-        var marker = places[x].marker
-        if (marker)
-          marker._icon.className += " shade"
+    
+    icon.onmouseleave = icon.onblur = function () {
+      places.forEach(function (x) {
+        toggleClass(x.element, "shade", false)
+        toggleClass(x.marker._icon, "shade", false)
       })
-      place.marker._icon.className =
-        place.marker._icon.className.replace(" shade", "")
-      hoverTimeout = setTimeout(function () {
-        place.marker.openPopup()
-      }, 500)
-      return false;
-    }
-
-    x.onmouseleave = function () {
-      Object.keys(places).forEach(function (x) {
-        var marker = places[x].marker
-        if (marker)
-          marker._icon.className =
-            marker._icon.className.replace(" shade", "")
-      })
-      queryAll(document, "article .name").forEach(function (x) {
-        x.className = "name"
-      })
-      clearTimeout(hoverTimeout)
-    }
-
-    if (place.story) {
-      x.className += " link"
-      x.onclick = function () {
-        window.open(location.href + "#stasts" + (i + 1), "_blank")
-        return false
-      }
     }
   })
+}
 
-  if (!currentPlace)
-    map.fitBounds(L.featureGroup(allMarkers).getBounds())
+function setupMarkerPopup(place) {
+  var readMoreLink = place.story
+      ? "<a target=_blank href=" + place.id + ".html>Lasīt vairāk</a>"
+      : ""
+  place.marker.bindPopup(
+    "<b>" + place.name + "</b><p>" + place.snippet + "</p>" + readMoreLink, {
+      maxWidth: 400,
+      offset: L.point(7, 4),
+      autoPanPadding: L.point(20, 20)
+    }
+  )
 }
