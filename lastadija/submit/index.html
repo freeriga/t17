@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Submit - Tikšanās ar Lastādiju</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700&amp;subset=cyrillic,latin-ext"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Submit a place</h1>
+      <h2><a href="..">Tikšanās ar Lastādiju</a></h2>
+    </header>
+    <form action="/cgi-bin/submit-map-story.cgi" method="POST">
+      <label><span>Name</span>
+        <input name="name" placeholder="Example place" autofocus="autofocus"/></label>
+      <label><span>Address</span>
+        <input name="address" placeholder="Example iela 12"/></label>
+      <label><span>Short story</span>
+        <textarea name="short-story" placeholder="One paragraph description..."></textarea>
+      </label>
+      <label><span>Full story <i>(optional)</i></span>
+        <textarea name="full-story" placeholder="Longer description...
+
+Multiple paragraphs..."></textarea>
+      </label>
+      <label><span>Your contact info</span>
+        <input name="contact" placeholder="Email or phone"/></label>
+      <input type="submit" label="Submit" />
+    </form>
+  </body>
+</html>

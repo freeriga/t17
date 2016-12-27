@@ -30,6 +30,9 @@
             un
             <b>LU antropoloģijas studenti</b>
           </h2>
+          <a id="submitlink" href="submit">
+            submit a place
+          </a>
         </header>
         <section class="map" id="mapelement"></section>
         <section class="stories">
