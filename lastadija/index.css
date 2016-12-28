@@ -14,7 +14,7 @@ h1 { font-size: 20px; }
 body { margin: 1rem; }
 
 .stories { width: 25rem; }
-header, .map { width: calc(100% - 25rem); }
+.map { width: calc(100% - 25rem); }
 
 header { padding-bottom: .5rem; }
 
