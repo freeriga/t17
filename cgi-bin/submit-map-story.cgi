@@ -2,6 +2,13 @@
 
 set -e
 
+if [[ $REQUEST_METHOD != POST ]]; then
+  echo Status: 400 Bad Request
+  echo
+  echo Bad request.
+  exit
+fi
+
 cd $DATA_REPOSITORY
 
 data=$(cat)
