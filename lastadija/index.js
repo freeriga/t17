@@ -128,3 +128,7 @@ function setupMarkerPopup(place) {
     }
   )
 }
+
+function showTheMap() {
+  query(document, "aside").className += " hidden"
+}

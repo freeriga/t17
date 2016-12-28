@@ -2,33 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Submit - Tikšanās ar Lastādiju</title>
+    <title>Iesniegt vietas aprakstu - Tikšanās ar Lastādiju</title>
+    <link href="../../font.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css"/>
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700&amp;subset=cyrillic,latin-ext"
-      rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Submit a place</h1>
+      <h1>Iesniegt vietas aprakstu</h1>
       <h2><a href="..">Tikšanās ar Lastādiju</a></h2>
     </header>
     <form action="/cgi-bin/submit-map-story.cgi" method="POST">
-      <label><span>Name</span>
-        <input name="name" placeholder="Example place" autofocus="autofocus"/></label>
-      <label><span>Address</span>
-        <input name="address" placeholder="Example iela 12"/></label>
-      <label><span>Short story</span>
-        <textarea name="short-story" placeholder="One paragraph description..."></textarea>
+      <label><span>Nosaukums</span>
+        <input name="place-name" autofocus="autofocus"/></label>
+      <label><span>Adrese</span>
+        <input name="address"/></label>
+      <label><span>Īsais apraksts</span>
+        <textarea name="short-story" placeholder="Līdz 100 v."></textarea>
       </label>
-      <label><span>Full story <i>(optional)</i></span>
-        <textarea name="full-story" placeholder="Longer description...
-
-Multiple paragraphs..."></textarea>
+      <label><span>Garais apraksts <i>(nav obligāts)</i></span>
+        <textarea name="full-story"></textarea>
       </label>
-      <label><span>Your contact info</span>
-        <input name="contact" placeholder="Email or phone"/></label>
+      <label><span>Kontaktinformācija</span>
+        <input name="contact" placeholder="E-pasts vai telefons"/></label>
+      <label><span>Vārds</span>
+        <input name="contact-name"/></label>
       <input type="submit" label="Submit" />
     </form>
+    <script src="index.js"></script>
   </body>
 </html>
