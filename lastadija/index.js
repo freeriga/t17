@@ -21,7 +21,7 @@ map.addControl(L.control.attribution({
 }))
 
 // Collect data about places from HTML
-places = queryAll(document, "article").map(
+places = queryAll(document, "li.place").map(
   function parsePlaceElement (x, i) {
     var nameElement = query(x, "h3 .name")
     return {
@@ -38,7 +38,7 @@ places = queryAll(document, "article").map(
 )
 
 // Set up map markers and popups
-queryAll(document, "article").forEach(function (x, i) {
+queryAll(document, "li.place").forEach(function (x, i) {
   var place = places[i]
 
   function popup(coords, title, text, i) {
@@ -59,15 +59,16 @@ queryAll(document, "article").forEach(function (x, i) {
     toggleClass(place.marker._icon, "shade", false)
     hoverTimeout = setTimeout(function () {
       place.marker.openPopup()
+      map.panTo(place.coords, 17)
     }, 500)
     return false;
   }
 
   x.onmouseleave = function () {
     places.forEach(function (x) {
-      toggleClass(places[x].marker._icon, "shade", false)
+      toggleClass(x.marker._icon, "shade", false)
     })
-    queryAll(document, "article .name").forEach(function (x) {
+    queryAll(document, "li.place .name").forEach(function (x) {
       x.className = "name"
     })
     clearTimeout(hoverTimeout)
@@ -75,6 +76,9 @@ queryAll(document, "article").forEach(function (x, i) {
 })
 
 map.fitBounds(L.featureGroup(allMarkers).getBounds())
+map.on("popupclose", function () {
+  map.fitBounds(L.featureGroup(allMarkers).getBounds())
+})
 
 // DOM utility functions
 function array(x) { return [].slice.call(x) }
@@ -124,7 +128,7 @@ function setupMarkerPopup(place) {
     "<b>" + place.name + "</b><p>" + place.snippet + "</p>" + readMoreLink, {
       maxWidth: 400,
       offset: L.point(7, 4),
-      autoPanPadding: L.point(20, 20)
+      autoPanPadding: L.point(10, 10)
     }
   )
 }

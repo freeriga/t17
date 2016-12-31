@@ -20,20 +20,29 @@
       </head>
       <body>
         <header>
-          <h1 title="Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.">Tikšanās ar Lastādiju</h1>
-          <h2>
-            veidoja
-            <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
-            <a href="http://t17.lv"><b>T17</b></a>
-            un
-            <b>LU antropoloģijas studenti</b>
-          </h2>
-          <a href="about">par karti</a>
-          <a id="submitlink" href="submit">papildināt karti</a>
+          <div class="map-width">
+            <h1 title="Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.">Tikšanās ar Lastādiju</h1>
+            <h2>
+              veidoja
+              <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
+              <a href="http://t17.lv"><b>T17</b></a>
+              un
+              <b>LU antropoloģijas studenti</b>
+            </h2>
+          </div>
+          <nav>
+            <a href="par-karti">par karti</a>
+            <a id="submitlink" href="papildinat-karti">papildināt karti</a>
+          </nav>
         </header>
-        <section class="map" id="mapelement"></section>
+        <section class="map map-width" id="mapelement"></section>
         <section class="stories">
-          <xsl:apply-templates select="place" mode="index"/>
+          <aside>
+            Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.
+          </aside>
+          <ul>
+            <xsl:apply-templates select="place" mode="index"/>
+          </ul>
         </section>
         <script src="index.js"></script>
       </body>
@@ -42,7 +51,8 @@
   </xsl:template>
 
   <xsl:template match="place" mode="index">
-    <article
+    <li
+        class="place"
         data-coords="{./location}"
         data-has-story="{boolean(./story)}"
         data-id="{@id}">
@@ -66,7 +76,7 @@
       <p class="summary">
         <xsl:apply-templates select="snippet"/>
       </p>
-    </article>
+    </li>
   </xsl:template>
 
   <xsl:template match="place" mode="place-file">
@@ -91,7 +101,7 @@
             </h2>
           </header>
           <section class="map" id="mapelement"></section>
-          <aside data-coords="{./location}">
+          <article data-coords="{./location}">
             <span id="index"><xsl:number/></span>
             <xsl:apply-templates select="story"/>
 
@@ -106,7 +116,7 @@
                 Atpakaļ uz karti</a>
               </xsl:otherwise>
             </xsl:choose>
-          </aside>
+          </article>
           <script src="place.js"></script>
         </body>
       </html>

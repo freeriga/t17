@@ -15,7 +15,7 @@ map.addControl(L.control.attribution({
   prefix: ""
 }))
 
-var root = document.querySelector("aside")
+var root = document.querySelector("article")
 var coords = root.getAttribute("data-coords").split(", ")
 
 map.setView(coords, 16)
