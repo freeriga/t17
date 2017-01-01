@@ -32,7 +32,7 @@
           </div>
           <nav>
             <a href="par-karti">par karti</a>
-            <a id="submitlink" href="papildinat-karti">papildināt karti</a>
+            <a id="submitlink" href="papildinat-karti">iesniegt stāstu</a>
           </nav>
         </header>
         <section class="left-column map-width">
