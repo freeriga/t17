@@ -23,5 +23,5 @@ if [ ! -e "$hash" ]; then
 fi
 
 echo Status: 302 Found
-echo Location: ../lastadija/thanks.html
+echo Location: ../lastadija/paldies.html
 echo
