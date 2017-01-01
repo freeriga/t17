@@ -9,9 +9,13 @@
   font-size: 100%;
 }
 
-html { font: 16px/1.6 rubik, helvetica, sans-serif; }
+html { font: 16px/1.4 rubik, helvetica, sans-serif; }
 html { background-color: #fafafa; }
 body { max-width: 35rem; margin: 2rem auto; padding: 1rem; background: white; border: 1px solid #ccc; border-radius: 1em; }
+
+p { margin: .25em 0; }
+li { margin: .25em 0 .25em 2em; }
+li span { border-bottom: 1px dashed black; }
 
 h1 { font-size: 20px; font-weight: bold; }
 h1, h2 { display: inline-block; }
