@@ -21,7 +21,7 @@
       <body>
         <header>
           <div class="map-width">
-            <h1 title="Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.">Tikšanās ar Lastādiju</h1>
+            <h1>Tikšanās ar Lastādiju</h1>
             <h2>
               veidoja
               <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
@@ -35,11 +35,13 @@
             <a id="submitlink" href="papildinat-karti">papildināt karti</a>
           </nav>
         </header>
-        <section class="map map-width" id="mapelement"></section>
-        <section class="stories">
+        <section class="left-column map-width">
           <aside>
             Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.
           </aside>
+          <div class="map" id="mapelement"/>
+        </section>
+        <section class="right-column stories">
           <ul>
             <xsl:apply-templates select="place" mode="index"/>
           </ul>
