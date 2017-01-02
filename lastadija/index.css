@@ -126,10 +126,6 @@ article { white-space: pre-line; }
 
 aside {
   line-height: 1.3;
-  background-color: #f8f4f0;
-  background-color: #fafaee;
-  border: 1px solid #ccc;
-  border-radius: .5em; */
   margin-bottom: .5em;
   color: #111;
 }
