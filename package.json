@@ -1,0 +1,8 @@
+{
+  "name": "t17.lv",
+  "version": "1.0.0",
+  "dependencies": {
+    "postcss-cli": "2.6.0",
+    "autoprefixer": "6.6.0"
+  }
+}
