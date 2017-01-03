@@ -99,7 +99,7 @@
         </head>
         <body>
           <header>
-            <h1>Tikšanās ar Lastādiju</h1>
+            <h1><a href="..">Tikšanās ar Lastādiju</a></h1>
             <h2>
               veidoja
               <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,

@@ -42,12 +42,10 @@ coords { display: none; }
 }
 
 .people .person img {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
 }
-
-.people b { font-weight: 100; }
 
 .people {
   flex-wrap: wrap;
@@ -60,5 +58,11 @@ coords { display: none; }
   justify-content: center;
 }
 
-.people .person img { margin-right: 1em; }
-.people .person { margin: .5em 2em .5em 0; }
+.people .person img { margin-right: .75em; }
+.people .person {
+  margin: .5em 1.5em .5em 0;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.people b { font-weight: 100; }
