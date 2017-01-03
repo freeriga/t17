@@ -22,6 +22,6 @@ map.setView(coords, 16)
 
 var icon = L.divIcon({
   className: "map-icon",
-  html: root.querySelector("#index").innerText
+  html: document.querySelector("#index").innerText
 })
 var marker = L.marker(coords, { icon: icon }).addTo(map)

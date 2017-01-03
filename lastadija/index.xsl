@@ -66,11 +66,13 @@
           <xsl:choose>
             <xsl:when test="story">
               <a class="name" href="stasts/{@id}.html" target="_blank">
-                <xsl:value-of select="name" />
+                <b><xsl:value-of select="name" /></b>
               </a>
             </xsl:when>
             <xsl:otherwise>
-              <span class="name"><xsl:value-of select="name" /></span>
+              <a class="name" href="stasts/{@id}.html" target="_blank">
+                <xsl:value-of select="name" />
+              </a>
             </xsl:otherwise>
           </xsl:choose>
         </span>
@@ -106,23 +108,29 @@
               <b>LU antropoloģijas studenti</b>
             </h2>
             <h3>
-              <xsl:value-of select="name"/>
+              <span id="index"><xsl:number/></span>.&#160;&#160;<xsl:value-of select="name"/>
             </h3>
           </header>
           <section class="map" id="mapelement"></section>
           <article data-coords="{./location}">
-            <span id="index"><xsl:number/></span>
-            <xsl:apply-templates select="story"/>
+            <xsl:choose>
+              <xsl:when test="story">
+                <xsl:apply-templates select="story"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:apply-templates select="snippet"/>
+              </xsl:otherwise>
+            </xsl:choose>
 
             <nav>
-              <xsl:if test="preceding-sibling::place[story][1]">
+              <xsl:if test="preceding-sibling::place[1]">
                 <span class="prev">
-                  Iepriekšējais: <a href="{preceding-sibling::place[story][1]/@id}.html"><xsl:value-of select="preceding-sibling::place[story][1]/name"/></a>
+                  <span class="arrow">←</span> <a href="{preceding-sibling::place[story][1]/@id}.html"><xsl:value-of select="preceding-sibling::place[1]/name"/></a>
                 </span>
               </xsl:if>
-              <xsl:if test="following-sibling::place[story][1]">
+              <xsl:if test="following-sibling::place[1]">
                 <span class="next">
-                  Nākamā: <a href="{following-sibling::place[story][1]/@id}.html"><xsl:value-of select="following-sibling::place[story][1]/name"/></a>
+                  <a href="{following-sibling::place[1]/@id}.html"><xsl:value-of select="following-sibling::place[1]/name"/></a> <span class="arrow">→</span> 
                 </span>
               </xsl:if>
             </nav>

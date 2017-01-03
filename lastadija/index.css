@@ -9,6 +9,8 @@
   font-size: 100%;
 }
 
+body { color: #111; }
+
 html { font: 16px/1 rubik, helvetica, sans-serif; }
 html.story { font-size: 18px; }
 
@@ -36,10 +38,10 @@ h1 { font-weight: bold; }
 h1, h2 { display: inline-block; }
 h2 { margin-left: 1em; }
 
-a, b { font-weight: 500; color: #222; }
+a, b { font-weight: 500; }
 .stories a { font-weight: normal; }
 
-nav a { display: inline-block; margin-right: 2em; }
+html:not(.story) nav a { display: inline-block; margin-right: 2em; }
 
 .left-column, .right-column {
   display: -webkit-box;
@@ -69,18 +71,18 @@ html.story #mapelement {
   margin-right: 1rem;
 }
 
-h2 { color: #444; }
+html.story h1, h2 { color: #222; }
 
 html.story h1, html.story h2 { font-size: 16px; }
 html.story h2 { float: right; }
 html.story h3 {
   margin: .5rem 0 0 0;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 140%;
 }
 
 html.story nav {
-
+  clear: both;
 }
 
 h3 .number, .map-icon {
@@ -90,6 +92,7 @@ h3 .number, .map-icon {
   -webkit-box-shadow: 1px 1px 20px -5px rgba(20,20,0,0.75);
   -moz-box-shadow: 4px 4px 20px -5px rgba(20,20,0,0.75);
   box-shadow: inset 1px 1px 12px -5px rgba(20,20,0,0.75);
+  font-size: 1rem !important;
   width: 23px !important;
   height: 23px !important;
   line-height: 21px !important;
@@ -148,5 +151,5 @@ aside { line-height: 1.3; margin-bottom: .5em; }
 .map-icon.shade { opacity: 0.5; background-color: #eea; }
 li.place.shade { opacity: 0.3; }
 
-#index { display: none; }
-
+.arrow { font-size: 180%; }
+.next { float: right; }
