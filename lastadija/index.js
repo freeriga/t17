@@ -59,7 +59,7 @@ queryAll(document, "li.place").forEach(function (x, i) {
     toggleClass(place.marker._icon, "shade", false)
     hoverTimeout = setTimeout(function () {
       place.marker.openPopup()
-      map.panTo(place.coords, 17)
+      map.panTo([+place.coords[0] + 0.0015, place.coords[1]], 17)
     }, 500)
     return false;
   }

@@ -19,30 +19,30 @@
         <title>Tikšanās ar Lastādiju</title>
       </head>
       <body>
-        <header>
-          <div class="map-width">
-            <h1>Tikšanās ar Lastādiju</h1>
-            <h2>
-              veidoja
-              <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
-              <a href="http://t17.lv"><b>T17</b></a>
-              un
-              <b>LU antropoloģijas studenti</b>
-            </h2>
-          </div>
-          <nav>
-            <a href="par-karti">par karti</a>
-            <a id="submitlink" href="papildinat-karti">iesniegt stāstu</a>
-          </nav>
-        </header>
         <section class="left-column map-width">
+          <header>
+            <div class="map-width">
+              <h1>Tikšanās ar Lastādiju</h1>
+              <h2>
+                veidoja
+                <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
+                <a href="http://t17.lv"><b>T17</b></a>
+                un
+                <b>LU antropoloģijas studenti</b>
+              </h2>
+            </div>
+          </header>
           <aside>
             Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.
           </aside>
           <div class="map" id="mapelement"/>
         </section>
-        <section class="right-column stories">
-          <ul>
+        <section class="right-column">
+          <nav>
+            <a href="par-karti">par karti</a>
+            <a id="submitlink" href="papildinat-karti">iesniegt stāstu</a>
+          </nav>
+          <ul class="stories">
             <xsl:apply-templates select="place" mode="index"/>
           </ul>
         </section>
