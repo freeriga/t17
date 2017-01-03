@@ -11,6 +11,8 @@
 
 body { color: #111; }
 
+html:not(.story) nav { text-align: center; }
+
 html { font: 16px/1 rubik, helvetica, sans-serif; }
 html.story { font-size: 18px; }
 

@@ -39,8 +39,8 @@
         </section>
         <section class="right-column">
           <nav>
-            <a href="par-karti">par karti</a>
-            <a id="submitlink" href="papildinat-karti">iesniegt stāstu</a>
+            <a href="par-karti">Par karti</a>
+            <a id="submitlink" href="papildinat-karti">Iesniegt stāstu</a>
           </nav>
           <ul class="stories">
             <xsl:apply-templates select="place" mode="index"/>
