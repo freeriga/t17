@@ -65,7 +65,7 @@
         <span class="name-container">
           <xsl:choose>
             <xsl:when test="story">
-              <a class="name" href="{@id}.html" target="_blank">
+              <a class="name" href="stasts/{@id}.html" target="_blank">
                 <xsl:value-of select="name" />
               </a>
             </xsl:when>
@@ -83,54 +83,63 @@
 
   <xsl:template match="place" mode="place-file">
     <exsl:document
-        href="{@id}.html"
+        href="stasts/{@id}.html"
         method="html"
         indent="yes"
         doctype-system="about:legacy-compat"
         encoding="utf-8">
-      <html>
+      <html class="story">
         <head>
-          <xsl:call-template name="common-meta"/>
+          <xsl:call-template name="common-meta">
+            <xsl:with-param name="prefix">../</xsl:with-param>
+          </xsl:call-template>
           <title><xsl:value-of select="./name"/> (Tikšanās ar Lastādiju)</title>
         </head>
-        <body class="story">
+        <body>
           <header>
-            <h1>
-              <xsl:value-of select="name"/>
-            </h1>
+            <h1>Tikšanās ar Lastādiju</h1>
             <h2>
-              <a href="./" style="font-weight: 500">Tikšanās ar Lastādiju</a>
+              veidoja
+              <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
+              <a href="http://t17.lv"><b>T17</b></a>
+              un
+              <b>LU antropoloģijas studenti</b>
             </h2>
+            <h3>
+              <xsl:value-of select="name"/>
+            </h3>
           </header>
           <section class="map" id="mapelement"></section>
           <article data-coords="{./location}">
             <span id="index"><xsl:number/></span>
             <xsl:apply-templates select="story"/>
 
-            <xsl:choose>
-              <xsl:when test="following-sibling::place[story][1]">
-                
-                Nākamā vieta: <a href="{following-sibling::place[story][1]/@id}.html"><xsl:value-of select="following-sibling::place[story][1]/name"/></a>
-              </xsl:when>
-              <xsl:otherwise>
-                <a href="./">
-
-                Atpakaļ uz karti</a>
-              </xsl:otherwise>
-            </xsl:choose>
+            <nav>
+              <xsl:if test="preceding-sibling::place[story][1]">
+                <span class="prev">
+                  Iepriekšējais: <a href="{preceding-sibling::place[story][1]/@id}.html"><xsl:value-of select="preceding-sibling::place[story][1]/name"/></a>
+                </span>
+              </xsl:if>
+              <xsl:if test="following-sibling::place[story][1]">
+                <span class="next">
+                  Nākamā: <a href="{following-sibling::place[story][1]/@id}.html"><xsl:value-of select="following-sibling::place[story][1]/name"/></a>
+                </span>
+              </xsl:if>
+            </nav>
           </article>
-          <script src="place.js"></script>
+          <script src="../stasts.js"></script>
         </body>
       </html>
     </exsl:document>
   </xsl:template>
 
   <xsl:template name="common-meta">
+    <xsl:param name="prefix"/>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="../map/leaflet.css"/>
-    <link rel="stylesheet" href="../font.css"/>
-    <link rel="stylesheet" href="index.css"/>
-    <script src="../map/leaflet.js"></script>
+    <link rel="stylesheet" href="{$prefix}../map/leaflet.css"/>
+    <link rel="stylesheet" href="{$prefix}../font.css"/>
+    <link rel="stylesheet" href="{$prefix}index.css"/>
+    <script src="{$prefix}../map/leaflet.js"></script>
   </xsl:template>
   
 </xsl:stylesheet>
