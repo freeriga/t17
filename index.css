@@ -2,71 +2,18 @@
 
 html { font: 20px/1.3 rubik, helvetica, sans-serif; }
 
-.tiksanas h1,
-.tiksanas h2,
-.tiksanas h3 { font-family: helvetica; }
-
-.tiksanas h1 {
-  font-size: 1.2rem;
-  margin: .5rem;
-  letter-spacing: -0.02em;
-  color: #222;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.tiksanas h1 div {
-  float: right;
-}
-
-.tiksanas h1 span {
-  font-size: 1rem;
-  /* background-color: yellow; */
-  /* border: 2px solid #cc0; */
-  /* border-radius: .5em; */
-  padding: .1em .5em;
-  font-weight: 500;
-}
-
-.tiksanas h1 a {
-  border: 0;
-}
-
-.tiksanas aside {
-  position: fixed;
-  top: 0; bottom: 0; left: 0; right: 0;
-  background-color: rgba(255,255,255,0.95);
-  z-index: 1000;
-  padding: 1rem;
-}
-
-details {
-  cursor: pointer;
-}
-
-summary { outline: 0; }
-
-.map-icon {
-  background-color: #ff6;
-  border-radius: 50%;
-  width: 21px !important;
-  height: 21px !important;
-  border: 2px solid #cc0;
-  text-align: center;
-  font-weight: bold;
-}
-
 body { padding-bottom: 4rem; }
 h1, h2, h3 { font-size: inherit; text-align: center; }
-// a { color: inherit; text-decoration: none; border-bottom: 1px solid currentcolor; }
 
 section { max-width: 34rem; margin: 0 auto; padding: .25rem; }
-section.wide { max-width: 80vw; padding: 0; }
+section.wide { max-width: 50vw; padding: 0; }
+
+header { margin-top: 2rem; text-align: center; font-size: 120%; }
 
 article { margin-top: 2rem; }
 
 ul, dl { padding-left: 2em; }
-li { padding-left: .25em; }
+li { padding-left: .25em; margin-bottom: .5em; }
 
 table { width: 100%; }
 table td:last-child { text-align: right; }
@@ -93,3 +40,25 @@ coords { display: none; }
   .gallery img:first-child { border-radius: .5rem 0 0 .5rem; }
   .gallery img:last-child { border-radius: 0 .5rem .5rem 0; }
 }
+
+.people .person img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.people b { font-weight: 100; }
+
+.people {
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.people, .people .person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.people .person img { margin-right: 1em; }
+.people .person { margin: .5em 2em .5em 0; }
