@@ -45,6 +45,8 @@ html.story h1 a {
 }
 
 .map-column {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -73,8 +75,15 @@ html.map h1 a { font-weight: normal; text-decoration: none; border: 0; }
 a { text-decoration: none; }
 
 html:not(.story) h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 

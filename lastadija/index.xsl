@@ -122,9 +122,7 @@
             <section class="map" id="mapelement"></section>
             <xsl:choose>
               <xsl:when test="story">
-                <p class="snippet">
-                  <xsl:apply-templates select="snippet"/>
-                </p>
+                <p class="snippet"><xsl:apply-templates select="snippet"/></p>
                 <xsl:apply-templates select="story"/>
               </xsl:when>
               <xsl:otherwise>
