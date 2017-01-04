@@ -1,12 +1,16 @@
 var map
 var places
 var allMarkers = []
-var hoverTimeout
+var highlightTimeout
+var unhighlightTimeout
+var storyListElement = document.querySelector("ul.stories")
+var mapElement = document.querySelector("#mapelement")
 
 map = L.map("mapelement", {
   zoomControl: true,
   scrollWheelZoom: false,
-  attributionControl: false
+  attributionControl: false,
+  zoomControl: false
 })
 
 // Use Wikimedia's OpenStreetMap tile rendering
@@ -20,6 +24,10 @@ map.addControl(L.control.attribution({
   prefix: ""
 }))
 
+map.addControl(L.control.zoom({
+  position: "topright"
+}))
+
 // Collect data about places from HTML
 places = queryAll(document, "li.place").map(
   function parsePlaceElement (x, i) {
@@ -30,7 +38,7 @@ places = queryAll(document, "li.place").map(
       name: nameElement.innerText,
       nameElement: nameElement,
       coords: x.getAttribute("data-coords").split(", "),
-      snippet: query(x, "p.summary").innerText,
+      snippet: query(x, ".summary").innerText,
       story: x.getAttribute("data-has-story") == "true",
       id: x.getAttribute("data-id")
     }
@@ -52,26 +60,12 @@ queryAll(document, "li.place").forEach(function (x, i) {
   popup(place.coords, place.name, place.snippet, i)
 
   x.onmouseenter = function () {
-    place.nameElement.className = "name pulse"
-    places.forEach(function (x) {
-      toggleClass(x.marker._icon, "shade", true)
-    })
-    toggleClass(place.marker._icon, "shade", false)
-    hoverTimeout = setTimeout(function () {
-      place.marker.openPopup()
-      map.panTo([+place.coords[0] + 0.0015, place.coords[1]], 17)
-    }, 500)
+    highlightPlace(place, false, true)
     return false;
   }
 
   x.onmouseleave = function () {
-    places.forEach(function (x) {
-      toggleClass(x.marker._icon, "shade", false)
-    })
-    queryAll(document, "li.place .name").forEach(function (x) {
-      x.className = "name"
-    })
-    clearTimeout(hoverTimeout)
+    unhighlightPlace(place, true)
   }
 })
 
@@ -96,6 +90,34 @@ function toggleClass(x, klass, on) {
   x.className = classes.join(" ")
 }
 
+function highlightPlace(place, doScroll, doPan) {
+  clearTimeout(highlightTimeout)
+  clearTimeout(unhighlightTimeout)
+  toggleClass(storyListElement, "shade", true)
+  toggleClass(mapElement, "shade", true)
+  toggleClass(place.element, "highlight", true)
+  toggleClass(place.marker._icon, "highlight", true)
+  highlightTimeout = setTimeout(function () {
+    if (doScroll)
+      scrollIntoView(place.nameElement, storyListElement)
+    if (doPan)
+      map.panTo([+place.coords[0], place.coords[1]], 17)
+  }, 500)
+}
+
+function unhighlightPlace(place, doFit) {
+  clearTimeout(highlightTimeout)
+  clearTimeout(unhighlightTimeout)
+  toggleClass(storyListElement, "shade", false)
+  toggleClass(mapElement, "shade", false)
+  toggleClass(place.element, "highlight", false)
+  toggleClass(place.marker._icon, "highlight", false)
+  unhighlightTimeout = setTimeout(function () {
+    if (doFit)
+      map.fitBounds(L.featureGroup(allMarkers).getBounds())
+  }, 500)
+}
+
 function setupMarkerFading(place) {
   // Immediate timeout needed because the _icon member is not
   // initialized yet.
@@ -103,36 +125,53 @@ function setupMarkerFading(place) {
     var icon = place.marker._icon
     
     icon.onmouseenter = icon.onfocus = function () {
-      places.forEach(function (x) {
-        if (x.index != place.index) {
-          toggleClass(x.element, "shade", true)
-          toggleClass(x.marker._icon, "shade", true)
-        }
-      })
+      highlightPlace(place, true, false)
+      // places.forEach(function (x) {
+      //   if (x.index != place.index) {
+      //     toggleClass(x.element, "shade", true)
+      //     toggleClass(x.marker._icon, "shade", true)
+      //   }
+      // })
     }
     
     icon.onmouseleave = icon.onblur = function () {
-      places.forEach(function (x) {
-        toggleClass(x.element, "shade", false)
-        toggleClass(x.marker._icon, "shade", false)
-      })
+      unhighlightPlace(place)
+      // places.forEach(function (x) {
+      //   toggleClass(x.element, "shade", false)
+      //   toggleClass(x.marker._icon, "shade", false)
+      // })
     }
   })
 }
 
 function setupMarkerPopup(place) {
-  var readMoreLink = place.story
-      ? "<a target=_blank href=" + place.id + ".html>Lasīt vairāk</a>"
-      : ""
-  place.marker.bindPopup(
-    "<b>" + place.name + "</b><p>" + place.snippet + "</p>" + readMoreLink, {
-      maxWidth: 400,
-      offset: L.point(7, 4),
-      autoPanPadding: L.point(10, 10)
-    }
-  )
+  if (place.story) {
+    setTimeout(function () {
+      place.marker._icon.className += " link"
+      place.marker._icon.onclick = function () {
+        window.open("stasts/" + place.id, place.id)
+      }
+    })
+  }
 }
 
 function showTheMap() {
   query(document, "aside").className += " hidden"
+}
+
+function scrollIntoView(needle, haystack) {
+  var xTop = needle.offsetTop
+  var xBottom = xTop + needle.clientHeight
+  var yTop = haystack.scrollTop
+  var yBottom = yTop + haystack.clientHeight
+  console.log(xTop, xBottom, yTop, yBottom)
+  // needle.scrollIntoView({ behavior: "smooth" })
+//  if (xTop < yTop || xBottom > yBottom) {
+    scrollTarget = xTop + needle.clientHeight / 2.0
+    smoothScroll(
+      storyListElement, 0,
+      scrollTarget - storyListElement.clientHeight / 2 + 50
+    )
+//    ensureScrollAnimation()
+//  }
 }

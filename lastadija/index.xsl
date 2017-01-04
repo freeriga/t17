@@ -13,39 +13,42 @@
       encoding="utf-8"/>
 
   <xsl:template match="places">
-    <html class="tiksanas">
+    <html class="map">
       <head>
         <xsl:call-template name="common-meta"/>
+        <meta property="og:url" content="https://t17.lv/lastadija/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:locale" content="lv_LV"/>
+        <meta property="og:title" content="Tikšanās ar Lastādiju"/>
+        <meta property="og:description" content="Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu."/>
         <title>Tikšanās ar Lastādiju</title>
       </head>
       <body>
-        <section class="left-column map-width">
-          <header>
-            <div class="map-width">
-              <h1>Tikšanās ar Lastādiju</h1>
-              <h2>
-                veidoja
-                <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
-                <a href="http://t17.lv"><b>T17</b></a>
-                un
-                <b>LU antropoloģijas studenti</b>
-              </h2>
-            </div>
-          </header>
-          <aside>
-            Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.
-          </aside>
+        <section class="map-column">
           <div class="map" id="mapelement"/>
+          <footer>
+            veidoja
+            <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
+            <a href="http://t17.lv"><b>T17</b></a>
+            un
+            <b>LU antropoloģijas studenti</b>
+            2016, 2017
+          </footer>
         </section>
-        <section class="right-column">
-          <nav>
-            <a href="par-karti">Par karti</a>
-            <a id="submitlink" href="papildinat-karti">Iesniegt stāstu</a>
-          </nav>
+        <section class="index-column">
+          <h1>
+            Tikšanās ar Lastādiju
+            <a href="par-karti">❓ Par karti</a>
+            <a id="submitlink" href="papildinat-karti">✎ Iesniegt stāstu</a>
+          </h1>
           <ul class="stories">
+            <aside>
+              Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.
+            </aside>
             <xsl:apply-templates select="place" mode="index"/>
           </ul>
         </section>
+        <script src="../smoothscroll.js"></script>
         <script src="index.js"></script>
       </body>
     </html>
@@ -65,27 +68,31 @@
         <span class="name-container">
           <xsl:choose>
             <xsl:when test="story">
-              <a class="name" href="stasts/{@id}.html" target="_blank">
+              <a class="name" href="stasts/{@id}" target="{@id}">
                 <b><xsl:value-of select="name" /></b>
               </a>
             </xsl:when>
             <xsl:otherwise>
-              <a class="name" href="stasts/{@id}.html" target="_blank">
+              <a class="name" href="stasts/{@id}" target="{@id}">
                 <xsl:value-of select="name" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
         </span>
       </h3>
-      <p class="summary">
-        <xsl:apply-templates select="snippet"/>
-      </p>
+      <div class="summary">
+        <span>
+        </span>
+        <p>
+          <xsl:apply-templates select="snippet"/>
+        </p>
+      </div>
     </li>
   </xsl:template>
 
   <xsl:template match="place" mode="place-file">
     <exsl:document
-        href="stasts/{@id}.html"
+        href="stasts/{@id}/index.html"
         method="html"
         indent="yes"
         doctype-system="about:legacy-compat"
@@ -93,28 +100,29 @@
       <html class="story">
         <head>
           <xsl:call-template name="common-meta">
-            <xsl:with-param name="prefix">../</xsl:with-param>
+            <xsl:with-param name="prefix">../../</xsl:with-param>
           </xsl:call-template>
           <title><xsl:value-of select="./name"/> (Tikšanās ar Lastādiju)</title>
+          <meta property="og:url" content="https://t17.lv/lastadija/stasts/{@id}/"/>
+          <meta property="og:type" content="place"/>
+          <meta property="og:locale" content="lv_LV"/>
+          <meta property="og:title" content="{name}"/>
+          <meta property="og:description" content="{summary}"/>
         </head>
         <body>
           <header>
-            <h1><a href="..">Tikšanās ar Lastādiju</a></h1>
-            <h2>
-              veidoja
-              <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
-              <a href="http://t17.lv"><b>T17</b></a>
-              un
-              <b>LU antropoloģijas studenti</b>
-            </h2>
+            <h1><a href="../..">◂ Tikšanās ar Lastādiju</a></h1>
+          </header>
+          <article data-coords="{./location}">
             <h3>
               <span id="index"><xsl:number/></span>.&#160;&#160;<xsl:value-of select="name"/>
             </h3>
-          </header>
-          <section class="map" id="mapelement"></section>
-          <article data-coords="{./location}">
+            <section class="map" id="mapelement"></section>
             <xsl:choose>
               <xsl:when test="story">
+                <p class="snippet">
+                  <xsl:apply-templates select="snippet"/>
+                </p>
                 <xsl:apply-templates select="story"/>
               </xsl:when>
               <xsl:otherwise>
@@ -125,17 +133,17 @@
             <nav>
               <xsl:if test="preceding-sibling::place[1]">
                 <span class="prev">
-                  <span class="arrow">←</span> <a href="{preceding-sibling::place[story][1]/@id}.html"><xsl:value-of select="preceding-sibling::place[1]/name"/></a>
+                  <span class="arrow">←</span> <a href="{preceding-sibling::place[story][1]/@id}"><xsl:value-of select="preceding-sibling::place[1]/name"/></a>
                 </span>
               </xsl:if>
               <xsl:if test="following-sibling::place[1]">
                 <span class="next">
-                  <a href="{following-sibling::place[1]/@id}.html"><xsl:value-of select="following-sibling::place[1]/name"/></a> <span class="arrow">→</span> 
+                  <a href="{following-sibling::place[1]/@id}"><xsl:value-of select="following-sibling::place[1]/name"/></a> <span class="arrow">→</span> 
                 </span>
               </xsl:if>
             </nav>
           </article>
-          <script src="../stasts.js"></script>
+          <script src="../../stasts.js"></script>
         </body>
       </html>
     </exsl:document>

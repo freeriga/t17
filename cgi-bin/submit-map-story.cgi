@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -xe
+set -e
 
 if [[ $REQUEST_METHOD != POST || $CONTENT_LENGTH < 0 ]]; then
   echo Status: 400 Bad Request
@@ -51,5 +51,5 @@ curl -sS \
   https://api.trello.com/1/cards
 
 echo Status: 302 Found
-echo Location: ../lastadija/paldies.html
+echo Location: ../lastadija
 echo
