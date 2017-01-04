@@ -58,7 +58,7 @@
   <xsl:template match="place" mode="index">
     <li
         class="place"
-        data-coords="{./location}"
+        data-coords="{./location/latitude}, {./location/longitude}"
         data-has-story="{boolean(./story)}"
         data-id="{@id}">
       <h3>
@@ -107,13 +107,15 @@
           <meta property="og:type" content="place"/>
           <meta property="og:locale" content="lv_LV"/>
           <meta property="og:title" content="{name}"/>
-          <meta property="og:description" content="{summary}"/>
+          <meta property="og:description" content="{snippet}"/>
+          <meta property="place:location:latitude" content="{location/latitude}"/>
+          <meta property="place:location:longitude" content="{location/longitude}"/>
         </head>
         <body>
           <header>
             <h1><a href="../..">◂ Tikšanās ar Lastādiju</a></h1>
           </header>
-          <article data-coords="{./location}">
+          <article data-coords="{./location/latitude}, {./location/longitude}">
             <h3>
               <span id="index"><xsl:number/></span>.&#160;&#160;<xsl:value-of select="name"/>
             </h3>
