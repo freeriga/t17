@@ -24,17 +24,6 @@
         <title>Tikšanās ar Lastādiju</title>
       </head>
       <body>
-        <section class="map-column">
-          <div class="map" id="mapelement"/>
-          <footer>
-            veidoja
-            <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
-            <a href="http://t17.lv"><b>T17</b></a>
-            un
-            <b>LU antropoloģijas studenti</b>
-            2016, 2017
-          </footer>
-        </section>
         <section class="index-column">
           <h1>
             Tikšanās ar Lastādiju
@@ -47,6 +36,17 @@
             </aside>
             <xsl:apply-templates select="place" mode="index"/>
           </ul>
+        </section>
+        <section class="map-column">
+          <div class="map" id="mapelement"/>
+          <footer>
+            veidoja
+            <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
+            <a href="http://t17.lv"><b>T17</b></a>
+            un
+            <b>LU antropoloģijas studenti</b>
+            2016, 2017
+          </footer>
         </section>
         <script src="../smoothscroll.js"></script>
         <script src="index.js"></script>

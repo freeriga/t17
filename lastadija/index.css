@@ -40,7 +40,6 @@ html.story h1 a {
   box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.3);
   z-index: 9999;
   text-align: justify;
-  padding-bottom: 1rem;
   color: #111;
 }
 
@@ -50,7 +49,10 @@ html.story h1 a {
   flex-grow: 1;
 }
 
-.stories { padding-top: .25rem; }
+.stories {
+  padding-top: .25rem;
+  padding-bottom: 1rem;
+}
 
 html.map h1 {
   text-align: center;
@@ -85,14 +87,6 @@ html:not(.story) h1 {
   
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-.index-column {
-  order: 0;
-}
-
-.map-column {
-  order: 1;
 }
 
 h1 { font-weight: bold; }
