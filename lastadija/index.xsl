@@ -133,12 +133,12 @@
             <nav>
               <xsl:if test="preceding-sibling::place[1]">
                 <span class="prev">
-                  <span class="arrow">←</span> <a href="{preceding-sibling::place[story][1]/@id}"><xsl:value-of select="preceding-sibling::place[1]/name"/></a>
+                  <span class="arrow">←</span>&#160;<a href="../{preceding-sibling::place[1]/@id}"><xsl:value-of select="preceding-sibling::place[1]/name"/></a>
                 </span>
               </xsl:if>
               <xsl:if test="following-sibling::place[1]">
                 <span class="next">
-                  <a href="{following-sibling::place[1]/@id}"><xsl:value-of select="following-sibling::place[1]/name"/></a> <span class="arrow">→</span> 
+                  <a href="../{following-sibling::place[1]/@id}"><xsl:value-of select="following-sibling::place[1]/name"/></a>&#160;<span class="arrow">→</span> 
                 </span>
               </xsl:if>
             </nav>
