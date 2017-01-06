@@ -8,6 +8,9 @@
                 version    : 'v2.8'
               });
               FB.AppEvents.logPageView();
+              var params = {};
+              params[FB.AppEvents.ParameterNames.CONTENT_ID] = "SIA "Organza" audumu veikals";
+              FB.AppEvents.logEvent("View place", null, params);
             };
           
             (function(d, s, id){

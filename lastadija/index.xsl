@@ -177,6 +177,9 @@
                 version    : 'v2.8'
               });
               FB.AppEvents.logPageView();
+              var params = {};
+              params[FB.AppEvents.ParameterNames.CONTENT_ID] = "<xsl:value-of select="name"/>";
+              FB.AppEvents.logEvent("View place", null, params);
             };
           
             (function(d, s, id){
