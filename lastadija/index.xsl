@@ -178,7 +178,7 @@
               });
               FB.AppEvents.logPageView();
               var params = {};
-              params[FB.AppEvents.ParameterNames.CONTENT_ID] = "<xsl:value-of select="name"/>";
+              params[FB.AppEvents.ParameterNames.CONTENT_ID] = "<xsl:value-of select="@id"/>";
               FB.AppEvents.logEvent("View place", null, params);
             };
           
