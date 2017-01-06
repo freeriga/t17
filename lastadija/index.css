@@ -36,7 +36,6 @@ html.story h1 a {
   width: 34rem;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-left: .5rem;
   box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.3);
   z-index: 9999;
   text-align: justify;
@@ -52,16 +51,17 @@ html.story h1 a {
 .stories {
   padding-top: .25rem;
   padding-bottom: 1rem;
+  padding-left: .5rem;
 }
 
 html.map h1 {
   text-align: center;
-  padding: .5rem 2rem .5rem .5rem;
+  padding: .5rem 2rem .5rem 1rem;
   background-color: white;
   border-bottom: 1px solid #ccc;
 }
 
-footer { padding: .5rem 0 .75rem 0; text-align: center; }
+footer { padding: .5rem 1rem .75rem 1rem; text-align: center; }
 
 .index-column { background-color: #fffff7; }
 
@@ -76,7 +76,7 @@ html.map h1 a { font-weight: normal; text-decoration: none; border: 0; }
 
 a { text-decoration: none; }
 
-html:.map h1 {
+html.map h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,9 +283,12 @@ html.banner h2 div {
   background-color: white;
   padding: .1em .25em;
   font-weight: bold;
-/*  border: 1px solid #ccc; */
 }
 
 html.banner .map-icon {
   transform: scale(2);
+}
+
+html.map .fb-like {
+  margin-left: 1rem;
 }
