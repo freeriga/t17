@@ -32,6 +32,7 @@
               xfbml      : true,
               version    : 'v2.8'
             });
+            FB.AppEvents.logPageView();
           };
         
           (function(d, s, id){
@@ -122,23 +123,6 @@
           </xsl:call-template>
         </head>
         <body>
-          <script>
-            window.fbAsyncInit = function() {
-              FB.init({
-                appId      : '716860265144744',
-                xfbml      : true,
-                version    : 'v2.8'
-              });
-            };
-          
-            (function(d, s, id){
-               var js, fjs = d.getElementsByTagName(s)[0];
-               if (d.getElementById(id)) {return;}
-               js = d.createElement(s); js.id = id;
-               js.src = "//connect.facebook.net/lv_LV/sdk.js";
-               fjs.parentNode.insertBefore(js, fjs);
-             }(document, 'script', 'facebook-jssdk'));
-          </script>
           <span id="index"><xsl:number/></span>
           <section class="map" id="banner-map"
                    data-coords="{./location/latitude}, {./location/longitude}">
@@ -182,6 +166,24 @@
           <meta property="place:location:longitude" content="{location/longitude}"/>
         </head>
         <body>
+          <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId      : '716860265144744',
+                xfbml      : true,
+                version    : 'v2.8'
+              });
+              FB.AppEvents.logPageView();
+            };
+          
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "//connect.facebook.net/lv_LV/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+          </script>
           <header>
             <h1><a href="../..">◂ Tikšanās ar Lastādiju</a></h1>
           </header>
@@ -212,6 +214,12 @@
                 </span>
               </xsl:if>
             </nav>
+            <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+            </div>
           </article>
           <script src="../../stasts.js"></script>
         </body>
