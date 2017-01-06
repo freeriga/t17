@@ -92,6 +92,36 @@
 
   <xsl:template match="place" mode="place-file">
     <exsl:document
+        href="stasts/{@id}/banner.html"
+        method="html"
+        indent="yes"
+        doctype-system="about:legacy-compat"
+        encoding="utf-8">
+      <html class="banner">
+        <head>
+          <xsl:call-template name="common-meta">
+            <xsl:with-param name="prefix">../../</xsl:with-param>
+          </xsl:call-template>
+        </head>
+        <body>
+          <span id="index"><xsl:number/></span>
+          <section class="map" id="banner-map"
+                   data-coords="{./location/latitude}, {./location/longitude}">
+          </section>
+          <header>
+            <h1>
+              <div>Tikšanās ar</div>
+              <div>Lastādiju</div>
+            </h1>
+            <h2>
+              <div><xsl:value-of select="name"/></div>
+            </h2>
+          </header>
+          <script src="../../banner.js"></script>
+        </body>
+      </html>
+    </exsl:document>
+    <exsl:document
         href="stasts/{@id}/index.html"
         method="html"
         indent="yes"
@@ -108,6 +138,8 @@
           <meta property="og:locale" content="lv_LV"/>
           <meta property="og:title" content="{name}"/>
           <meta property="og:description" content="{snippet}"/>
+          <meta property="og:image"
+                content="https://t17.lv/lastadija/stasts/{@id}/banner.png"/>
           <meta property="place:location:latitude" content="{location/latitude}"/>
           <meta property="place:location:longitude" content="{location/longitude}"/>
         </head>

@@ -76,7 +76,7 @@ html.map h1 a { font-weight: normal; text-decoration: none; border: 0; }
 
 a { text-decoration: none; }
 
-html:not(.story) h1 {
+html:.map h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +164,13 @@ h3 .number, .map-icon {
   font-weight: 500;
 }
 
+html.banner .map-icon {
+  font-size: 32px !important;
+  width: 50px !important;
+  height: 50px !important;
+  line-height: 46px !important;
+}
+
 .leaflet-container { font: inherit; }
 
 .leaflet-popup-content-wrapper {
@@ -238,4 +245,47 @@ aside {
 html.story .snippet {
   font-style: italic;
   margin-bottom: 1rem;
+}
+
+#banner-map {
+  width: 1200px;
+  height: 630px;
+  border: 0;
+}
+
+html.banner #index { display: none; }
+html.banner header {
+  z-index: 9999; position: absolute;
+  top: 0px;
+  font-size: 43px;
+  width: 1200px;
+  line-height: 1;
+/*  text-align: center !important; */
+}
+
+html.banner header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em;
+}
+
+html.banner h1 {
+  flex-shrink: 0;
+  text-align: right;
+  margin-bottom: 4em;
+  font-weight: 500;
+  font-size: 32px;
+  background-color: white;
+  padding: .1em .25em;
+}
+
+html.banner h2 div {
+  background-color: white;
+  padding: .1em .25em;
+  font-weight: bold;
+/*  border: 1px solid #ccc; */
+}
+
+html.banner .map-icon {
+  transform: scale(2);
 }
