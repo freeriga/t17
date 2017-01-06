@@ -16,6 +16,7 @@
     <html class="map">
       <head>
         <xsl:call-template name="common-meta"/>
+        <meta property="fb:app_id" content="716860265144744"/>
         <meta property="og:url" content="https://t17.lv/lastadija/"/>
         <meta property="og:type" content="website"/>
         <meta property="og:locale" content="lv_LV"/>
@@ -135,11 +136,14 @@
           <title><xsl:value-of select="./name"/> (Tikšanās ar Lastādiju)</title>
           <meta property="og:url" content="https://t17.lv/lastadija/stasts/{@id}/"/>
           <meta property="og:type" content="place"/>
+          <meta property="fb:app_id" content="716860265144744"/>
           <meta property="og:locale" content="lv_LV"/>
           <meta property="og:title" content="{name}"/>
           <meta property="og:description" content="{snippet}"/>
           <meta property="og:image"
                 content="https://t17.lv/lastadija/stasts/{@id}/banner.png"/>
+          <meta property="og:image:width" content="1200"/>
+          <meta property="og:image:height" content="630"/>
           <meta property="place:location:latitude" content="{location/latitude}"/>
           <meta property="place:location:longitude" content="{location/longitude}"/>
         </head>
