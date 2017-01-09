@@ -26,7 +26,7 @@
   <xsl:variable name="title">
     <xsl:choose>
       <xsl:when test="$lang = 'lv'">Tikšanās ar Lastādiju</xsl:when>
-      <xsl:when test="$lang = 'ru'">TODO: Russian title</xsl:when>
+      <xsl:when test="$lang = 'ru'">Встреча с Ластадией</xsl:when>
     </xsl:choose>
   </xsl:variable>
   
@@ -69,7 +69,7 @@
   <xsl:variable name="description">
     <xsl:choose>
       <xsl:when test="$lang = 'lv'">Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.</xsl:when>
-      <xsl:when test="$lang = 'ru'">TODO: Russian description.</xsl:when>
+      <xsl:when test="$lang = 'ru'">Встреча с Ластадией является приглашением получше и поближе познакомиться с этим округом, открывая его человеческие черты и характер. На карте образ Ластадии раскрывается как коллаж историй и опыта людей, который пользователь карты может испытать и на себе, отправляясь на неспешную прогулку и знакомясь с описанными местами.</xsl:when>
     </xsl:choose>
   </xsl:variable>
   
@@ -102,7 +102,7 @@
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
          js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/lv_LV/sdk.js";
+         js.src = "//connect.facebook.net/<xsl:value-of select="$locale"/>/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -287,7 +287,7 @@
     </xsl:variable>
     
     <exsl:document
-        href="stasts/{@id}/banner.html"
+        href="{$lang}/stasts/{@id}/banner.html"
         method="html"
         indent="yes"
         doctype-system="about:legacy-compat"
@@ -316,7 +316,7 @@
       </html>
     </exsl:document>
     <exsl:document
-        href="stasts/{@id}/index.html"
+        href="{$lang}/stasts/{@id}/index.html"
         method="html"
         indent="yes"
         doctype-system="about:legacy-compat"
@@ -396,7 +396,7 @@
             </nav>
             <div class="fb-like" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
           </article>
-          <script src="../../stasts.js"></script>
+          <script src="../../../stasts.js"></script>
         </body>
       </html>
     </exsl:document>

@@ -2,28 +2,28 @@
 <places>
   <place id="p11">
     <name>Free Riga Puškina ielā (P11)</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Free Riga на улице Пушкина (P11)</russian-name>
     <location>
       <latitude>56.94201775</latitude><longitude>24.1210603466947</longitude>
     </location>
     <snippet>Bijusī Rīgas Dzirnavnieka fabrikas administratīvā ēka, kas pēc gadiem ilgas aizmirstības lēnām pārvērtusies par vietējo sociālo un kultūras aktivitāšu centru. Šeit dienām (un naktīm) strādā dažādi mākslinieki un organizācijas. Un runā, ka māja ir atvērta arī kaimiņiem, kas meklē vietu, kur pulcēties un pavadīt laiku.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Бывшая котельная и офис рижской фабрики Дзирнавниекс, которые после долгих лет забвения постепенно превратилась в местный центр социальной и культурной деятельности. Здесь днями (и ночами) работают различные художники и организации. Говорят, что дом открыт и для соседей, которые ищут, где бы собраться и провести время.</russian-snippet>
   </place>
 
   <place id="deficits">
     <name>"Deficīts"</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Дефицит</russian-name>
     <location>
       <latitude>56.942117</latitude><longitude>24.119644</longitude>
     </location>
     <snippet>Pazudušo mīļlietiņu “Nārnijas skapis”, kur saplūst padomju pasaules mantojums un maģiski vecmāmiņu, kolekcionāru un, jo īpaši, kaķumīļu dārgumi. Kur vēl Rīgā vienuviet atrast mazu kurpīšu un porcelāna leļļu kolekciju, antīku preču maiņas punktu, pašataisītas rotaslietas, mugursomas ar kaķu sejām un romantisku gleznu reprodukcijas kaķu veidolā?</snippet>
     <story>Atverot “Deficīta” durvis, tevi sagaida sludinājumu siena ar asprātīgiem izteicieniem krievu valodā, kas rada smaidu ikviena ienācēja sejā. Katrs var noplēst lapiņu, lai sev atgādinātu par vienkāršajiem dzīves prieciņiem. “Deficīts” ir unikāla vieta, kur var atrast jebko, sākot no kolekcionāru veidotām porcelāna leļļu kolekcijām līdz kaķu mugursomām un hand made rotaslietām. Īpašniece sapņo par pārmaiņām Maskavas ielas rajonā, atceroties laikus, kad Rūpniecības preču tirgus bija dzīvīgāks un arī veikalā viesu bija vairāk. “Deficīta” īpašniece uzskata, ka rajonam ir milzīgs potenciāls, kurš netiekot novērtēts sliktās reprezentācijas dēļ. Īpašnieces pieķeršanās veikalam ir daudz spēcīgāka par biznesa domāšanu. Unikālais retro veikaliņa vispusīgais piedāvājums ir radījis vairāk muzeja, nevis veikaliņa sajūtu. Piedāvājot visu, netiek piedāvāts nekas. Te pat pastāv maiņas tirgus princips - ir iespējams apamainīt savas retro, padomju laiku mantas pret citu atstātām. “Tā ir visa mana dzīve, mans hobijs! Lai gan naudu ar šo nenopelnīsi, man prieks redzēt smaidu cilvēku sejās, piedāvāt unikālas preces! Šis veikals patīk ikvienam, varbūt, izņemot tos Stockmann cilvēkus” smejas īpašniece.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Кладовая исчезающих милых вещиц, куда стекаются наследие советских времён и волшебные сокровища бабушек, коллекционеров и особенно любителей котов. Где ещё в Риге под одной крышей найдёшь такую общирную коллекцию фарфоровых кукол и маленьких туфелек, самодельных ювелирных изделий, рюкзаков и репродукций романтической живописи в виде кошек?</russian-snippet>
   </place>
 
   <place id="abrenes">
     <name>Abrenes ielas pieturvieta</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Автобусный парк на улице Абренес</russian-name>
     <location>
       <latitude>56.945681</latitude><longitude>24.131111</longitude>
     </location>
@@ -33,33 +33,33 @@
       Tieši vecāka gadu gājuma Centrāltirgus apmeklētāji ir iecienījuši Abrenes ielas galapunktu kā stratēģiski izdevīgu pieturu, ar kuru iespējams izvairīties no bariem, kas stumdās pieturā pie tirgus. Iekāpjot pieturu pirms galapunkta un braucot līdz Abrenes ielai, ir iespēja garantēt, ka mājupceļā nebūs jāstāv kājās ar iepirkumu maisiņiem. Savukārt jaunieši izbauda, ka Abrenes ielas galapunktā ir pietiekami plaši, lai varētu izvēlēties savu stūrīti nost no citiem cilvēkiem, kur justies netraucēti. Tajā pašā laikā laužu plūsma ļauj justies drošāk nekā vientuļākās pieturās.
 
       Šī vieta ir kā radīta introvertiem cilvēkiem – vari droši nodoties pārdomām par dzīvi, citi netraucēs un nav nepieciešams justies slikti par to, ka neiesaisties sarunās, jo neviens cits arī nevēlas iesaistīties.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Конечная остановка на улице Абренес прекрасно иллюстрирует метафору о  транспортном движении как кровообращении города. Конечная в ней служит в качестве сердца – шофера здесь отдыхают, сменяют друг друга и продолжают транспортный поток, вновь приветствуя людей и доставляя их до цели. Если  ехать  в сторону конечной на Абренес с рынка, можно гарантировать, что не придётся стоять с сумками.</russian-snippet>
   </place>
 
   <place id="zinatnu">
     <name>Latvijas Zinātņu аkadēmija</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Академия наук Латвии</russian-name>
     <location>
       <latitude>56.94313055</latitude><longitude>24.1220223898022</longitude>
     </location>
     <snippet>Padomju laika šarms bijušajā kolhoznieku namā jūtams vēl šobaltdien. Zinātņu akadēmija mūsdienās uzņem ne tikai zinātniekus. To labi var redzēt pusdienlaikā Zinātņu akadēmijas ēdnīcā. Akadēmija ir darba vieta grāmatvežiem, redaktoriem, dziedniekiem un skolotājiem. Te kādreiz glabājās Dainu skapis, bet tagad telpas kļuvušas par krāsainu kapitālisma dzītu profesiju rasolu.</snippet>
     <snippet>Latvijas Zinātņu akadēmija – padomju laika šarms bijušajā kolhoznieku namā jūtams vēl šobaltdien. Zinātņu akadēmija mūsdienās uzņem ne tikai zinātniekus. To labi var redzēt pusdienlaikā Zinātņua akadēmijas ēdnīcā. Akadēmija ir darba vieta grāmatvežiem, redaktoriem, dziedniekiem un skolotājiem. Te kādreiz glabājās Dainu skapis, bet tagad telpas kļuvušas par krāsainu kapitālisma dzītu profesiju rasolu.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>В Академии наук Латвии,  бывшем Доме колхозника, шарм советских времён ощущается и по сей день. В Академии наук приветствуют не только ученых, и это лучше всего подверждают ежедневные посетители столовой академии. Академия наук предоставляет возможность работы бухгалтерам, редакциям, целителям и учебным центрам. Здесь когда-то хранился „Шкаф дайн”, а теперь это место стало красочной смесью капиталистических профессий.</russian-snippet>
   </place>
 
   <place id="kurpnieka">
     <name>Kurpnieka darbnīca</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Мастерская сапожника</russian-name>
     <location>
       <latitude>56.941921</latitude><longitude>24.119300</longitude>
     </location>
     <snippet>Runā, ka apkaimē un, iespējams, Rīgā labākā un izdevīgākā kurpnieka darbnīca!</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Говорят, что это самая лучшая мастерская не только в этом округе, но и, возможно, во всей Риге!</russian-snippet>
   </place>
 
   <place id="gaizins">
     <name>Sarkanā Krusta sociālais centrs “Gaiziņš”</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Социальный центр Красного Креста "Гайзиньш"</russian-name>
     <location>
       <latitude>56.942063</latitude><longitude>24.118892</longitude>
     </location>
@@ -69,23 +69,23 @@
 Vispamanāmākie no centra klientiem ir bezpajumtnieki, kuri pa vienam vai mazos pulciņos sastopami apkārtnē. Viņu ikdienā liela loma ir blakus esošajam Centrāltirgum, kur var dabūt ko ēdamu un dzeramu, kā arī kādu gadījuma darbiņu.
 
 Sociālā centra darbu var atbalstīt, ziedojot kādu noderīgu lietu – apģērbus, apavus vai sadzīves priekšmetus. Centra darbinieki parūpēsies, lai mantas nonāktu to cilvēku rokās, kam tās visvairāk nepieciešamas.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>В жёлтом здании около Центрального рынка  поддержку и приют находят люди с самыми различными жизненными историями. Кто-то приходит за теплыми зимними сапогами или продуктовыми наборами, кто-то - проспать вчерашнее похмелье,  ещё кто-то -  за советом и поддержкой. Повседневная жизнь здесь красочна, но, несмотря на образ жизни каждого из пришедших, всех объединяет желание быть полезными и принятыми.</russian-snippet>
   </place>
 
   <place id="gogola-tunelis">
     <name>Pazemes gājēju tunelis zem Gogoļa ielas</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Подземный пешеходный переход под улицей Гоголя</russian-name>
     <location>
       <latitude>56.945419</latitude><longitude>24.119448</longitude>
     </location>
     <snippet>Vieta, kurai ik dienas cauri izskrien simtiem cilvēku, acis pat nepaceļot. Taču, ja uz mirkli apstājas un paraugās apkārt, var ieraudzīt “visas Latvijas sabiedrības krāsas”, sākot ar steigas pārņemtiem studentiem un beidzot ar ielu muzikantiem un pensionāriem, kas tirgo pašu adītas vilnas zeķes. Tunelis lielākajai daļai cilvēku nodrošina ērtāku un drošāku pārvietošanos, bet dažiem tā ir vieta, kur nopelnīt trūkstošo centu maizītei vai patverties no sliktiem laika apstākļiem.</snippet>
     <story>Kad laukā ir auksts, cilvēku ir mazāk un esošie vairāk steidzas garām. Ir cilvēki, kam gājēju tunelis zem Gogoļa ielas ir darba un cerību vieta. Kaprona zeķbikšu un zeķu, adītu zeķu, cimdu un šaļļu, kā arī tamborētu pašdarinājumu tirgotāji uzturas šeit pastāvīgi (pat par spīti policijas darbinieku neatlaidīgajiem mēģinājumiem viņus no šīs vietas padzīt). Tuvojoties salam, sievietes pensijas vecumā, kuras nestrādā vai nu invaliditātes vai nesekmīgu darba meklējumu dēļ, šeit cenšas pavadīt, cik vien laika spēj, lai sapelnītu uz priekšu. Katrai no viņām ir sava vieta tunelī, blakus balstiem. Šīs vietas netiek savā starpā mainītas, un, ja ieņem svešu vietu, rodas konflikti. Kā atzina divas no sievietēm, vietai, kur stāv, ir nozīme - visvairāk veicoties tām, kas stāv kādā no tuneļa galiem. Mazbērni un ģimenes ir lielākie prieki viņu dzīvēs, un jūtamas ilgas pēc tuvākajiem. Lielākoties šī distance ir piespiedu kārtā, jo līdzekļi ir pārāk ierobežoti, lai ģimeni un radiniekus apciemotu tik bieži, cik gribētos.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Место, через которое каждый день проносятся сотни людей, даже не поднимая глаз. Однако, если хоть на минуту остановиться и посмотреть вокруг, можно увидеть "все цвета латвийского общества", начиная от торопливых студентов и заканчивая уличными музыкантами и пенсионерами, которые продают шерстяные носки собственной вязки. Туннель для большинства людей обеспечивает более удобное и безопасное передвижение, но для некоторых это место, где можно подзаработать недостающий на хлеб цент  или укрыться от непогоды.</russian-snippet>
   </place>
   
   <place id="organza">
     <name>SIA "Organza" audumu veikals</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>ООО Органза, магазин тканей</russian-name>
     <location>
       <latitude>56.94361015</latitude><longitude>24.124514290738</longitude>
     </location>
@@ -97,33 +97,33 @@ Ieejot iekšā caur mazām, nedaudz ļodzīgām durvīm, nošķind vēja zvani u
 Uz šo vietu nāk visi Latvijas tērpu dizaineri un daži Igaunijas dizaineri, kā arī citi, kas nodarbojas ar šūšanu. Veikalam nekad nav bijusi vajadzīga reklāma. Vietējie gan reti nākot.
 
 Veikala darbiniece ir norobežojušies no Lastādijas, turklāt veikals šeit atrodas zemās īres dēļ. Tā drīzāk esot Maskačka – jo tālāk, jo trakāk. Lastādija vairāk ietekmējot veikalu, nekā veikals Lastādiju. Lai kā arī būtu viņa lepojas ar savu darbavietu neatkarīgi no tā, ko domā par rajonu.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Старая кирпичная стена со скромной надписью "Ткани" ведет в невидимое для прохожих место, но, по словам продавца, этот магазин пользуется популярностью среди молодых дизайнеров, и ему никогда не была нужна особая реклама. В магазине суетность улицы сменяется ощущением спокойствия и простоты.</russian-snippet>
   </place>
 
   <place id="lunchbox">
     <name>Lunchbox</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Lunchbox</russian-name>
     <location>
       <latitude>56.9418</latitude><longitude>24.122648</longitude>
     </location>
     <snippet>Jauna vietiņa ar izdevīgu pusdienu piedāvājumu, ko saimnieks tiešsaistē pārrauga no sava kabineta tuvējā augstceltnē.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Новое местечко с хорошим обеденным меню, которое владелец предлагает онлайн из своего офиса в соседнем высотном здании.</russian-snippet>
   </place>
 
   <place id="jesusbaznica">
     <name>Rīgas Jēzus baznīca</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Церковь Иисуса в Риге </russian-name>
     <location>
       <latitude>56.94162</latitude><longitude>24.1235</longitude>
     </location>
     <snippet>Gandrīz 400 gadu ir pagājuši, pilsētas robežas ir mainījušās, bet dievnams tur turpina stāvēt, nemainīgi piederot luteriskajai draudzei, tikai šobrīd jau citā – savā ceturtajā veidolā, kā lielākā koka baznīca Latvijā. Te senioru smaidi mijas ar mazu bērnu čalām. Baznīcā sastapta cienījama vecuma kundze apliecina: “Es te nācu un nākšu. Šī ir visskaistākā baznīca. Svēta vieta.” </snippet>
     <story>Pretēji vispārpieņemtajiem kanoniem, Jēzus baznīcas centrālā ieeja tika būvēta nevis uz austrumiem, bet uz dienvidaustrumiem, lai būtu pretī tiem, kas nāca no pilsētas uz priekšpilsētu. Dievnama celtniecības vēstures pirmais nozīmīgākais gads ir 1638. Gandrīz 400 gadi ir pagājuši, pilsētas robežas ir mainījušās, bet dievnams te turpina stāvēt, nemainīgi piederot luteriskajai draudzei. Šī brīža baznīca ir ceturtā Jēzus baznīca šajā vietā, pārstāvot lielāko koka baznīcu Latvijā. Kāda baznīcā sastapta ļoti cienījama vecuma kundze apgalvo, ka “baznīca šeit bija un paliks mūžīgi”, lai arī kādi notikumi tai negājā un neies pāri. Pārliecība viņas balsī neliek apšaubīt viņas teikto, tieši šāds ticīgo spēks, šķiet, ir noturējis un turpina turēt šo dievnamu laika griežos. Baznīca ir iecienīta, baznīcēnu ir daudz. Svētdienas dievkalpojumus apmeklē ap 300 cilvēku, un tas vēl neesot nekas, uz Ziemassvētkiem baznīcā esot tik pilns, ka cilvēki kājās stāv. Apmeklētāji ir dažāda vecuma cilvēki, sākot ar zīdaiņiem, kas čalo baznīcas aizmugurē, un beidzot ar cienījama vecuma senioriem, te visi gaidīti.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Прошло почти 400 лет, границы города изменились, но церковь продолжает стоять, неизменно принадлежа лютеранской церкви, только теперь уже в другом - четвертом своём обличии, как самая большая деревянная церковь Латвии. Здесь улыбки пожилых вперемешку с лепетом малышей. "Я приходила сюда и буду продолжать приходить. Это самая красивая церковь. Святое место," высказывается госпожа очень почтенного возраста.</russian-snippet>
   </place>
 
   <place id="banuzis">
     <name>Antikvaribārs “Bānūzis”</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Антиквар-бар "Bānūzis"</russian-name>
     <location>
       <latitude>56.9432628</latitude><longitude>24.1243507</longitude>
     </location>
@@ -133,23 +133,23 @@ Veikala darbiniece ir norobežojušies no Lastādijas, turklāt veikals šeit at
 Antīki pulksteņi, senas fotogrāfijas, padomju ēras rotaļlietas un filmu plakāti ir tikai neliela daļa no plašā priekšmetu klāsta. Strikti novilktu konceptuālu robežu trūkums priekšmetu atlasē ir viens no iestādījuma lielākajiem plusiem – saimnieki ir atvērti dažādībai kolekcijā un seko sirdsbalsij, personīgām estētikas vadlīnijām un rūpīgai kvalitātes un autentiskuma pārbaudei, pieņemot priekšmetus un piedāvājot tos Bānūža viesiem. Iesaku ieklausīties aizraujošos namatēva stāstos par dažādo priekšmetu izcelsmi pie karstas tējas krūzes rudenīgā pēcpusdienā – tieši niansēs slēpjas Bānūža šarms, un tās vislabāk iepazīt prasmīga gida pavadībā.
 
 Iepriecinot apkaimes iedzīvotājus un viesus, Bānūža namatēvi pārliecinoši apliecina, ka viņiem azotē ir daudz radošu ideju, kam drīzumā lemts ieraudzīt dienas gaismu. Citējot saimniekus, jāsaka, ka Bānūzim zīmējas spoža nākotne!</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Место, которое позволяет своим посетителям познать артефакты былых времен и искупаться в ощутимых воспоминаниях. Именно в нюансах скрыт шарм этого антиквариата, и лучше всего их можно изведать,  не спеша потягивая напитки, принесённые самим хозяином, и учавствуя в импровизированной программе историй у стойки бара. Остаётся только согласиться с владельцем – " У Банузиса светлое будущее."</russian-snippet>
   </place>
 
   <place id="janus">
     <name>Grāmatnīca “Janus”</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Книжный магазин "Янус"</russian-name>
     <location>
       <latitude>56.94140</latitude><longitude>24.12273</longitude>
     </location>
     <snippet>Liels veikals, kas slēpjas mazas un vienkāršas koka mājiņas aizsegā. Tajā var pavadīt pat pusi dienas, iepazīstoties ar jaunāko krievu literatūru vai savu nākamā gada horoskopu. Pārdevējas šajā veikalā dažkārt ieņem gluži vai psihologa lomu, palīdzot cilvēkiem atrast to, ko viņi meklē.</snippet>
     <story>Neliela koka māja ar norādi “Janus” liek domāt, ka tas ir mazs grāmatu veikaliņš, bet patiesībā tas ir veikalu komplekss trīs stāvos. Tajā ne tikai izplata un tirgo grāmatas, bet arī citas ikdienā noderīgas un vienkārši interesantas preces. Runājot ar cilvēkiem šķiet, ka veikals dzīvo savu dzīvi un tam nav būtiska atrašanās vieta. Kāds nāk pēc palīdzības, kāds atnāk pavadīt savu brīvo laiku, bet cits meklē kā papildināt savas zināšanas. Cik dažādas preces, tik dažādi cilvēki un iespējas. Tā var šķist kā noslēgta, klusa un mazliet maģiska vietiņa tik pat klusā un noslēgtā rajonā. Taču katra pārdevēja atzīs, ka ne jau grāmatnīcai tik ļoti vajadzīgi cilvēki, kā pašiem cilvēkiem šī grāmatnīca.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Огромный магазин, который спрятался за небольшим и простым деревянным домиком. В нём можно провести чуть ли не полдня, знакомясь с новинками русской литературы или своим гороскопом на следующий год. Продавцы в этом магазине порой принимают роль психолога, помогая людям найти то, что они ищут.</russian-snippet>
   </place>
 
   <place id="sinagogas-memorials">
     <name>Rīgas Lielās Horālās sinagogas memoriāls</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Мемориал Большой хоральной синагоги</russian-name>
     <location>
       <latitude>56.942451</latitude><longitude>24.126339</longitude>
     </location>
@@ -159,105 +159,105 @@ Iepriecinot apkaimes iedzīvotājus un viesus, Bānūža namatēvi pārliecinoš
 2007.gadā blakus sinagogas drupām tika atklāts piemineklis Žanim Lipkem un visiem ebreju glābējiem holokausta laikā. Latvijas ebreju reliģiskās draudzes „Šamir” vadītājs, rabīns Menahems Barkahans uzsver Žaņa Lipkes fantastisko devumu ebreju tautas glābšanā - Lipke cilvēkiem devis iespēju dzīvot. Viņa piemineklis memoriālā vēstī par dzīvību, bet sinagogas drupas - par nāvi, un šie pretstati līdzinās politiskajām cīņām.
 
 Memoriāls ir pieejams ikvienam un ir no apkārtnes un apkaimes vēstures neatdalāms objekts. Ikdienā tajā atrodas vien daži vietējie cilvēki, kas sēdot uz soliņiem risina savas sarunas. Apkaimes iedzīvotājs stāsta: “Zinu vien, ka sievas vectēvam ir bijusi kāda saistība ar šo vietu, bet to nevarēšu precīzi atstāstīt.” Par līdzīgu personīgu sasaisti ar sinagogu stāsta arī rabīns. Šeit bojāgājušo vārdus mēs nekad neuzzināsim, jo dokumentālas liecības par to klusē. Atgādinot, ka dzīve iet uz priekšu, rabīns rosina padomāt - kā rīkoties, lai šādi noziegumi vairs nekad neatkārtotos?</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Мемориал, объекты которого одновременно напоминают о противоположностях, о смерти и о жизни. Шум автомобилей и имена спасателей евреев здесь звучат громче, чем крики жертв. "Жизнь продолжается," напоминает местный раввин, показывая мемориал, и предлагает ознакомиться с книгами об уничтожении еврейского общества Латвии в его кабинете.</russian-snippet>
   </place>
 
   <place id="igo">
     <name>"Igo. Akcents personībai"</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Иго. Акцент на личность</russian-name>
     <location>
       <latitude>56.940723</latitude><longitude>24.117702</longitude>
     </location>
     <snippet>No skata necila vienstāva māja patukšās Turgeņeva ielas pašā galā. Māju ieņēmusi radoša komanda, lai dienas gaismu ieraudzītu dažādi mūziķa Igo Fomina radīti dizaina priekšmeti. Šī mājīgā darbnīca ieved pilnīgā Igo pasaulē, kur rodamas visas viņa mākslinieciskās izpausmes vienuviet. "Igo. Akcents personībai" ir pavisam jauns iemītnieks šajā kvartālā, kas rada citādu un kontrastējošu apkaimes tēlu.</snippet>
     <story>Gluži necila vienstāvu mājiņa, kas apskauta no vienas puses ar Turgeņeva ielu un Spīķeru sienu un no otras puses ar mašīnu mudžošo Krasta ielu un mūsu mīļo Daugavu. Šeit atradusi savu stūrīti darbnīca Igo. Akcents Personībai. Kā izrādās un ar ko dizainere Gita lepojas, arī pagalma ēkās atrodas ne viena vien darbnīca, gan darba apģērbu šūšana, gan koka mēbeļu restauratori, gan šeit tiek ražota Antiseptika – Latvijā radīts koksnes aizsardzības līdzeklis. Šķiet, ka šajā vietā ir īpaša radošā enerģija. Ieejot Igo radītā zīmola darbnīcā, ir sajūta kā mājās. Šajās mājīgajās telpās var apskatīt viņa zīmētās grafikas, kas ir atrodamas gan uz svecēm, gan traukiem, var piemērīt īpaši latviskos lina apģērbus, palasīt Igo rakstītos dzejoļus vai paklausīties Igo radīto mūziku. Dizainerei var palūgt parādīt, kā viņa ar sietspiedi strādā un rada šos dizaina priekšmetus. Ieejot dziļāk telpā un paskatoties zem kājām, var ieraudzīt pavisam senu aku, kas atklājās remontējot šī telpas pēc iepriekšējiem saimniekiem. Izrādās, Latvijā pazīstamajam mūziķim Igo māksla vienmēr ir bijusi sirdī, un tagad šī iedvesma nākusi ārā - ir radīta unikāla dažādu dizaina priekšmetu sērija. Sākotnēji kā papildu suvenīri koncerta tūrēs, bet nu jau arī pieejami plašākai publikai. Citi tos pērk aiz patikas pret Igo mūziku, citi, jo novērtē skaisto grafisko mākslu. Apskatiet šo darbnīcu, ja vēlaties izbaudīt citu Maskavas priekšpilsētas garšu. Ļoti iespējams, šīs darbnīcas ir dzimšanas vieta jaunam radošajam kvartālam, kas lieliski papildinās apkārtni.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>С виду скромный одноэтажный дом в дальнем конце полупустой улицы Тургенева, которым занялась творческая бригада, чтобы свет увидели разные предметы дизайна, созданные музыкантом Иго. Эта уютная мастерская приглашает в мир Иго, где можно познакомиться со всеми его художественными проявлениями в одном месте. Иго. Акцент на личность - совершенно новый постоялец в этом квартале, который создает различный и контрастный образ округа.</russian-snippet>
   </place>
 
   <place id="hanza">
     <name>Hanza Hotel</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Hanza Hotel</russian-name>
     <location>
       <latitude>56.94205</latitude><longitude>24.123442</longitude>
     </location>
     <snippet>Neliela trīs zvaigžņu viesnīca, kas varbūt atrodas un varbūt neatrodas Maskačkā.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Небольшой трёхзвёздочный отель,  вроде бы расположенный на Маскачке, а может быть и нет.</russian-snippet>
   </place>
 
   <place id="ugunsdzeseju">
     <name>Ugunsdzēsēju depo</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Пожарная станция</russian-name>
     <location>
       <latitude>56.942560</latitude><longitude>24.115759</longitude>
     </location>
     <snippet>Priecīgi par apmeklētājiem, kuriem nekas nedeg, ugunsdzēsēji ir pretimnākoši, laipni un labi jūt cilvēkus.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Рады посетителям, у которых ничего не горит, пожарные приветливы, добры и хорошо чувствуют людей.</russian-snippet>
   </place>
 
   <place id="rozmarins">
     <name>Kafejnīca “Rozmarīns”</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Кафе "Розмарин"</russian-name>
     <location>
       <latitude>56.939676</latitude><longitude>24.124602</longitude>
     </location>
     <snippet>Pēc nosaukuma nepateiksi, ka šīs kafejnīcas interjerā dominē doriskās un joniskās grieķu kolonnas. “Rozmarīns” ir vieta ar attieksmi, to atklās katrs vērīgs apmeklētājs. Klusā rītā stāvot pie letes, no virtuves dzirdamas pavāru un konditoru dzīvīgās sarunas. Pati saimniece saka, ja cilvēks vēloties paēst, viņam te vienmēr tiks kaut kas pasniegts - kartupeļi ar rozmarīnu, piemēram.</snippet>
     <story>Šī kafejnīca visticamāk radīs interesi un izbrīnu ikvienam apmeklētājam. Pēc nosaukuma Rozmarīns nepateiksi, ka kafejnīcas interjeru sastāda, galvenokārt, flīzētas grīdas un grieķu kolonnas. Iekārtojums palicis no laika, kad telpas bija daļa no pirts kompleksa. Taču tas neliedz kafejnīcā norisināties nepārtrauktai darbībai – telpā uz galdiem ir novietotas vairākas kastes ar smalkmaizītēm, ik pa laikam ierodas piegādātājs un pasūtījumu saņēmēji. Tikmēr aiz atvērtajām virtuves durvīm dzirdamas pavāru un konditoru dzīvīgās sarunas. Arī ledusskapis ir piepildīts ar dažādām kūciņām un smalkmaizītēm, ko iespējams iegādāties uz vietas un pasūtīt. Kā nojaušams, uzņēmums darbojas, galvenokārt, uz pasūtījumiem. Par to liecina arī reto apmeklētāju skaits. Ja neesi viens no patstāvīgajiem pusdienu apmeklētājiem, Tava ierašanās varētu tikt nopētīta, iespējams, teju ar izbrīnu. Taču pusdienu piedāvājumā, ko Jums labprāt pasniegs arī krietni vēlāk par pusdienlaika, iespējams tikt gan pie pirmā, gan otrā ēdiena. Ja nu izdodās sastapt jautro un dzīvīgo kafejnīcas īpašnieci, var novērot aizrautību un degsmi ar kādu uzņēmums tiek vadīts – tas vien rada pozitīvu gaisotni, kas virza uz tālāku attīstību.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>По названию не скажешь, что в интерьере этого кафе доминируют греческие колонны дорического и ионического стиля. "Розмарин" это место с изюминкой, и это заметит каждый наблюдательный посетитель. Тихим утром, стоя у прилавка, из кухни слышишь оживленные разговоры поваров и кондитеров. Сама же хозяйка говорит, что у них найдётся что-то особенное для каждого - картофель с розмарином, например.</russian-snippet>
   </place>
 
   <place id="centraltirgus">
     <name>Centrāltirgus</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Центральный рынок</russian-name>
     <location>
       <latitude>56.943945</latitude><longitude>24.116780</longitude>
     </location>
     <snippet>Starp pieciem pārbūvētiem cepelīnu angāriem ik dienu mutuļo garšas, smaržas un cilvēku pūļi, kas zina, kur, kas un par cik atrodams. Te ir sava pašsaprotama kārtība, pārdevējiem balsis skaļas un cenas - tikai tās labākās. Katrai precei beigu beigās atrodas savs pircējs - gan kontrabandas cigaretēm un tūristu suvenīriem, gan Ogrē audzētajām puķēm, ko katru rītu puķu pārdevēja uz tirgu ved ar vilcienu.</snippet>
     <story>Rīgas centrāltirgus ir vieta, kas pilna pārsteigumu. Gan sajūtu un notikumu, gan preču un pakalpojumu daudzveidība, kas, ja dodies turp bez konkrēta mērķa, tevi ierauj kā tādā skaņu, garšu, smaržu un krāsu virpulī. Arī tur sastopamie cilvēki, katrs ar savu stāstu, sākot ar ratiņstūmēju, kurš cenšas izlavierēt pūlī un, turpinot ar nelegālo cigarešu, zāļu tēju, adītu zeķu, video kasešu, apakšveļas un velosipēdu kameru tirgotājiem un visiem pārējiem, apmeklētājiem, garāmgājējiem un darbiniekiem. Tirgota tiek ne tikai milzīgos komercuzņēmumos saražotā prece, bet arī cilvēka sirdslietas radīts produkts, kā piemēram, adījumi, ziedi un dažādi augļi. Iespējams, tirgus identitāte meklējama tieši tajā daudzveidībā, jo reti kura vieta sevī spēj sapulcināt tik dažādus cilvēkus, lietas, produktus un pakalpojumus. Tā nav viens veselums, bet sastāv no daudzām ikkatra veidotām daļiņām.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Пять реконструированных ангаров дирижаблей ежедневно переполнены всевозможными запахами, товарами на любой вкус и толпами людей, которые знают где, что и почём можно найти. Тут жизнь течёт своим чередом, продавцы громкие, а цены - самые выгодные. Каждый товар в конце концов находит своего покупателя - и контрабандные сигареты, и сувениры для туристов,  и выращенные в Огрэ цветы, которые каждое утро продавщицы привозят на рынок на поезде.</russian-snippet>
   </place>
 
   <place id="vissvetas">
     <name>Vissvētās Dievmātes Pasludināšanas pareizticīgo baznīca</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Православная церковь Благовещения Пресвятой Богородицы</russian-name>
     <location>
       <latitude>56.943944</latitude><longitude>24.122906</longitude>
     </location>
     <snippet>Pāri ielai pie policijas iecirkņa ēkas Gogoļa un Turgeņeva ielu krustojumā sēž vīrs un vēro putniņus. Viņš te nāk “katru dienu - desmit gadus jau”. Pareizticīgo krusts uztetovēts uz vidējā pirksta, vīrietis apliecina, ka brīvdienās cilvēku nāk maz. “Bet svētku dienās, jā – tad gan nāk.” Otrpus ielai baznīcas darbiniece gan par apmeklētāju daudzumu nesūdzas. Un nākot ne tikai pareizticīgie, bet arī luterāņi un katoļi. “Jo viņiem sveces tur savās baznīcās likt nav kur, un pasūtīt lūgšanas par drošību un veselību viņi nevar. Tāpēc viņi nāk šeit. Citās baznīcās tā neļauj, bet pie mums ļauj. Vot tā!”</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>На противоположной стороне улицы, у здания полицейского участка на перекрёсте улиц Гоголя и Тургенева сидит мужчина с татуировкой православного креста на среднем пальце и наблюдает за птичками. Он приходит сюда "каждый день – уже десять лет," и заметил, что в выходные дни людей приходит немного. "Но на праздники, да, тогда толпами." На другой стороне улицы работница церкви на количество посетителей не жалуется. Приходят не только православные, но и католики и лютеране. "Им там свечки в своих церквях ставить некуда, и заказать молебен о здравии и панихиду они не могут. Поэтому они приходят сюда. Вот так!"</russian-snippet>
   </place>
 
   <place id="spikeri">
     <name>Spīķeri</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Спикери</russian-name>
     <location>
       <latitude>56.9416366</latitude><longitude>24.116552</longitude>
     </location>
     <snippet>Dažu gadu laikā šis sākotnēji maz zināmais kultūrpunkts ir daudz mainījies un attīstijies. Gadsimtu senās spīķeru noliktavas no omulīgā subkultūru nostūra pārveidojušās par ģimenei draudzīgu vietiņu, kur bērni un jaunieši var izklaidēties labiekārtotajā laukumā, bet vecāki pavadīt laiku kafejnīcās un salonos. Tāpat šeit joprojām mājo kritiskie un laikmetīgie teātra uzvedumi no Dirty Deal Teatro.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>В течение всего нескольких лет этот поначалу малоизвестный культурный центр значительно развился и изменился. Древние склады вековой давности из уютного уголка субкультур преобразовались в место для семейного отдыха, где дети и молодёжь могут отдохнуть на благоустроенной площадке, а родители провести время в кафе и салонах. Кроме того, здесь до сих пор обитают критические и современные театральные постановки Dirty Deal Teatro.</russian-snippet>
   </place>
   
   <place id="nailsmile">
     <name>Nail Smile</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Nail Smile</russian-name>
     <location>
       <latitude>56.942118</latitude><longitude>24.122880</longitude>
     </location>
     <snippet>Krustojumā esošs frizētavu-skaistumkopšanas salonu pāris ieintriģē ar pašu neapzināto vienotību. Ar pieticību un atrunām pārdevēja saka, ka par apkārtnē notiekošo neko nezina. Tomēr frizierītes pulcina rīdziniekus no visām pilsētas malām, vienlaicīgi radot teju nemanāmu, tomēr rajonu spilgti raksturojošu iespaidu par krievu-latviešu līdzāspastāvēšanu.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>На пересечении улиц имеющиеся парикмахерские-салоны красоты интригуют своим неосознанным единством. Со скромностью и отговорками парикмахеры говорят, что не в курсе, что там напротив. Однако обе привлекают посетителей со всех сторон города, создавая почти незаметную, но яркую отличительную черту района об успешном сосуществовании  русских и латышей.</russian-snippet>
   </place>
   
   <place id="sviestapika">
     <name>Kafejnīca “Sviesta pika”</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Кафе "Свиеста пика"</russian-name>
     <location>
       <latitude>56.942356</latitude><longitude>24.121587</longitude>
     </location>
     <snippet>Aiz privātas autostāvvietas uz Elijas un Puškina ielas stūra, kuru gadiem pārvalda tas pats uzraugs, atrodas kafejnīca "Sviesta pika", ko īpaši iecienījuši autoskolu instruktori. "Sviesta pikā" var ieskriet pēc zupas, kafijas un pusdienu piedāvājuma - ir izvēle starp soļanku un mājas soļanku.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>За частной стоянкой на углу улиц Элияс и Пушкина, которой годами заведует один и тот же смотритель, нахдится кафе "Свиеста пика", наиболее популярное среди инструкторов автошкол. В кафе можно забежать за супом, кофе и обеденным предложением - есть выбор между солянкой и домашней солянкой.</russian-snippet>
   </place>
   
   <place id="latgalite">
     <name>"Latgalīte"</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Латгальский рынок</russian-name>
     <location>
       <latitude>56.9426784</latitude><longitude>24.1290677060562</longitude>
     </location>
@@ -267,26 +267,26 @@ Memoriāls ir pieejams ikvienam un ir no apkārtnes un apkaimes vēstures neatda
 Jauni kolēģi te tiek gaidīti, bet nosacījums ir viens – netirgot to, ko var nopirkt ''Depo'', jo tam neesot jēgas. Jāpiedāvā interesantas mantas – tādas, kuras gribas gan nopirkt, gan vienkārši apskatīt.  Par drošības apsvērumiem arī jāuztraucas nav - vērtīgākas mantas nakts laikā iespējams sabāzt uz jumta. Kā sākt? Kur iegūt mantas, ko piedāvāt pirkt kārajiem?  Mantu sagādniekus, kuri ir katra tirgoņa palīgs un apgrūtinājums vienlaikus, iespējams atpazīt pēc tā, ka tiem rokās ir lieli maisi. Kāds pieklājīga paskata kungs no maisa izvelk pamatīgu zupas kausu, sitot sev pa galvu un reklamējot: ''Tukša muca tālu skan! Pavei', šitais ir smags, tas ir īsts pašaizsardzības ierocis!''. Garantēts ir viens – ''Latgalītē'', gan kā pircējs, gan kā tirgotājs, pats esi sev karalis. Līdz kādai summai nokaulēsi – tik arī maksāsi. Dāma, kura tirgo retro traukus, priekšpusdienā jau vācās nost, jo laiks ārā nav labs: ''Čau!'', viņa nosaka un dodas prom.
 
 Cilvēks ''Latgalītē'' tiek gaidīts, un viss cilvēciskais ''Latgalītē'' ir cieņā. ''Vajag darīt! Nevajag iznīcināt ''Latgalīti'', vajag to atdzīvināt!'', saka kāds tirgonis, kas atbalstījies pret Rīgas Domes pērn finansēto plastmasas kiosku.</story>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>В параллельныой реальности, построеной из ДСП и полиэтиленовой пленки представителям бюрократии слишком холодно. Хозяева своей жизни здесь припасли для вас всё - от аккумулятора до дневника одинокого солдата. '' Да, у нас всё хорошо, и наркоманов здесь нет," объясняет один из местных, вытирая о штаны капающее с рук моторное масло.</russian-snippet>
   </place>
 
   <place id="apgerbu-veikals">
     <name>Apģērbu veikals</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Магазин одежды</russian-name>
     <location>
       <latitude>56.9401</latitude><longitude>24.127702</longitude>
     </location>
     <snippet>Kādreiz šeit strādāja bārs, kur vietējie pēc iedzeršanas gāja “pār ielas ēst šašliku”, un ar apaļiem vēderiem čāpoja atpakaļ. Tā stāsta iedzīvotāji, kuri vel joprojām ienāk aplūkot bijušās, iemīļotās “розoвые стены”. Tagad šeit cilvēku balsis ir aizvietotas ar nemitīgu džinsu šķirošanu. Drēbes šeit ir uzticamas un, galvenais, lētas, jo “laiki diemžēl paliek arvien grūtāki”.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Когда-то здесь был бар, из которого местные после употребления алкоголя переходили через улицу „поесть шашлычку", и с круглыми животами топали назад. Так рассказывают жители, которые до сих пор заходят поглазеть на бывшие, любимые "розoвые стены". Теперь здесь голоса людей заменены на непрекращающуюся сортировку джинсов. Одежда здесь надёжная,и, главное, дешёвая, „а времена, к сожалению, все труднее и труднее."</russian-snippet>
   </place>
 
   <place id="t17">
     <name>Free Riga Turgeņeva ielas rezidence (T17)</name>
-    <russian-name>TODO: Russian name</russian-name>
+    <russian-name>Резиденция Free Riga на улице Тургенева (T17)</russian-name>
     <location>
       <latitude>56.94231505</latitude><longitude>24.1201374242082</longitude>
     </location>
     <snippet>Neuzkrītoša, teju 200 gadus veca divstāvu dzīvojamā ēka. Mājas otrais stāvs pēc pieciem tukšiem gadiem ir ieguvis otro elpu - tur tagad apmetušies Free Riga rezidenti. Kaimiņu uzmanību piesaista pie sētas pieslēgtie ērmriteņi, un pamazām tiek iestaigāta taciņa, lai atvērtu šo māju pasākumiem un jaunām iniciatīvām.</snippet>
-    <russian-snippet>TODO: Russian snippet</russian-snippet>
+    <russian-snippet>Ненавязчивый, почти 200-летний двухэтажный жилой дом. Часть здания на втором этаже после пяти лет запустения получила второе дыхание - тут теперь пребывают резиденты Free Riga.  Внимание соседей привлекают припаркованные у забора самодельные велосипеды, и постепенно этот дом всё больше открывается новым мероприятиям и инициативам.</russian-snippet>
   </place>
 </places>

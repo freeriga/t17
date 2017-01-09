@@ -65,7 +65,7 @@ html.map h1 {
   border-bottom: 1px solid #ccc;
 }
 
-footer { padding: .5rem 1rem .75rem 1rem; text-align: center; }
+footer { padding: .5rem; text-align: center; }
 
 .index-column { background-color: #fffff7; }
 
@@ -315,6 +315,6 @@ html.map h1 img {
   margin-right: .5em;
 }
 
-html.map h1 { line-height: 1.7rem; }
+html.map h1 { line-height: 1.3rem; }
 
 .language-choices span { font-weight: normal; }
