@@ -6,8 +6,10 @@ var unhighlightTimeout
 var storyListElement = document.querySelector("ul.stories")
 var mapElement = document.querySelector("#mapelement")
 
+var isBanner = document.body.parentElement.className == "root-banner"
+
 map = L.map("mapelement", {
-  zoomControl: true,
+  zoomControl: false,
   scrollWheelZoom: false,
   attributionControl: false,
   zoomControl: false
@@ -24,9 +26,11 @@ map.addControl(L.control.attribution({
   prefix: ""
 }))
 
-map.addControl(L.control.zoom({
-  position: "topright"
-}))
+if (!isBanner) {
+  map.addControl(L.control.zoom({
+    position: "topright"
+  }))
+}
 
 // Collect data about places from HTML
 places = queryAll(document, "li.place").map(

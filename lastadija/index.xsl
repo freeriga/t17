@@ -127,6 +127,10 @@
           <meta property="og:title" content="{$title}"/>
           <meta property="og:description" content="{$description}"/>
           <meta property="og:type" content="website"/>
+          <meta property="og:image"
+                content="https://t17.lv/lastadija/{$lang}/banner.png"/>
+          <meta property="og:image:width" content="1200"/>
+          <meta property="og:image:height" content="630"/>
   
           <title>
             <xsl:value-of select="$title"/>
@@ -180,6 +184,32 @@
             </footer>
           </section>
           <script src="../../smoothscroll.js"></script>
+          <script src="../index.js"></script>
+        </body>
+      </html>
+    </exsl:document>
+    <exsl:document
+        href="{$lang}/banner.html"
+        method="html"
+        indent="yes"
+        doctype-system="about:legacy-compat"
+        encoding="utf-8">
+      <html class="root-banner" data-lang="{$lang}">
+        <head>
+          <xsl:call-template name="common-meta">
+            <xsl:with-param name="prefix">../</xsl:with-param>
+          </xsl:call-template>
+        </head>
+        <body>
+          <header>
+            <h1>
+              <xsl:call-template name="translate-meeting-with-lastadija"/>
+            </h1>
+          </header>
+          <ul class="stories">
+            <xsl:apply-templates select="place" mode="index"/>
+          </ul>
+          <div class="map" id="mapelement"/>
           <script src="../index.js"></script>
         </body>
       </html>

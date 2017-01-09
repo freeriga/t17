@@ -177,6 +177,13 @@ html.banner .map-icon {
   line-height: 46px !important;
 }
 
+html.root-banner .map-icon {
+  font-size: 20px !important;
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 32px !important;
+}
+
 .leaflet-container { font: inherit; }
 
 .leaflet-popup-content-wrapper {
@@ -260,13 +267,20 @@ html.story .snippet {
 }
 
 html.banner #index { display: none; }
-html.banner header {
+html.banner header, html.root-banner header {
   z-index: 9999; position: absolute;
-  top: 0px;
   font-size: 43px;
   width: 1200px;
   line-height: 1;
-/*  text-align: center !important; */
+}
+
+html.banner header {
+  top: 0px;
+}
+
+html.root-banner header {
+  top: 120px;
+  text-align: center;
 }
 
 html.banner header {
@@ -289,10 +303,6 @@ html.banner h2 div {
   background-color: white;
   padding: .1em .25em;
   font-weight: bold;
-}
-
-html.banner .map-icon {
-  transform: scale(2);
 }
 
 html.map .fb-like {
@@ -318,3 +328,21 @@ html.map h1 img {
 html.map h1 { line-height: 1.3rem; }
 
 .language-choices span { font-weight: normal; }
+
+html.root-banner .stories { display: none; }
+html.root-banner #mapelement {
+  width: 1200px;
+  height: 630px;
+  border: 0;
+}
+
+html.root-banner header {
+  display: inline-block;
+}
+
+html.root-banner h1 {
+  display: inline-block;
+  background-color: white;
+  padding: .2em;
+  
+}
