@@ -54,7 +54,7 @@
 
   <xsl:variable name="url">
     <xsl:choose>
-      <xsl:when test="$lang = 'lv'">https://t17.lv/lastadija/</xsl:when>
+      <xsl:when test="$lang = 'lv'">https://t17.lv/lastadija/lv/</xsl:when>
       <xsl:when test="$lang = 'ru'">https://t17.lv/lastadija/ru/</xsl:when>
     </xsl:choose>
   </xsl:variable>
