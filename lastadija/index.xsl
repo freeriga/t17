@@ -12,72 +12,198 @@
       doctype-system="about:legacy-compat"
       encoding="utf-8"/>
 
+  <!--
+  <xsl:template name="translate-">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">
+      </xsl:when>
+      <xsl:when test="$lang = 'ru'">
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+  -->
+
+  <xsl:variable name="title">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">Tikšanās ar Lastādiju</xsl:when>
+      <xsl:when test="$lang = 'ru'">TODO: Russian title</xsl:when>
+    </xsl:choose>
+  </xsl:variable>
+  
+  <xsl:template name="translate-meeting-with-lastadija">
+    <xsl:value-of select="$title"/>
+  </xsl:template>
+
+  <xsl:template name="translate-byline">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">
+        veidoja
+        <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
+        <a href="http://t17.lv"><b>T17</b></a>
+        un
+        <b>LU antropoloģijas studenti</b>
+        2016, 2017
+      </xsl:when>
+      <xsl:when test="$lang = 'ru'">
+        TODO: Russian byline.
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:variable name="appid">716860265144744</xsl:variable>
+
+  <xsl:variable name="url">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">https://t17.lv/lastadija/</xsl:when>
+      <xsl:when test="$lang = 'ru'">https://t17.lv/lastadija/ru/</xsl:when>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="locale">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">lv_LV</xsl:when>
+      <xsl:when test="$lang = 'ru'">ru_RU</xsl:when>
+    </xsl:choose>
+  </xsl:variable>
+  
+  <xsl:variable name="description">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.</xsl:when>
+      <xsl:when test="$lang = 'ru'">TODO: Russian description.</xsl:when>
+    </xsl:choose>
+  </xsl:variable>
+  
+  <xsl:template name="translate-about-map">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">Par karti</xsl:when>
+      <xsl:when test="$lang = 'ru'">О карте</xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="translate-submit-story">
+    <xsl:choose>
+      <xsl:when test="$lang = 'lv'">Iesniegt stāstu</xsl:when>
+      <xsl:when test="$lang = 'ru'">TODO: Russian submit</xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="facebook-init-script">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '716860265144744',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+      };
+    
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/lv_LV/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </xsl:template>
+  
   <xsl:template match="places">
-    <html class="map">
-      <head>
-        <xsl:call-template name="common-meta"/>
-        <meta property="fb:app_id" content="716860265144744"/>
-        <meta property="og:url" content="https://t17.lv/lastadija/"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:locale" content="lv_LV"/>
-        <meta property="og:title" content="Tikšanās ar Lastādiju"/>
-        <meta property="og:description" content="Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu."/>
-        <title>Tikšanās ar Lastādiju</title>
-      </head>
-      <body>
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '716860265144744',
-              xfbml      : true,
-              version    : 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-          };
-        
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "//connect.facebook.net/lv_LV/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <section class="index-column">
-          <h1>
-            Tikšanās ar Lastādiju
-            <a href="par-karti">❓ Par karti</a>
-            <a id="submitlink" href="papildinat-karti">✎ Iesniegt stāstu</a>
-          </h1>
-          <ul class="stories">
-            <aside>
-              Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.
-            </aside>
-            <xsl:apply-templates select="place" mode="index"/>
-          </ul>
-        </section>
-        <section class="map-column">
-          <div class="map" id="mapelement"/>
-          <footer>
-            <span>
-            veidoja
-            <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
-            <a href="http://t17.lv"><b>T17</b></a>
-            un
-            <b>LU antropoloģijas studenti</b>
-            2016, 2017
-            </span>
-            <div class="fb-like" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-          </footer>
-        </section>
-        <script src="../smoothscroll.js"></script>
-        <script src="index.js"></script>
-      </body>
-    </html>
+    <exsl:document
+        href="{$lang}/index.html"
+        method="html"
+        indent="yes"
+        doctype-system="about:legacy-compat"
+        encoding="utf-8">
+      <html class="map" data-lang="{$lang}">
+        <head>
+          <xsl:call-template name="common-meta">
+            <xsl:with-param name="prefix">../</xsl:with-param>
+          </xsl:call-template>
+  
+          <meta property="fb:app_id" content="{$appid}"/>
+          <meta property="og:url" content="{$url}"/>
+          <meta property="og:locale" content="{$locale}"/>
+          <meta property="og:title" content="{$title}"/>
+          <meta property="og:description" content="{$description}"/>
+          <meta property="og:type" content="website"/>
+  
+          <title>
+            <xsl:value-of select="$title"/>
+          </title>
+        </head>
+        <body>
+          <xsl:call-template name="facebook-init-script"/>
+          <section class="index-column">
+            <h1>
+              <xsl:call-template name="translate-meeting-with-lastadija"/>
+              <span class="language-choices">
+                <xsl:choose>
+                  <xsl:when test="$lang = 'lv'">
+                    <a href="../ru">Русский</a>
+                  </xsl:when>
+                  <xsl:when test="$lang = 'ru'">
+                    <a href="../lv">Latviešu</a>
+                  </xsl:when>
+                </xsl:choose>
+              </span>
+              <a href="par-karti">
+                ❓
+                <xsl:call-template name="translate-about-map"/>
+              </a>
+              <a id="submitlink" href="papildinat-karti">
+                ✎
+                <xsl:call-template name="translate-submit-story"/>
+              </a>
+            </h1>
+            <ul class="stories">
+              <aside>
+                <div class="fb-like"
+                     data-layout="button_count"
+                     data-action="like"
+                     data-size="large"
+                     data-show-faces="true"
+                     data-share="true">
+                </div>
+                <xsl:value-of select="$description"/>
+
+              </aside>
+              <xsl:apply-templates select="place" mode="index"/>
+            </ul>
+          </section>
+          <section class="map-column">
+            <div class="map" id="mapelement"/>
+            <footer>
+              <span>
+                <xsl:call-template name="translate-byline"/>
+              </span>
+            </footer>
+          </section>
+          <script src="../../smoothscroll.js"></script>
+          <script src="../index.js"></script>
+        </body>
+      </html>
+    </exsl:document>
     <xsl:apply-templates select="place" mode="place-file"/>
   </xsl:template>
 
   <xsl:template match="place" mode="index">
+    <xsl:variable name="name">
+      <xsl:choose>
+        <xsl:when test="$lang = 'lv'">
+          <xsl:value-of select="name"/>
+        </xsl:when>
+        <xsl:when test="$lang = 'ru'">
+          <xsl:value-of select="russian-name"/>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="has-story">
+      <xsl:choose>
+        <xsl:when test="$lang = 'lv' and story">true</xsl:when>
+        <xsl:when test="$lang = 'ru' and russian-story">true</xsl:when>
+      </xsl:choose>
+    </xsl:variable>
     <li
         class="place"
         data-coords="{./location/latitude}, {./location/longitude}"
@@ -89,14 +215,14 @@
         </span>
         <span class="name-container">
           <xsl:choose>
-            <xsl:when test="story">
+            <xsl:when test="$has-story = 'true'">
               <a class="name" href="stasts/{@id}" target="{@id}">
-                <b><xsl:value-of select="name" /></b>
+                <b><xsl:value-of select="$name" /></b>
               </a>
             </xsl:when>
             <xsl:otherwise>
               <a class="name" href="stasts/{@id}" target="{@id}">
-                <xsl:value-of select="name" />
+                <xsl:value-of select="$name" />
               </a>
             </xsl:otherwise>
           </xsl:choose>
@@ -106,13 +232,60 @@
         <span>
         </span>
         <p>
-          <xsl:apply-templates select="snippet"/>
+          <xsl:choose>
+            <xsl:when test="$lang = 'lv'">
+              <xsl:apply-templates select="snippet"/>
+            </xsl:when>
+            <xsl:when test="$lang = 'ru'">
+              <xsl:apply-templates select="russian-snippet"/>
+            </xsl:when>
+          </xsl:choose>
         </p>
       </div>
     </li>
   </xsl:template>
 
   <xsl:template match="place" mode="place-file">
+    <xsl:variable name="name">
+      <xsl:choose>
+        <xsl:when test="$lang = 'lv'">
+          <xsl:value-of select="name"/>
+        </xsl:when>
+        <xsl:when test="$lang = 'ru'">
+          <xsl:value-of select="russian-name"/>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:variable>
+    
+    <xsl:variable name="snippet">
+      <xsl:choose>
+        <xsl:when test="$lang = 'lv'">
+          <xsl:value-of select="snippet"/>
+        </xsl:when>
+        <xsl:when test="$lang = 'ru'">
+          <xsl:value-of select="russian-snippet"/>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:variable>
+    
+    <xsl:variable name="story">
+      <xsl:choose>
+        <xsl:when test="$lang = 'lv'">
+          <xsl:apply-templates select="story"/>
+        </xsl:when>
+        <xsl:when test="$lang = 'ru'">
+          <xsl:apply-templates select="russian-story"/>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:variable>
+
+    <xsl:variable name="has-story">
+      <xsl:choose>
+        <xsl:when test="$lang = 'lv' and story">true</xsl:when>
+        <xsl:when test="$lang = 'ru' and russian-story">true</xsl:when>
+      </xsl:choose>
+    </xsl:variable>
+    
     <exsl:document
         href="stasts/{@id}/banner.html"
         method="html"
@@ -122,7 +295,7 @@
       <html class="banner">
         <head>
           <xsl:call-template name="common-meta">
-            <xsl:with-param name="prefix">../../</xsl:with-param>
+            <xsl:with-param name="prefix">../../../</xsl:with-param>
           </xsl:call-template>
         </head>
         <body>
@@ -132,14 +305,13 @@
           </section>
           <header>
             <h1>
-              <div>Tikšanās ar</div>
-              <div>Lastādiju</div>
+              <div><xsl:value-of select="$title"/></div>
             </h1>
             <h2>
-              <div><xsl:value-of select="name"/></div>
+              <div><xsl:value-of select="$name"/></div>
             </h2>
           </header>
-          <script src="../../banner.js"></script>
+          <script src="../../../banner.js"></script>
         </body>
       </html>
     </exsl:document>
@@ -152,17 +324,19 @@
       <html class="story">
         <head>
           <xsl:call-template name="common-meta">
-            <xsl:with-param name="prefix">../../</xsl:with-param>
+            <xsl:with-param name="prefix">../../../</xsl:with-param>
           </xsl:call-template>
-          <title><xsl:value-of select="./name"/> (Tikšanās ar Lastādiju)</title>
-          <meta property="og:url" content="https://t17.lv/lastadija/stasts/{@id}/"/>
+          <title>
+            <xsl:value-of select="$name"/> (<xsl:value-of select="$title"/>)
+          </title>
+          <meta property="og:url" content="https://t17.lv/lastadija/{$lang}/stasts/{@id}/"/>
           <meta property="og:type" content="place"/>
-          <meta property="fb:app_id" content="716860265144744"/>
-          <meta property="og:locale" content="lv_LV"/>
-          <meta property="og:title" content="{name}"/>
-          <meta property="og:description" content="{snippet}"/>
+          <meta property="fb:app_id" content="{$appid}"/>
+          <meta property="og:locale" content="{$locale}"/>
+          <meta property="og:title" content="{$name}"/>
+          <meta property="og:description" content="{$snippet}"/>
           <meta property="og:image"
-                content="https://t17.lv/lastadija/stasts/{@id}/banner.png"/>
+                content="https://t17.lv/lastadija/{$lang}/stasts/{@id}/banner.png"/>
           <meta property="og:image:width" content="1200"/>
           <meta property="og:image:height" content="630"/>
           <meta property="place:location:latitude" content="{location/latitude}"/>
@@ -191,20 +365,20 @@
              }(document, 'script', 'facebook-jssdk'));
           </script>
           <header>
-            <h1><a href="../..">◂ Tikšanās ar Lastādiju</a></h1>
+            <h1><a href="../..">◂ <xsl:value-of select="$title"/></a></h1>
           </header>
           <article data-coords="{./location/latitude}, {./location/longitude}">
             <h3>
-              <span id="index"><xsl:number/></span>.&#160;&#160;<xsl:value-of select="name"/>
+              <span id="index"><xsl:number/></span>.&#160;&#160;<xsl:value-of select="$name"/>
             </h3>
             <section class="map" id="mapelement"></section>
             <xsl:choose>
-              <xsl:when test="story">
-                <p class="snippet"><xsl:apply-templates select="snippet"/></p>
-                <xsl:apply-templates select="story"/>
+              <xsl:when test="$has-story = 'true'">
+                <p class="snippet"><xsl:value-of select="$snippet"/></p>
+                <xsl:copy-of select="$story"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:apply-templates select="snippet"/>
+                <xsl:value-of select="$snippet"/>
               </xsl:otherwise>
             </xsl:choose>
 

@@ -42,6 +42,10 @@ html.story h1 a {
   color: #111;
 }
 
+html[data-lang=ru] .index-column {
+  width: 36rem;
+}
+
 .map-column {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -56,7 +60,7 @@ html.story h1 a {
 
 html.map h1 {
   text-align: center;
-  padding: .5rem 2rem .5rem 1rem;
+  padding: .5rem .5rem .5rem 1rem;
   background-color: white;
   border-bottom: 1px solid #ccc;
 }
@@ -87,6 +91,8 @@ html.map h1 {
   
   -ms-flex-negative: 0;
   flex-shrink: 0;
+
+  align-items: center;
 }
 
 h1 { font-weight: bold; }
@@ -196,7 +202,7 @@ html.banner .map-icon {
 coords  { display: none !important; }
 .summary { line-height: 1.3;  }
 
-html.map h1, html.map footer { font-size: 120%; }
+html.map h1, html.map footer { font-size: 110%; }
 
 li.place .number-container { padding-right: .75em; }
 li.place .name { vertical-align: -1px; }
@@ -290,5 +296,25 @@ html.banner .map-icon {
 }
 
 html.map .fb-like {
-  margin-left: 1rem;
+  display: block;
+  float: right;
+  margin: 0 0 .25em 1em;
+  opacity: 0.9;
 }
+
+html.map h1 img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.flags {
+  height: 1.5rem;
+}
+
+.flags img:first-child {
+  margin-right: .5em;
+}
+
+html.map h1 { line-height: 1.7rem; }
+
+.language-choices span { font-weight: normal; }

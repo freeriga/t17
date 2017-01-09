@@ -13,10 +13,19 @@
       encoding="utf-8"/>
 
   <xsl:template match="site">
-    <style>
-      img { width: 50px; height: 50px; }
-    </style>
-    <xsl:apply-templates select="people/person"/>
+    <html>
+      <head>
+        <meta charset="utf-8"/>
+        <title>
+          <xsl:value-of select="homepage/title/text[@lang=$lang]"/>
+        </title>
+      </head>
+      <body>
+        <section>
+          <xsl:apply-templates select="homepage/header/text[@lang=$lang]"/>
+        </section>
+      </body>
+    </html>
   </xsl:template>
 
   <xsl:template match="people/person">

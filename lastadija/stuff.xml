@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stuff>
+  <title lang="lv">Tikšanās ar Lastādiju</title>
+  <title lang="ru">TODO: Russian site title</title>
+  <about-map>
+    <title lang="lv">Par Tikšanās ar Lastādiju</title>
+    <title lang="ru">TODO: Russian title</title>
+    <text lang="lv">
+      <p>
+        <b>Tikšanās ar Lastādiju</b> ir aicinājums tuvāk un personiskāk iepazīties ar šo apkaimi, atklājot tās cilvēciskos vaibstus un raksturu. Kartē Lastādijas tēls atklājas kā cilvēku stāstu un pieredzes kolāža, ko kartes lietotājs var piedzīvot arī pats, dodoties pastaigā un iepazīstot aprakstītās vietas.
+      </p>
+      <p>
+        Bet kas ir Lastādija? Kartes nosaukumā apspēlēts viens no apkaimes senākajiem vietvārdiem (rakstos no 1348.g.), kas norāda uz Lastādiju kā dzīvīgu tirdzniecības un prēču pārkraušanas vietu. Šodien esam to iezīmējuši kā teritoriju starp Daugavu, Lāčplēša ielu un dzelzceļu. Lastādija ir skanīgs, bet mūsdienās maz zināms apkaimes nosaukums – iespējams, tieši tāpēc piemērots, lai no jauna atklātu vienu no Maskavas forštates nezināmajām pusēm.
+      </p>
+      <p>
+        Tāpat kā Rīga, karte nekad nav gatava. Šobrīd atzīmēto vietu saraksts noteikti ir papildināms un visdrīzāk arī nebeidzams – katra vieta pilsētā ir apdzīvota ar stāstiem. Stāstu karte "Tikšanās ar Lastādiju" veidota 2016. gada rudenī, biedrībai Free Riga sadarbojoties ar Latvijas Universitātes antropoloģijas studentiem. Kartes pamatā ir tikšanās ar cilvēkiem, kas tepat tuvumā strādā, dzīvo un pavada savu ikdienu. Arī Tu vari papildināt karti ar savu stāstu - Iesniegt stāstu.
+      </p>
+      <p>
+        "Tikšanās ar Lastādiju" ir viens no Free Riga <a href="/">T17 rezidences</a> projektiem. Apkaimes kartes platformu izveidoja un attīstīja T17 rezidenti Ieva, Mikaels un Jāzeps. Kartes veidotājus vieno interese par to, kā apkārtējā vide un tāda vienkārša lieta kā pastaiga var ietekmēt mūsu uztveri un saikni ar cilvēkiem mums apkārt. Gatavojot “Tikšanos ar Lastādiju”, paši to arī izjutām – tuvāka vietējo kafejnīcu, veikaliņu un citu vietu iepazīšana apkaimi kopumā padarījusi daudz aptveramāku un pieejamāku.
+      </p>
+    </text>
+    <text lang="ru">
+      TODO: Russian text.
+    </text>
+    <people>
+      <person>
+        <name>Ieva Lange</name>
+        <avatar>/avatars/ieva.jpg</avatar>
+        <job lang="lv">Producer</job>
+        <job lang="ru">Todo: Russian</job>
+      </person>
+      <person>
+        <name>Jāzeps Bikše</name>
+        <avatar>/avatars/jazeps.jpg</avatar>
+        <job lang="lv">Producer</job>
+        <job lang="ru">Todo: Russian</job>
+      </person>
+      <person>
+        <name>Mikael Brockman</name>
+        <avatar>/avatars/mikael.jpg</avatar>
+        <job lang="lv">Layout and web</job>
+        <job lang="ru">Todo: Russian</job>
+      </person>
+    </people>
+  </about-map>
+  <story-form>
+    <title lang="lv">Iesniegt vietas aprakstu</title>
+    <title lang="ru">TODO: Russian title</title>
+    <p lang="lv">
+      Kartē cenšamies uzsvērt apkaimes cilvēku klātbūtni un viņu
+      skatījumu - aprakstot kādu detaļu, minot kādu citātu, kā arī
+      iekļaujot personīgo pieredzi.
+    </p>
+    <p lang="ru">
+      TODO: Russian.
+    </p>
+    <p lang="lv">
+      Līdzīgi kā šeit:
+    </p>
+    <p lang="ru">
+      TODO: Russian.
+    </p>
+    <snippet-examples>
+      <example lang="lv">
+        <name>Sarkanā Krusta sociālais centrs “Gaiziņš”</name>
+        <snippet>Dzeltenajā ēkā pie Centrāltirgus patvērumu un atbalstu rod cilvēki ar visdažādākajiem dzīvesstāstiem. Cits nāk pēc siltiem ziemas zābakiem vai pārtikas paciņas, cits izgulēt vakardienas reibumu, vēl kāds saņemt padomu un kādu uzmundrinošu vārdu. Ikdiena šeit ir krāsaina, bet, lai kādu dzīves ceļu ikviens no šejienes iemītniekiem būtu mērojis, visus vieno vēlme būt noderīgiem un pieņemtiem.</snippet>
+      </example>
+      <example lang="ru">
+        <name>TODO: Russian</name>
+        <snippet>TODO: Russian</snippet>
+      </example>
+      <example lang="lv">
+        <name>Vissvētās Dievmātes Pasludināšanas pareizticīgo baznīca</name>
+        <snippet>Pāri ielai pie policijas iecirkņa ēkas Gogoļa un Turgeņeva ielu krustojumā sēž vīrs un vēro putniņus. Viņš te nāk “katru dienu - desmit gadus jau”. Pareizticīgo krusts uztetovēts uz vidējā pirksta, vīrietis apliecina, ka brīvdienās cilvēku nāk maz. “Bet svētku dienās, jā – tad gan nāk.” Otrpus ielai baznīcas darbiniece gan par apmeklētāju daudzumu nesūdzas. Un nākot ne tikai pareizticīgie, bet arī luterāņi un katoļi. “Jo viņiem sveces tur savās baznīcās likt nav kur, un pasūtīt lūgšanas par drošību un veselību viņi nevar. Tāpēc viņi nāk šeit. Citās baznīcās tā neļauj, bet pie mums ļauj. Vot tā!”.</snippet>
+      </example>
+      <example lang="ru">
+        <name>TODO: Russian</name>
+        <snippet>TODO: Russian</snippet>
+      </example>
+      <example lang="lv">
+        <name>"Latgalīte"</name>
+        <snippet>No skaidu plāksnēm un plastmasas plēvēm būvētās paralēlajās realitātēs birokrātijai ir pārāk auksti. Savas dzīves karaļi jums sagādās visu - no akumulatora lādētāja līdz vientuļa zaldāta dienasgrāmatai. ''Tā jau mums viss ir labi, un narkomānu te nav,'' viņš bilst un noslauka biksēs no rokām pilošo motoreļļu.</snippet>
+      </example>
+      <example lang="ru">
+        <name>TODO: Russian</name>
+        <snippet>TODO: Russian</snippet>
+      </example>
+    </snippet-examples>
+    <form>
+      
+    </form>
+  </story-form>
+</stuff>

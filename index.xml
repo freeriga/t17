@@ -2,47 +2,53 @@
 <site>
   <people>
     <person>
-      <avatar>lastadija/par-karti/ieva2.jpg</avatar>
+      <avatar>avatars/ieva.jpg</avatar>
       <short-name>Ieva</short-name>
     </person>
     <person>
-      <avatar>lastadija/par-karti/jazeps.jpg</avatar>
+      <avatar>avatars/jazeps.jpg</avatar>
       <short-name>Jāzeps</short-name>
     </person>
     <person>
-      <avatar>img/1f639.svg</avatar>
+      <avatar>avatars/karlis.svg</avatar>
       <short-name>Kārlis</short-name>
     </person>
     <person>
-      <avatar>img/1f477.svg</avatar>
+      <avatar>avatars/krisjanis.svg</avatar>
       <short-name>Krišjānis</short-name>
     </person>
     <person>
-      <avatar>img/1f385.svg</avatar>
+      <avatar>avatars/marcis.svg</avatar>
       <short-name>Mārcis</short-name>
     </person>
     <person>
-      <avatar>lastadija/par-karti/mikael.jpg</avatar>
+      <avatar>avatars/mikael.jpg</avatar>
       <short-name>Mikael</short-name>
     </person>
     <person>
-      <avatar>img/1f600.svg</avatar>
+      <avatar>avatars/ray.svg</avatar>
       <short-name>Ray</short-name>
     </person>
   </people>
   <homepage>
     <title>
-      <lang code="lv">T17 rezidence</lang>
-      <lang code="en">T17 residence</lang>
+      <text lang="lv">T17 rezidence</text>
+      <text lang="en">T17 residence</text>
     </title>
     <header>
-      <lang code="lv">
+      <text lang="lv">
         <b>T17</b>
         (<a href="https://www.openstreetmap.org/way/113568992#map=18/56.94231/24.12014">
         Turgeņeva iela 17</a>)
         ir māja, kur dzīvo
         <a href="https://www.facebook.com/FREERIGA/">Free Riga</a>:
-      </lang>
+      </text>
+      <text lang="en">
+        <b>T17</b> (at <a
+        href="https://www.openstreetmap.org/way/113568992#map=18/56.94231/24.12014">
+        Turgeņeva iela 17</a>) is a residence house maintained by
+        <a href="https://www.facebook.com/FREERIGA/">Free Riga</a>.
+      </text>
     </header>
   </homepage>
 </site>
