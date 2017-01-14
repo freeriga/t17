@@ -86,7 +86,7 @@
         <snippet>TODO: Russian</snippet>
       </example>
     </snippet-examples>
-    <form action="/cgi-bin/submit-map-story">
+    <form action="/cgi-bin/submit-map-story.cgi">
       <input name="place-name" autofocus="true">Nosaukums</input>
       <input name="address">Adrese</input>
       <input name="short-story" placeholder="Līdz 100 v.">Īsais apraksts</input>
