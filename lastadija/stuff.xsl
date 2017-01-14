@@ -95,5 +95,31 @@
   <xsl:template match="b">
     <b><xsl:apply-templates/></b>
   </xsl:template>
+
+  <xsl:template match="form">
+    <form method="POST" action="{@action}">
+      <xsl:apply-templates />
+    </form>
+  </xsl:template>
+
+  <xsl:template match="input">
+    <label>
+      <span><xsl:apply-templates/></span>
+      <input name="{@name}"
+             autofocus="{@autofocus}"
+             placeholder="{@placeholder}"/>
+    </label>
+  </xsl:template>
+
+  <xsl:template match="textarea">
+    <label>
+      <span><xsl:apply-templates/></span>
+      <textarea name="{@name}"/>
+    </label>
+  </xsl:template>
+
+  <xsl:template match="submit">
+    <input type="submit" value="{.}"/>
+  </xsl:template>
   
 </xsl:stylesheet>
