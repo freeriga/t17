@@ -104,22 +104,22 @@
 
   <xsl:template match="input">
     <label>
-      <span><xsl:apply-templates/></span>
+      <span><xsl:apply-templates select="text[@lang=$lang]"/></span>
       <input name="{@name}"
              autofocus="{@autofocus}"
-             placeholder="{@placeholder}"/>
+             placeholder="{placeholder[@lang=$lang]}"/>
     </label>
   </xsl:template>
 
   <xsl:template match="textarea">
     <label>
-      <span><xsl:apply-templates/></span>
+      <span><xsl:apply-templates select="text[@lang=$lang]"/></span>
       <textarea name="{@name}"/>
     </label>
   </xsl:template>
 
   <xsl:template match="submit">
-    <input type="submit" value="{.}"/>
+    <input type="submit" value="{text[@lang=$lang]}"/>
   </xsl:template>
   
 </xsl:stylesheet>

@@ -45,7 +45,9 @@
         2016, 2017
       </xsl:when>
       <xsl:when test="$lang = 'ru'">
-        TODO: Russian byline.
+        составлена
+        при сотрудничестве <a href="https://www.facebook.com/FREERIGA/"><b>Free Рига</b></a>, <a href="http://t17.lv"><b>T17</b></a> со студентами антропологии ЛY
+        2016, 2017
       </xsl:when>
     </xsl:choose>
   </xsl:template>
@@ -69,7 +71,7 @@
   <xsl:variable name="description">
     <xsl:choose>
       <xsl:when test="$lang = 'lv'">Vai pazīsti apkaimi aiz Centrāltirgus jeb tuvējo Maskačku? Ar īpašu karti aicinām uz “Tikšanos ar Lastādiju” - Rīgās senāko priekšpilsētu. Kartē apkopoti 25 apkaimei raksturīgu vietu apraksti, kas radīti sarunās ar cilvēkiem, kas šeit dzīvo, strādā un pavada savu ikdienu.</xsl:when>
-      <xsl:when test="$lang = 'ru'">Встреча с Ластадией является приглашением получше и поближе познакомиться с этим округом, открывая его человеческие черты и характер. На карте образ Ластадии раскрывается как коллаж историй и опыта людей, который пользователь карты может испытать и на себе, отправляясь на неспешную прогулку и знакомясь с описанными местами.</xsl:when>
+      <xsl:when test="$lang = 'ru'">Знакомы ли вы с окрестностью сразу за центральным рынком или началом Maскачки? С помощью специальной карты приглашаем вас на "Встречи с Ластадией" - старейшим пригородом Риги. На карте собраны ​​25 описания характерных мест окрестности, созданных через разговоры с людьми, которые здесь живут, работают и проводят свою повседневную жизнь.</xsl:when>
     </xsl:choose>
   </xsl:variable>
   
@@ -83,7 +85,7 @@
   <xsl:template name="translate-submit-story">
     <xsl:choose>
       <xsl:when test="$lang = 'lv'">Iesniegt stāstu</xsl:when>
-      <xsl:when test="$lang = 'ru'">TODO: Russian submit</xsl:when>
+      <xsl:when test="$lang = 'ru'">Послать историю</xsl:when>
     </xsl:choose>
   </xsl:template>
 

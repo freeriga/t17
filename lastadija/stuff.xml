@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stuff>
   <title lang="lv">Tikšanās ar Lastādiju</title>
-  <title lang="ru">TODO: Russian site title</title>
+  <title lang="ru">Встреча с Ластадией</title>
   <about-map>
     <title lang="lv">Par Tikšanās ar Lastādiju</title>
-    <title lang="ru">TODO: Russian title</title>
+    <title lang="ru">Встреча с Ластадией</title>
     <text lang="lv">
       <p>
         <b>Tikšanās ar Lastādiju</b> ir aicinājums tuvāk un personiskāk iepazīties ar šo apkaimi, atklājot tās cilvēciskos vaibstus un raksturu. Kartē Lastādijas tēls atklājas kā cilvēku stāstu un pieredzes kolāža, ko kartes lietotājs var piedzīvot arī pats, dodoties pastaigā un iepazīstot aprakstītās vietas.
@@ -20,45 +20,50 @@
       </p>
     </text>
     <text lang="ru">
-      TODO: Russian text.
+      <p>
+        <b>Встреча с Ластадией</b> является приглашением получше и поближе познакомиться с этим округом, открывая его человеческие черты и характер. На карте образ Ластадии раскрывается как коллаж историй и опыта людей, который пользователь карты может испытать и на себе, отправляясь на неспешную прогулку и знакомясь с описанными местами.
+      </p>
+      <p>
+        Но что такое Ластадия? В названии карты обыгран один из самых древних географических названий округа (из писаний 1348 года), где Ластадия указывается как живой центр торговли и перегрузочных работ. Сегодня мы обозначили его как область между Даугавой, улицей Лачплеша и железной дорогой. Ластадия  - звучное, но мало кому известное название округа - возможно, именно поэтому оно поможет вновь открыть одну из неизвестных сторон Московского предместья.
+      </p>
+      <p>
+        Так же как и Рига, карта никогда не будет окончена. В настоящее время обозначенный список мест, безусловно, не является исчерпывающим, и, скорее всего, он нескончаем – каждое место города несёт в себе историю. Карта историй "Встреча с Ластадией" составлена осенью 2016 года, при сотрудничестве Free Рига со студентами антропологии Латвийского университета. Карта основана на встречах с людьми, которые работают, живут и проводят свою повседневную жизнь рядом.
+      </p>
+      <p>
+        "Встреча с Ластадией" является одним из проектов платформы Free Riga T17. Карта окрестности создана и разработана жителями резиденции T17 Иевой, Майклом и Язепом. Их объединил интерес к окружающей среде и то, как такая простая вещь, как прогулка может повлиять на наше восприятие и отношение к окружающим нас людям. Готовя "Встречи с Ластадией" они сами это прочувствовали - более близкое знакомство с местными кафе, магазинами и другими местами превратило для них окрестность в более постигаемую и доступную.
+      </p>
     </text>
     <people>
       <person>
         <name>Ieva Lange</name>
         <avatar>/avatars/ieva.jpg</avatar>
-        <job lang="lv">Producer</job>
-        <job lang="ru">Todo: Russian</job>
       </person>
       <person>
         <name>Jāzeps Bikše</name>
         <avatar>/avatars/jazeps.jpg</avatar>
-        <job lang="lv">Producer</job>
-        <job lang="ru">Todo: Russian</job>
       </person>
       <person>
         <name>Mikael Brockman</name>
         <avatar>/avatars/mikael.jpg</avatar>
-        <job lang="lv">Layout and web</job>
-        <job lang="ru">Todo: Russian</job>
       </person>
     </people>
   </about-map>
   <story-form>
     <title lang="lv">Iesniegt vietas aprakstu</title>
-    <title lang="ru">TODO: Russian title</title>
+    <title lang="ru">Послать историю</title>
     <p lang="lv">
       Kartē cenšamies uzsvērt apkaimes cilvēku klātbūtni un viņu
       skatījumu - aprakstot kādu detaļu, minot kādu citātu, kā arī
       iekļaujot personīgo pieredzi.
     </p>
     <p lang="ru">
-      TODO: Russian.
+      На карте мы пытаемся подчеркнуть присутствие окружающих людей и их взгляды - описывая некоторые подробности, ссылаясь на цитаты, а также опираясь на личный опыт.
     </p>
     <p lang="lv">
       Līdzīgi kā šeit:
     </p>
     <p lang="ru">
-      TODO: Russian.
+      Например:
     </p>
     <snippet-examples>
       <example lang="lv">
@@ -66,34 +71,59 @@
         <snippet>Dzeltenajā ēkā pie Centrāltirgus patvērumu un atbalstu rod cilvēki ar visdažādākajiem dzīvesstāstiem. Cits nāk pēc siltiem ziemas zābakiem vai pārtikas paciņas, cits izgulēt vakardienas reibumu, vēl kāds saņemt padomu un kādu uzmundrinošu vārdu. Ikdiena šeit ir krāsaina, bet, lai kādu dzīves ceļu ikviens no šejienes iemītniekiem būtu mērojis, visus vieno vēlme būt noderīgiem un pieņemtiem.</snippet>
       </example>
       <example lang="ru">
-        <name>TODO: Russian</name>
-        <snippet>TODO: Russian</snippet>
+        <name>Социальный центр Красного Креста  "Гайзиньш"</name>
+        <snippet>В жёлтом здании около Центрального рынка поддержку и приют находят люди с самыми различными жизненными историями. Кто-то приходит за теплыми зимними сапогами или продуктовыми наборами, кто-то - проспать вчерашнее похмелье, ещё кто-то - за советом и поддержкой. Повседневная жизнь здесь красочна, но, несмотря на образ жизни каждого из пришедших, всех объединяет желание быть полезными и принятыми.</snippet>
       </example>
       <example lang="lv">
         <name>Vissvētās Dievmātes Pasludināšanas pareizticīgo baznīca</name>
         <snippet>Pāri ielai pie policijas iecirkņa ēkas Gogoļa un Turgeņeva ielu krustojumā sēž vīrs un vēro putniņus. Viņš te nāk “katru dienu - desmit gadus jau”. Pareizticīgo krusts uztetovēts uz vidējā pirksta, vīrietis apliecina, ka brīvdienās cilvēku nāk maz. “Bet svētku dienās, jā – tad gan nāk.” Otrpus ielai baznīcas darbiniece gan par apmeklētāju daudzumu nesūdzas. Un nākot ne tikai pareizticīgie, bet arī luterāņi un katoļi. “Jo viņiem sveces tur savās baznīcās likt nav kur, un pasūtīt lūgšanas par drošību un veselību viņi nevar. Tāpēc viņi nāk šeit. Citās baznīcās tā neļauj, bet pie mums ļauj. Vot tā!”.</snippet>
       </example>
       <example lang="ru">
-        <name>TODO: Russian</name>
-        <snippet>TODO: Russian</snippet>
+        <name>Православная церковь Благовещения Пресвятой Богородицы</name>
+        <snippet>На противоположной стороне улицы, у здания полицейского участка на перекрёсте улиц Гоголя и Тургенева сидит мужчина с татуировкой православного креста на среднем пальце и наблюдает за птичками. Он приходит сюда "каждый день – уже десять лет," и заметил, что в выходные дни людей приходит немного. "Но на праздники, да, тогда толпами." На другой стороне улицы работница церкви на количество посетителей не жалуется. Приходят не только православные, но и католики и лютеране. "Им там свечки в своих церквях ставить некуда, и заказать молебен о здравии и панихиду они не могут. Поэтому они приходят сюда. Вот так!"</snippet>
       </example>
       <example lang="lv">
         <name>"Latgalīte"</name>
         <snippet>No skaidu plāksnēm un plastmasas plēvēm būvētās paralēlajās realitātēs birokrātijai ir pārāk auksti. Savas dzīves karaļi jums sagādās visu - no akumulatora lādētāja līdz vientuļa zaldāta dienasgrāmatai. ''Tā jau mums viss ir labi, un narkomānu te nav,'' viņš bilst un noslauka biksēs no rokām pilošo motoreļļu.</snippet>
       </example>
       <example lang="ru">
-        <name>TODO: Russian</name>
-        <snippet>TODO: Russian</snippet>
+        <name>Латгальский рынок</name>
+        <snippet>В параллельныой реальности, построеной из ДСП и полиэтиленовой пленки представителям бюрократии слишком холодно. Хозяева своей жизни здесь припасли для вас всё - от аккумулятора до дневника одинокого солдата. '' Да, у нас всё хорошо, и наркоманов здесь нет," объясняет один из местных, вытирая о штаны капающее с рук моторное масло.</snippet>
       </example>
     </snippet-examples>
     <form action="/cgi-bin/submit-map-story.cgi">
-      <input name="place-name" autofocus="true">Nosaukums</input>
-      <input name="address">Adrese</input>
-      <input name="short-story" placeholder="Līdz 100 v.">Īsais apraksts</input>
-      <textarea name="full-story">Garais apraksts (nav obligāts)</textarea>
-      <input name="contact" placeholder="E-pasts vai telefons">Kontaktinformācija</input>
-      <input name="contact-name">Vārds</input>
-      <submit>Iesniegt</submit>
+      <input name="place-name" autofocus="true">
+        <text lang="lv">Nosaukums</text>
+        <text lang="ru">Название</text>
+      </input>
+      <input name="address">
+        <text lang="lv">Adrese</text>
+        <text lang="ru">Адрес</text>
+      </input>
+      <input name="short-story">
+        <placeholder lang="lv">Līdz 100 v.</placeholder>
+        <placeholder lang="ru">до 100 с.</placeholder>
+        <text lang="lv">Īsais apraksts</text>
+        <text lang="ru">Краткое описание</text>
+      </input>
+      <textarea name="full-story">
+        <text lang="lv">Garais apraksts (nav obligāts)</text>
+        <text lang="ru">Подробное описание (необязательно)</text>
+      </textarea>
+      <input name="contact">
+        <placeholder lang="lv">E-pasts vai telefons</placeholder>
+        <placeholder lang="ru">эл.почта или номер телефона</placeholder>
+        <text lang="lv">Kontaktinformācija</text>
+        <text lang="ru">Контактная информация</text>
+      </input>
+      <input name="contact-name">
+        <text lang="lv">Vārds</text>
+        <text lang="ru">Имя</text>
+      </input>
+      <submit>
+        <text lang="lv">Iesniegt</text>
+        <text lang="ru">Послать</text>
+      </submit>
     </form>
   </story-form>
 </stuff>
