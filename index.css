@@ -1,14 +1,13 @@
 * { box-sizing: border-box; }
-html { font: 14px/1.2 rubik, helvetica, sans-serif; }
+html { font: 14px/1.2 "Fantasque Sans Mono", courier; }
 * { margin: 0; padding: 0; }
 h1 { font-size: 130%; }
 h2 { font-size: 110%; font-weight: normal; }
 h2 { color: #666; }
 p { color: #333; }
-body { padding: 1em; }
 h2 { margin-bottom: .5rem; }
 .sc { text-transform: uppercase; }
-.sc { font-size: 80%; }
+.sc { font-size: 85%; }
 a { text-decoration: none; }
 p { margin-bottom: .5rem; }
 img { width: 100%; }
@@ -19,7 +18,7 @@ img { transition: 1s ease all; }
 
 a:not(:visited) { color: mediumblue; }
 
-body { display: flex; flex-wrap: wrap; }
+main { display: flex; flex-wrap: wrap; }
 
 .project { position: relative; }
 
@@ -36,8 +35,6 @@ body { display: flex; flex-wrap: wrap; }
 @media (min-width: 800px) {
   html { font-size: 20px; }
   header { width: 18rem; }
-  body > * { margin: .25rem 1rem; }
-  body { max-width: 50rem; margin: 0 auto; }
 }
 
 .projects { display: flex; flex-wrap: wrap; }
@@ -52,3 +49,25 @@ body { display: flex; flex-wrap: wrap; }
 .date { display: inline-block; width: 6em; }
 
 ul { list-style-type: none; }
+
+header {
+  background-image: url(img/house.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  padding: 1rem;
+  color: white;
+  font-size: 230%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 0 0 4px black, 0 0 20px black;
+  border-bottom: 1rem solid yellow;
+}
+
+header h2, header p { color: white; }
+
+article { margin: 1rem; }
+article { max-width: 50%; }
