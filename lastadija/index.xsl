@@ -39,14 +39,14 @@
       <xsl:when test="$lang = 'lv'">
         veidoja
         <a href="https://www.facebook.com/FREERIGA/"><b>Free Riga</b></a>,
-        <a href="http://t17.lv"><b>T17</b></a>
+        <a href="https://t17.lv"><b>T17</b></a>
         un
         <b>LU antropoloģijas studenti</b>
         2016, 2017
       </xsl:when>
       <xsl:when test="$lang = 'ru'">
         составлена
-        при сотрудничестве <a href="https://www.facebook.com/FREERIGA/"><b>Free Рига</b></a>, <a href="http://t17.lv"><b>T17</b></a> со студентами антропологии ЛY
+        при сотрудничестве <a href="https://www.facebook.com/FREERIGA/"><b>Free Рига</b></a>, <a href="https://t17.lv"><b>T17</b></a> со студентами антропологии ЛY
         2016, 2017
       </xsl:when>
     </xsl:choose>
@@ -185,7 +185,7 @@
               </span>
             </footer>
           </section>
-          <script src="../../smoothscroll.js"></script>
+          <script src="../smoothscroll.js"></script>
           <script src="../index.js"></script>
         </body>
       </html>
@@ -437,10 +437,10 @@
   <xsl:template name="common-meta">
     <xsl:param name="prefix"/>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="{$prefix}../map/leaflet.css"/>
-    <link rel="stylesheet" href="{$prefix}../font.css"/>
+    <link rel="stylesheet" href="{$prefix}map/leaflet.css"/>
+    <link rel="stylesheet" href="{$prefix}font.css"/>
     <link rel="stylesheet" href="{$prefix}index.css"/>
-    <script src="{$prefix}../map/leaflet.js"></script>
+    <script src="{$prefix}map/leaflet.js"></script>
   </xsl:template>
   
 </xsl:stylesheet>

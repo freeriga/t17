@@ -21,7 +21,7 @@
       <html>
         <head>
           <link rel="stylesheet" href="../../papildinat-karti.css"/>
-          <link rel="stylesheet" href="../../../font.css"/>
+          <link rel="stylesheet" href="../../font.css"/>
           <title><xsl:value-of select="title[@lang=$lang]"/></title>
         </head>
         <body>
@@ -63,7 +63,7 @@
       <html>
         <head>
           <link rel="stylesheet" href="../../par-karti.css"/>
-          <link rel="stylesheet" href="../../../font.css"/>
+          <link rel="stylesheet" href="../../font.css"/>
           <title><xsl:value-of select="$title"/></title>
         </head>
         <body>

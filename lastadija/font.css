@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Rubik";
+  font-weight: normal;
+  src: url("font/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  src: url("font/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: bold;
+  src: url("font/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family; "Fantasque Sans Mono";
+  font-weight: normal;
+  src: url("font/FantasqueSansMono-Regular.ttf");
+}
+@font-face {
+  font-family; "Fantasque Sans Mono";
+  font-weight: bold;
+  src: url("font/FantasqueSansMono-Bold.ttf");
+}
