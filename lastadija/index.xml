@@ -288,4 +288,49 @@ Cilvēks ''Latgalītē'' tiek gaidīts, un viss cilvēciskais ''Latgalītē'' ir
     <snippet>Neuzkrītoša, teju 200 gadus veca divstāvu dzīvojamā ēka. Mājas otrais stāvs pēc pieciem tukšiem gadiem ir ieguvis otro elpu - tur tagad apmetušies Free Riga rezidenti. Kaimiņu uzmanību piesaista pie sētas pieslēgtie ērmriteņi, un pamazām tiek iestaigāta taciņa, lai atvērtu šo māju pasākumiem un jaunām iniciatīvām.</snippet>
     <russian-snippet>Ненавязчивый, почти 200-летний двухэтажный жилой дом. Часть здания на втором этаже после пяти лет запустения получила второе дыхание - тут теперь пребывают резиденты Free Riga.  Внимание соседей привлекают припаркованные у забора самодельные велосипеды, и постепенно этот дом всё больше открывается новым мероприятиям и инициативам.</russian-snippet>
   </place>
+
+  <place id="panna">
+    <name>Panna (skvērs pie Centrālstacijas)</name>
+    <location>
+      <latitude>56.9428442</latitude><longitude>24.1222155</longitude>
+    </location>
+    <snippet>Apaļais skvērs pie dzelzceļa stacijas pretim Satiksmes ministrijai – neformāla bezpajumtnieku un brīvu klaidoņu tikšanās un informācijas apmaiņas vieta, saukta par pannu (“skovoroda”). Kad mobilie telefoni bija ne gandrīz katram bezpajumtniekam, te gan apmainījās ziņām par to, kurš pazudis, kurš miris, cietumā vai slimnīcā, gan sastiķēja, gan dabūja, ko kuram vajadzēja, gan par palīdzību – kur ko var dabūt, kur kas slēgts, kad māsas Terēzes organizē braucienu uz Bruknu. Tepat arī policija savāc “sagurušos”.</snippet>
+  </place>
+
+  <place id="veca-veikals">
+    <name>Veča veikals</name>
+    <location>
+      <latitude>56.9412872</latitude><longitude>24.1176237</longitude>
+    </location>
+    <snippet>Tas tiešām ir pārtikas produktu veikals Maskavas ielā, tieši pie tramvaja pieturas “Turgeņeva iela”. Ap 2000. gadu veikalā vēl bija vairākas pārdevējas, neliels bāriņš, vienmēr vietējo iedzīvotāju mīlēts. Vietējie iedzīvotāji iedzēra, vecis piedāvāja plašu zivju produkciju. Par veča veikalu tas kļuvis pēdējos 5 gadus, tagad veikala īpašnieks strādā viens un nīgri klibo ap leti. Daži draugi minējuši, ka ko tādu viņi nav redzējuši ne Ukrainā, ne Baltkrievijā. Veča veikalam piemīt savdabīga smarža. Pārdod viņš alkoholu un lētus pārtikas produktus, reizēm atlikumā izdod pārāk maz, reizēm par daudz. Brikešu cenas atkarīgas no termometra stabiņa.</snippet>
+  </place>
+
+  <place id="peldvieta-nr1">
+    <name>Peldvieta Nr 1</name>
+    <location>
+      <latitude>56.941922</latitude><longitude>24.113468</longitude>
+    </location>
+    <snippet>Šai vietai nav adreses, bet to var atpazīt pēc zīmes, ko ar draugiem tulkojam "Uzmanību, šeit var iekrist ūdenī". Karstās vasaras dienās strādājot pavisam netālu nelielā birojā, nereti esam sekojuši zīmes vilinājumam un šo varbūt ne-vietu izvēlējušies par savu Rīgas centra peld-vietu.</snippet>
+    <story>Peldvieta ir pavisam netīši aprīkota ar gandrīz izcilu infrastruktūru. Tā ir viegli pieejama, bet tai pat laikā no pārējās krastmalas promenādes noslēgta kabata. Vienā stūrī atrodama ērta vieta, kur pārģērbties, un lietus gadījumā mantas nolikt zem tilta. Ūdenī mesties var, lecot no paaustinājuma, savukārt mierīgākas peldes meklētāji var upē iemērcēties, nokāpjot pa kāpnēm.
+    
+Iespējams, lielākais peldvietas bonuss ir skats uz pilsētu, īpaši agros rītos vai naksnīgas peldes laikā. Šī ir lieliska peldvieta randiņam, ja pāris ir pietiekami atbrīvoti un meklē neparastu pieredzi. Vienīgā ekstra, ko vēl varētu vēlēties, ir duša, bet tādā gadījumā, lai iederētos peldvietas kanonā, tai droši vien vajadzētu būt auto mazgāšanas šļūtenei vai kam tamlīdzīgam.
+    
+Interesanta parādība/īpašība ir arī kanāla bipolārā daba - lai arī mūsu pieredzē ūdens pārsvarā plūst no Daugavas kanālā un tālāk tirgus virzienā, reizēm vēja un laikapstākļu dēļ peldvieta kļūst par Vecrīgas un "Rīgas vēsturiskā centra" atraugu. Tad ūdens virsma ir noklāta ar putām un visdažādākajām drazām, kuras tiek izskalotas no kanāla. Šādas atrugas gadījumā var paiet nedaudz prom no kanāla iztekas.
+    
+Tās pāris reizes, kad, svelmes mudināts, esmu centies iepazīstināt peldvietu ar jauniem cilvēkiem ar, izrādās, nedaudz augstākiem higiēnas standartiem, izmantoju frāzi: "Gangā taču cilvēki arī peldas".
+Peldēties ir forši, vajag peldēties.</story>
+  </place>
+
+  <place id="sojas-veikals">
+    <name>Sojas veikals</name>
+    <location>
+      <latitude>56.9435078</latitude><longitude>24.121557</longitude>
+    </location>
+    <snippet>Ejot garām veikalam "Sojas produkti", tas Tevi neapžilbinās ar spilgtām reklāmām, skatlogu, kurā varētu iepazīties ar labākajiem, lētākajiem, pašiem optimālākajiem pirkumiem. Gluži pretēji "Sojas produkti" skatloga dizains ir atturīgs un vienkāršs - Sojas, bezglutēna produkti un cita pārtika. Veikala logus mūžīgi klāj ar uzrakstu virs durvīm saskaņotas brūnas žalūzijas.</snippet>
+    <story>Veikala interjers arī ļoti atturīgs - vienkāršs, bet plašs. Veikalam ir augsti griesti, un pēc iekārtojuma un flīzēm varētu domāt, ka padomju laikos tas bijis kādu īpašu preču veikals. Nelielos Rīgas veikalos arī citur apkaimē redzētais dalījums divās daļās ar divām kasēm, starp kurām nereti manevrē viena un tā pati pārdevēja (būtu interesanti noskaidrot, kāpēc divas kases ir izdevīgas, vajadzīgas). Pirmajā pusē iespējams iegādāties atlasītus, bet diezgan ierastus pārtikas produktus, kurus varētu iegādāties parastā 9m2 "rajončika" veikaliņā, bet otrā veikala pusē plauktos un ledusskapī ir izvietoti dažnedažādi parastam latvietim eksotiski produkti: sojas pupiņas, dažādu izmēru sojas gabaliņi, garšvielas, ledusskapī blakus bezglutēna parastiem cīsiņiem var atrast tofu ar visdažādākajām garšām, sojas cīsiņus, augu pastētes utt.
+    
+Veikals ir ilgdzīvotājs un pēc neilgas interneta izpētes tas sevi atklāj kā pionieris augu valsts pārtikas produktiem Rīgā un Latvijā kopš 1994. gada, ja var ticēt Lursoft pieejamajai informācijai. Daudz ilgāk nekā apkaimes jaunpienācēju Dzīvnieku draugu organizācija "Dzīvnieku brīvība" turpat netālu Puškina ielā 11.
+    
+Lai arī tā redzamībā un apjomā veikalu ir grūti salīdzināt ar ZInātņu Akadēmiju vai Latgalīti, tomēr man šķiet, ka šis veikals ir viena no vietām, kas raksturo un runā par apkaimi un dod labu izpratni par apkaimes atmosfēru. Vai vismaz tās šķautni.</story>
+  </place>
 </places>
